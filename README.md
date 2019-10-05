@@ -8,7 +8,7 @@
 <!-- badges: end -->
 
 The goal of dataedu is to provide readers of [Data Science in Education
-Using R](https://github.com/data-edu/data-science-in-education) with
+Using R](https://github.com/data-edu/data-science-in-education) with a
 package with references and data from the book.
 
 ## Installation
