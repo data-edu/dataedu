@@ -13,18 +13,12 @@ package with references and data from the book.
 
 ## Installation
 
-You can install the released version of dataedu from
-[CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("dataedu")
-```
-
-And the development version from [GitHub](https://github.com/) with:
+You can install the development version of dataedu from
+[GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("ivelasq/dataedu")
+devtools::install_github("data-edu/dataedu")
 ```
 
 ## Examples
