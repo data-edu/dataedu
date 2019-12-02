@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# dataedu <img src="https://i.ibb.co/F76nyTh/hex.png" align = "right" height="150"/>
+# dataedu <img src="./img/hex.png" align = "right" height="150"/>
 
 <!-- badges: start -->
 
