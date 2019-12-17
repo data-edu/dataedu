@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# dataedu <img src="./img/hex.png" align = "right" height="150"/>
+# dataedu <img src='man/figures/logo.png' align="right" height="150" />
 
 <!-- badges: start -->
 
@@ -18,7 +18,7 @@ You can install the development version of dataedu from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("data-edu/dataedu")
+devtools::install_github("data-edu/dataedu", dependencies = TRUE)
 ```
 
 ## Examples
