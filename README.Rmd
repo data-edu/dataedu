@@ -18,16 +18,68 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of dataedu is to provide readers of [Data Science in Education Using R](https://github.com/data-edu/data-science-in-education) with a package with references and data from the book.
+The goal of dataedu is to provide readers of [Data Science in Education Using R](https://github.com/data-edu/data-science-in-education) with a package with useful functions, data, and references from the book.
+
+* [ Installation ](#installation)
+* [ Package Contents ](#package-contents)
+* [ Contact ](#contact)
 
 ## Installation
 
-You can install the development version of dataedu from [GitHub](https://github.com/) with:
+### 1. Install {devtools}
+
+First, let's install {devtools}, an R package with many handy R tools. In your R console, type in:
 
 ``` r
-# install.packages("devtools")
+install.packages("devtools", dependencies = TRUE)
+```
+
+If you already have {devtools} installed, you can move on to the next step.
+
+If you are not sure whether you have it installed, you can run this function, which will install {devtools} if you do not already have it.
+
+``` r
+if (!require(devtools)) {
+  install.packages("devtools")
+  library(devtools)
+}
+```
+
+### 2. Install {dataedu}
+
+You can install the development version of {dataedu} by running this in your R Studio console:
+
+``` r
 devtools::install_github("data-edu/dataedu", dependencies = TRUE)
 ```
 
-## Examples
+### 3. Call the packages
 
+Before you can use the package, make sure to call it using `library()`:
+
+``` r
+library(dataedu)
+```
+
+## Package Contents
+
+We created this package to provide our readers an opportunity to jump into R however they see fit.
+
+1. Mass installation of all the packages used in the book
+2. Reproducible code for the walkthroughs
+3. The dataedu theme and color palette for reuse
+
+### Mass Installation of Packages
+
+We strived to use packages that we use in our daily work when creating the walkthroughs in the book. Because we covered a variety of subjects, that means we used a lot of packages! As described in the Foundational Skills chapter, you can install the packages individually as it suits your needs. However, if you want to quickly get started and download all the packages at once, please use `mass_install()`:
+
+``` r
+dataedu::mass_install()
+```
+
+### Reproducible Code for Walkthroughs
+
+## Contact
+
+* Please report ideas or issues on the [Issues page](https://github.com/data-edu/dataedu/issues). If possible, make your post reproducible using the [reprex](https://github.com/tidyverse/reprex) package.
+* Send any pull requests on the [Github repository](https://github.com/data-edu/dataedu).
