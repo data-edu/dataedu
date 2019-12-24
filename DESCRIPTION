@@ -9,7 +9,7 @@ Authors@R: c(person("Emily", "Bovee", role = c("aut"), email = "emily.a.bovee@gm
     person("Isabella", "Velasquez", role = c("aut", "cre"), email = "ivelasq@gmail.com"))
 Description: 
     Provide readers of Data Science in Education Using R with 
-    a package with useful functions, references, and data from the book.
+    a package with useful functions, data, and references from the book.
 License: CCBY-4.0
 Depends:
     R (>= 3.6)
