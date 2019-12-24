@@ -1,6 +1,13 @@
 #' Mass installation of DSIEUR packages
 #' 
-#' \code{mass_installation} installs all the packages used in the book
+#' @name mass_install
+#' @aliases mass_install
+#' @export mass_install
+#' 
+#' @description
+#' `mass_install()` installs the packages used in DSIEUR
+#' @usage
+#' mass_install()
 #' 
 library(pacman)
 
