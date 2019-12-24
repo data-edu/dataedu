@@ -19,8 +19,8 @@ package with useful functions, data, and references from the book.
 
 ### 1\. Install {devtools}
 
-First, let’s install {devtools}, an R package with many handy R tools.
-In your R console, type in:
+First, let’s install [devtools](https://github.com/r-lib/devtools), an R
+package with many handy R tools. In your R console, type in:
 
 ``` r
 install.packages("devtools", dependencies = TRUE)
@@ -70,12 +70,26 @@ into R however they see fit.
 We strived to use packages that we use in our daily work when creating
 the walkthroughs in the book. Because we covered a variety of subjects,
 that means we used a lot of packages\! As described in the Foundational
-Skills chapter, you can install the packages individually as it suits
-your needs. However, if you want to quickly get started and download all
-the packages at once, please use `mass_install()`:
+Skills chapter, you can install the packages individually as they suit
+your needs.
+
+However, if you want to quickly get started and download all the
+packages at once, please use `mass_install()`. This function uses the
+very handy `p_install()` from the
+[pacman](https://github.com/trinker/pacman) package, which facilitates
+the installation and loading of packages.
 
 ``` r
 dataedu::mass_install()
+```
+
+To see all the packages used in the book, run:
+
+``` r
+dataedu::all_packages
+#>  [1] "apaTables"   "dummies"     "ggraph"      "here"        "janitor"    
+#>  [6] "lme4"        "lubridate"   "performance" "readxl"      "rtweet"     
+#> [11] "randomNames" "sjPlot"      "tidygraph"   "tidyverse"   "tidytext"
 ```
 
 ### Reproducible Code for Walkthroughs
