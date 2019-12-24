@@ -2,10 +2,10 @@
 % Please edit documentation in R/theme_dataedu.R
 \name{theme_dataedu}
 \alias{theme_dataedu}
-\title{Function}
+\title{Function to apply background and font to ggplot}
 \usage{
 theme_dataedu()
 }
 \description{
-Function
+Function to apply background and font to ggplot
 }
