@@ -2,12 +2,13 @@ Package: dataedu
 Type: Package
 Title: Package for Data Science in Education Using R
 Version: 0.1.0
-Authors@R: c(person("Emily", "Bovee", role = c("aut", "ctb")), 
-    person("Ryan", "Estrellado", role = c("aut", "ctb")), 
+Authors@R: c(person("Emily", "Bovee", role = c("aut", "ctb"), email = "emily.a.bovee@gmail.com"), 
+    person("Ryan", "Estrellado", role = c("aut", "ctb"), email = "ryan.estrellado@gmail.com"), 
     person("Jesse", "Mostipak", role = c("aut", "ctb")), 
-    person("Joshua", "Rosenberg", role = c("aut", "cre", "ctb")),
-    person("Isabella", "Velasquez", role = c("aut", "ctb")))
-Description: Provide readers of Data Science in Education Using R with a package with references and data from the book.
+    person("Joshua", "Rosenberg", role = c("aut", "cre", "ctb"), email = "jmichaelrosenberg@gmail.com"),
+    person("Isabella", "Velasquez", role = c("aut", "ctb"), email = "ivelasq@gmail.com"))
+Description: 
+    Provide readers of Data Science in Education Using R with a package with references and data from the book.
 License: CCBY-4.0
 Depends:
     R (>= 3.6)
