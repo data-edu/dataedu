@@ -25,4 +25,5 @@ Imports:
     rlang (>= 0.4.1)
 Suggests:
     dplyr
-    
+URL: https://github.com/data-edu/dataedu
+BugReports: https://github.com/data-edu/dataedu/issues
