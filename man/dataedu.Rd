@@ -3,7 +3,6 @@
 \docType{package}
 \name{dataedu}
 \alias{dataedu}
-\alias{dataedu-package}
 \title{dataedu: A package for Data Science in Education Using R}
 \description{
 The dataedu package provides readers of Data Science in Education Using R 
