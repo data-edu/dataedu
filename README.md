@@ -98,7 +98,7 @@ to read PDFs. {tabulizer} requires the installation of
 [RJava](https://cran.r-project.org/web/packages/rJava/index.html), which
 can be a tricky process on Mac computers. {tabulizer} is not included in
 `mass_install()` and we recommend reading through the notes on its
-Github repo when installing.
+Github repo if installing.
 
 ### Reproducible Code for Walkthroughs
 
