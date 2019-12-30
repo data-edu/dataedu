@@ -45,7 +45,7 @@ You can install the development version of {dataedu} by running this in
 your R Studio console:
 
 ``` r
-devtools::install_github("data-edu/dataedu", dependencies = TRUE)
+devtools::install_github("data-edu/dataedu")
 ```
 
 ### 3\. Call the package
