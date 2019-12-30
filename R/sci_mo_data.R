@@ -1,4 +1,6 @@
+library(tidyverse)
 library(synthpop)
+
 d <- read_csv(here::here("data", "raw", "sci_mo_data.csv"))
 
 #filtering the data to only include spring 2017 data
