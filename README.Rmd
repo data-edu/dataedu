@@ -89,6 +89,19 @@ dataedu::all_packages
 
 ### Reproducible Code for Walkthroughs
 
+### Using the dataedu theme
+
+As in following, simply add the theme to ggplot2-based plots:
+
+```{r}
+library(ggplot2)
+library(dataedu)
+
+ggplot(midwest, aes(x = area, y = popdensity, color = state)) +
+  geom_point() +
+  theme_dataedu()
+```
+
 ## Contact
 
 * Please report ideas or issues on the [Issues page](https://github.com/data-edu/dataedu/issues). If possible, make your post reproducible using the [reprex](https://github.com/tidyverse/reprex) package.
