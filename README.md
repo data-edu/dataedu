@@ -102,9 +102,10 @@ Github repo when installing.
 
 ### Reproducible Code for Walkthroughs
 
-### Using the dataedu theme
+### Using the {dataedu} Theme and Palette
 
-As in following, simply add the theme to ggplot2-based plots:
+As in following, simply add the theme and palette to ggplot2-based
+plots:
 
 ``` r
 library(ggplot2)
@@ -112,10 +113,11 @@ library(dataedu)
 
 ggplot(midwest, aes(x = area, y = popdensity, color = state)) +
   geom_point() +
-  theme_dataedu()
+  theme_dataedu() +
+  scale_color_dataedu()
 ```
 
-<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
 
 ## Contact
 

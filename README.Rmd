@@ -8,8 +8,7 @@ output: github_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
+  fig.path = "man/figures/README-"
 )
 ```
 
@@ -89,17 +88,18 @@ dataedu::all_packages
 
 ### Reproducible Code for Walkthroughs
 
-### Using the dataedu theme
+### Using the {dataedu} Theme and Palette
 
-As in following, simply add the theme to ggplot2-based plots:
+As in following, simply add the theme and palette to ggplot2-based plots:
 
-```{r}
+```{r, fig.align = "center"}
 library(ggplot2)
 library(dataedu)
 
 ggplot(midwest, aes(x = area, y = popdensity, color = state)) +
   geom_point() +
-  theme_dataedu()
+  theme_dataedu() +
+  scale_color_dataedu()
 ```
 
 ## Contact
