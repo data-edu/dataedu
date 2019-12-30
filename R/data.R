@@ -14,8 +14,5 @@
 #' @source US Department of Education \url{https://www2.ed.gov/programs/osepidea/618-data/state-level-data-files/index.html}
 #' @format Tibble
 #' \describe{
-#'  \item{status_id}{A unique identifier for a tweet}
-#'  \item{lang}{Language of a tweet}
-#'  \item{text}{Text of a tweet}
 #' }
 "longitudinal_data"
