@@ -48,7 +48,7 @@ your R Studio console:
 devtools::install_github("data-edu/dataedu", dependencies = TRUE)
 ```
 
-### 3\. Call the packages
+### 3\. Call the package
 
 Before you can use the package, make sure to call it using `library()`:
 
@@ -83,7 +83,7 @@ the installation and loading of packages.
 dataedu::mass_install()
 ```
 
-To see all the packages used in the book, run:
+To see the packages used in the book, run:
 
 ``` r
 dataedu::all_packages
@@ -91,6 +91,14 @@ dataedu::all_packages
 #>  [6] "lme4"        "lubridate"   "performance" "readxl"      "rtweet"     
 #> [11] "randomNames" "sjPlot"      "tidygraph"   "tidyverse"   "tidytext"
 ```
+
+**A special note on {tabulizer}:** One of the walkthroughs uses
+[tabulizer](https://github.com/ropensci/tabulizer), created by ROpenSci
+to read PDFs. {tabulizer} requires the installation of
+[RJava](https://cran.r-project.org/web/packages/rJava/index.html), which
+can be a tricky process on Mac computers. {tabulizer} is not included in
+`mass_install()` and we recommend reading through the notes on its
+Github repo when installing.
 
 ### Reproducible Code for Walkthroughs
 
