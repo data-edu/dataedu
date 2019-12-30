@@ -8,3 +8,10 @@
 #'  \item{text}{Text of a tweet}
 #' }
 "tt_tweets"
+
+#' List of datasets containing students with disabilities enrollment
+#'
+#' @source US Department of Education \url{https://www2.ed.gov/programs/osepidea/618-data/state-level-data-files/index.html}
+#' @format A list of dataframes
+#' }
+"longitudinal_list"
