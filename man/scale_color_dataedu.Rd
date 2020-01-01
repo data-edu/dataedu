@@ -4,8 +4,7 @@
 \alias{scale_color_dataedu}
 \title{Color scale constructor for dataedu colors}
 \usage{
-scale_color_dataedu(palette = "main", discrete = TRUE,
-  reverse = FALSE, ...)
+scale_color_dataedu(palette = "main", discrete = TRUE, reverse = FALSE, ...)
 }
 \arguments{
 \item{palette}{Character name of palette in dataedu_palettes}
