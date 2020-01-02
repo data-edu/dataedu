@@ -1,6 +1,7 @@
 library(readr)
 library(here)
-library(simstudy)
+library(synthpop)
+library(dplyr)
 
 s12_course_data <-
   read_csv(here(
@@ -9,7 +10,7 @@ s12_course_data <-
     "s12-course-data.csv"
   ))
 
-s12_course_data <- select(s12_course_data, )
+s12_course_data <- select(s12_course_data, CourseSectionOrigID, Bb_UserPK, Points_Possible, Points_Earned)
 s12_course_data_syn <- syn(s12_course_data)
 
 s12_pre_survey <-
