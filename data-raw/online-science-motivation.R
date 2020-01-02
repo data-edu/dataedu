@@ -10,8 +10,19 @@ s12_course_data <-
     "s12-course-data.csv"
   ))
 
-s12_course_data <- select(s12_course_data, CourseSectionOrigID, Bb_UserPK, Points_Possible, Points_Earned)
+s12_course_data_ss <- select(s12_course_data, CourseSectionOrigID, Bb_UserPK)
+s12_course_data <- select(s12_course_data, Points_Possible, Points_Earned, Gender)
+s12_course_data <- s12_course_data %>% 
+  mutate(Points_Earned = as.numeric(Points_Earned))
 s12_course_data_syn <- syn(s12_course_data)
+
+s12_course_data_syn_final <- bind_cols(s12_course_data_ss, as_tibble(s12_course_data_syn$syn))
+
+write_csv(s12_course_data_syn_final, here(
+  "data",
+  "processed",
+  "s12-course-data.csv"
+))
 
 s12_pre_survey <-
   read_csv(here(
