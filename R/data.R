@@ -16,3 +16,19 @@
 #' \describe{
 #' }
 "longitudinal_data"
+
+#' Dataset from studnets on their motivation and achievement in online science classes
+#'
+#' @source John Ranellucci and Joshua Rosenberg
+#' @format Tibble
+#' \describe{
+#' }
+"sci_mo_data"
+
+#' Dataset on points earned out of points possible on more than 29,000 class assignments
+#'
+#' @source John Ranellucci and Joshua Rosenberg
+#' @format Tibble
+#' \describe{
+#' }
+"s12_course_data"
