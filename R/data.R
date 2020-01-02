@@ -16,3 +16,43 @@
 #' \describe{
 #' }
 "longitudinal_data"
+
+#' Dataset from students on their motivation and achievement in online science classes
+#'
+#' @source John Ranellucci and Joshua Rosenberg
+#' @format Tibble
+#' \describe{
+#' }
+"sci_mo_data"
+
+#' Dataset on points earned out of points possible on more than 29,000 class assignments
+#'
+#' @source John Ranellucci and Joshua Rosenberg
+#' @format Tibble
+#' \describe{
+#' }
+"course_data"
+
+#' Dataset on students' motivation administered before the start of those students' online science courses
+# '
+#' @source John Ranellucci and Joshua Rosenberg
+#' @format Tibble
+#' \describe{
+#' }
+"pre_survey"
+
+#' Dataset on log-trace data from the number of minutes students spend on the course learning management system for online science courses
+#'
+#' @source John Ranellucci and Joshua Rosenberg
+#' @format Tibble
+#' \describe{
+#' }
+"course_minutes"
+
+#' Processed dataset (for modeling with multi-level models) from students on their motivation and achievement in online science classes
+#'
+#' @source John Ranellucci and Joshua Rosenberg
+#' @format Tibble
+#' \describe{
+#' }
+"sci_mo_processed"
