@@ -17,7 +17,7 @@
 #' }
 "longitudinal_data"
 
-#' Dataset from studnets on their motivation and achievement in online science classes
+#' Dataset from students on their motivation and achievement in online science classes
 #'
 #' @source John Ranellucci and Joshua Rosenberg
 #' @format Tibble
@@ -32,3 +32,27 @@
 #' \describe{
 #' }
 "s12_course_data"
+
+#' Dataset on students' motivation administered before the start of those students' online science courses
+# '
+#' @source John Ranellucci and Joshua Rosenberg
+#' @format Tibble
+#' \describe{
+#' }
+"s12_pre_survey"
+
+#' Dataset on log-trace data from the number of minutes students spend on the course learning management system for online science courses
+#'
+#' @source John Ranellucci and Joshua Rosenberg
+#' @format Tibble
+#' \describe{
+#' }
+"s12_course_minutes"
+
+#' Processed dataset (for modeling with multi-level models) from students on their motivation and achievement in online science classes
+#'
+#' @source John Ranellucci and Joshua Rosenberg
+#' @format Tibble
+#' \describe{
+#' }
+""

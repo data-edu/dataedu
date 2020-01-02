@@ -31,8 +31,14 @@ s12_pre_survey <-
     "s12-pre-survey.csv"
   ))
 
-s12_pre_survey <- select(s12_pre_survey, )
+s12_pre_survey <- select(s12_pre_survey, RespondentId, opdata_CourseID, Q1MaincellgroupRow1:Q1MaincellgroupRow10)
 s12_pre_survey_syn <- syn(s12_pre_survey)
+
+write_csv(as_tibble(s12_pre_survey_syn$syn), here(
+  "data",
+  "processed",
+  "s12-pre_survey.csv"
+))
 
 s12_time_spent <-
   read_csv(here(
@@ -41,5 +47,11 @@ s12_time_spent <-
     "s12-course-minutes.csv"
   ))
 
-s12_time_spent <- select(s12_time_spent, )
+s12_time_spent <- select(s12_time_spent, Bb_UserPK, CourseSectionOrigID, TimeSpent)
 s12_time_spent_syn <- syn(s12_time_spent)
+
+write_csv(as_tibble(s12_time_spent_syn$syn), here(
+  "data",
+  "processed",
+  "s12-course-minutes.csv"
+))
