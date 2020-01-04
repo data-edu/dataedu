@@ -13,7 +13,6 @@ library(pacman)
 
 all_packages <-
   c("apaTables",
-    "caret",
     "dummies",
     "ggraph",
     "here",
@@ -26,7 +25,6 @@ all_packages <-
     "randomNames",
     "sjPlot",
     "tidygraph",
-    "tidylog",
     "tidyverse",
     "tidytext"
     )
