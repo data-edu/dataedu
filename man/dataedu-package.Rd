@@ -11,6 +11,14 @@
 Provide readers of Data Science in Education Using R with 
     a package with useful functions, data, and references from the book.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/data-edu/dataedu}
+  \item Report bugs at \url{https://github.com/data-edu/dataedu/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Isabella Velasquez \email{ivelasq@gmail.com}
 
