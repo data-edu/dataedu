@@ -89,9 +89,10 @@ To see the packages used in the book, run:
 
 ``` r
 dataedu::all_packages
-#>  [1] "apaTables"   "dummies"     "ggraph"      "here"        "janitor"    
-#>  [6] "lme4"        "lubridate"   "performance" "readxl"      "rtweet"     
-#> [11] "randomNames" "sjPlot"      "tidygraph"   "tidyverse"   "tidytext"
+#>  [1] "apaTables"   "caret"       "dummies"     "ggraph"      "here"       
+#>  [6] "janitor"     "lme4"        "lubridate"   "performance" "readxl"     
+#> [11] "rtweet"      "randomNames" "sjPlot"      "tidygraph"   "tidylog"    
+#> [16] "tidyverse"   "tidytext"
 ```
 
 **A special note on {tabulizer}:** One of the walkthroughs uses
