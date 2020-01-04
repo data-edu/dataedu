@@ -25,7 +25,7 @@ First, let’s install [devtools](https://github.com/r-lib/devtools), an R
 package with many handy R tools. In your R console, type in:
 
 ``` r
-install.packages("devtools", dependencies = TRUE)
+install.packages("devtools")
 ```
 
 If you already have {devtools} installed, you can move on to the next
