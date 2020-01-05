@@ -19,7 +19,7 @@ Authors@R:
              role = "aut",
              email = "jmichaelrosenberg@gmail.com"),
       person(given = "Isabella",
-             family = "Velasquez",
+             family = "Velásquez",
              role = c("aut", "cre"),
              email = "ivelasq@gmail.com"))
 Description: Provide readers of Data Science in Education Using
