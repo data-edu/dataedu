@@ -27,3 +27,4 @@ Suggests:
     dplyr
 URL: https://github.com/data-edu/dataedu
 BugReports: https://github.com/data-edu/dataedu/issues
+Roxygen: list(markdown = TRUE)
