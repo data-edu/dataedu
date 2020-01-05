@@ -1,6 +1,5 @@
 #' A ggplot2 theme for Data Science in Education Using R
 #' 
-#' @md
 #' @description
 #' Apply the 'Data Science in Education Using R' background and font to ggplot2.
 #' 
