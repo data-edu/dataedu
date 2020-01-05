@@ -1,26 +1,27 @@
-#' A [ggplot] theme for Data Science in Education
+#' A ggplot2 theme for Data Science in Education Using R
 #' 
 #' @md
-#' @section About the font:
-#' The dataedu theme uses extrafont to download Arial Rounded Bold.
-#' To download extrafont, the extrafont database is required.
-#' More information can be found on the extrafont help page.
+#' @description
+#' Apply the 'Data Science in Education Using R' background and font to ggplot2.
 #' 
+#' @usage
+#' theme_dataedu()
+#' 
+#' @details
+#' The dataedu theme uses the [extrafont](https://github.com/wch/extrafont) package to download Arial Rounded Bold.
+#' 
+#' To use [extrafont](https://github.com/wch/extrafont), the extrafont database is required. More information can be found on the [extrafont](https://github.com/wch/extrafont) help page.
+#' 
+#' @rdname theme_dataedu
 #' @export
-
-library(extrafont)
-
-if(.Platform$OS.type == "windows") {
-  font_import(pattern = "ARLRDBD")
-  loadfonts(device = "win", quiet = TRUE)
-} else {
-  font_import(pattern = "Arial Rounded Bold")
-  loadfonts()
-}
-
-#' Function to apply background and font to ggplot
-#' 
 theme_dataedu <- function () {
+  if(.Platform$OS.type == "windows") {
+    extrafont::font_import(pattern = "ARLRDBD")
+    extrafont::loadfonts(device = "win", quiet = TRUE)
+  } else {
+    extrafont::font_import(pattern = "Arial Rounded Bold")
+    extrafont::loadfonts(quiet = TRUE)
+  }
   theme_minimal(base_size = 12,
                 base_family = "Arial Rounded MT Bold") %+replace%
     theme(
