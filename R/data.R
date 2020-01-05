@@ -56,3 +56,26 @@
 #' \describe{
 #' }
 "sci_mo_processed"
+
+#' All packages used in Data Science in Education Using R
+#' 
+#' @format A character vector
+all_packages <-
+  c("apaTables",
+    "caret",
+    "dummies",
+    "ggraph",
+    "here",
+    "janitor",
+    "lme4",
+    "lubridate",
+    "performance",
+    "readxl",
+    "rtweet",
+    "randomNames",
+    "sjPlot",
+    "tidygraph",
+    "tidylog",
+    "tidyverse",
+    "tidytext"
+  )
