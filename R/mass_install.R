@@ -1,15 +1,12 @@
 #' Mass installation of DSIEUR packages
 #' 
-#' @name mass_install
-#' @aliases mass_install
-#' @export mass_install
-#' 
 #' @description
 #' `mass_install()` installs the packages used in DSIEUR
+#' 
 #' @usage
 #' mass_install()
-#' 
-library(pacman)
+#'
+#' @export mass_install
 
 all_packages <-
   c("apaTables",
