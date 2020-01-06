@@ -1,6 +1,6 @@
 #' Tweets using hashtag tidytuesday
 #'
-#' @source Twitter and TidyTuesday \url{https://thomasmock.netlify.com/post/tidytuesday-a-weekly-social-data-project-in-r/}
+#' @source Twitter and TidyTuesday <https://thomasmock.netlify.com/post/tidytuesday-a-weekly-social-data-project-in-r/>
 #' @format A data frame with columns:
 #' \describe{
 #'  \item{status_id}{A unique identifier for a tweet}
@@ -11,7 +11,7 @@
 
 #' Datasets containing students with disabilities enrollment
 #'
-#' @source US Department of Education \url{https://www2.ed.gov/programs/osepidea/618-data/state-level-data-files/index.html}
+#' @source US Department of Education <https://www2.ed.gov/programs/osepidea/618-data/state-level-data-files/index.html>
 #' @format Tibble
 #' \describe{
 #' }
@@ -56,3 +56,26 @@
 #' \describe{
 #' }
 "sci_mo_processed"
+
+#' All packages used in Data Science in Education Using R
+#' 
+#' @format A character vector
+all_packages <-
+  c("apaTables",
+    "caret",
+    "dummies",
+    "ggraph",
+    "here",
+    "janitor",
+    "lme4",
+    "lubridate",
+    "performance",
+    "readxl",
+    "rtweet",
+    "randomNames",
+    "sjPlot",
+    "tidygraph",
+    "tidylog",
+    "tidyverse",
+    "tidytext"
+  )

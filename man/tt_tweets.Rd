@@ -6,9 +6,9 @@
 \title{Tweets using hashtag tidytuesday}
 \format{A data frame with columns:
 \describe{
- \item{status_id}{A unique identifier for a tweet}
- \item{lang}{Language of a tweet}
- \item{text}{Text of a tweet}
+\item{status_id}{A unique identifier for a tweet}
+\item{lang}{Language of a tweet}
+\item{text}{Text of a tweet}
 }}
 \source{
 Twitter and TidyTuesday \url{https://thomasmock.netlify.com/post/tidytuesday-a-weekly-social-data-project-in-r/}

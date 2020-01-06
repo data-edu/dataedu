@@ -1,38 +1,16 @@
 #' Mass installation of DSIEUR packages
 #' 
-#' @name mass_install
-#' @aliases mass_install
-#' @export mass_install
-#' 
 #' @description
 #' `mass_install()` installs the packages used in DSIEUR
+#' 
 #' @usage
 #' mass_install()
 #' 
-library(pacman)
-
-all_packages <-
-  c("apaTables",
-    "caret",
-    "dummies",
-    "ggraph",
-    "here",
-    "janitor",
-    "lme4",
-    "lubridate",
-    "performance",
-    "readxl",
-    "rtweet",
-    "randomNames",
-    "sjPlot",
-    "tidygraph",
-    "tidylog",
-    "tidyverse",
-    "tidytext"
-    )
+#' @rdname mass_install
+#' @export
 
 mass_install <- function() {
   message("This may take a while...")
   Sys.sleep(2)
-  pacman::p_install(all_packages, character.only = T)
+  pacman::p_install(all_packages, character.only = TRUE)
 }
