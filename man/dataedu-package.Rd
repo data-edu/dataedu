@@ -8,8 +8,9 @@
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-Provide readers of Data Science in Education Using R with 
-    a package with useful functions, data, and references from the book.
+Provide readers of Data Science in Education Using
+    R with a package containing useful functions, data, and references
+    from the book.
 }
 \seealso{
 Useful links:
@@ -20,7 +21,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Isabella Velasquez \email{ivelasq@gmail.com}
+\strong{Maintainer}: Isabella Velásquez \email{ivelasq@gmail.com}
 
 Authors:
 \itemize{

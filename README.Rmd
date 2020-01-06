@@ -68,6 +68,7 @@ We created this package to provide our readers an opportunity to jump into R how
 1. Mass installation of all the packages used in the book
 2. Reproducible code for the walkthroughs
 3. The dataedu theme and color palette for reuse
+4. Access to all of the data used in each of the walkthroughs
 
 ### Mass Installation of Packages
 

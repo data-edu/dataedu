@@ -7,5 +7,5 @@
 mass_install()
 }
 \description{
-`mass_install()` installs the packages used in DSIEUR
+\code{mass_install()} installs the packages used in DSIEUR
 }
