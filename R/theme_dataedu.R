@@ -21,9 +21,9 @@ theme_dataedu <- function () {
     extrafont::font_import(pattern = "Arial Rounded Bold")
     extrafont::loadfonts(quiet = TRUE)
   }
-  theme_minimal(base_size = 12,
+  ggplot2::theme_minimal(base_size = 12,
                 base_family = "Arial Rounded MT Bold") %+replace%
-    theme(
+    ggplot2::theme(
       legend.background = element_rect(fill = "transparent", colour = NA),
       legend.key = element_rect(fill = "transparent", colour = NA)
     )

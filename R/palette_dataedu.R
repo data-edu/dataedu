@@ -37,7 +37,7 @@ dataedu_pal <- function(palette = "main", reverse = FALSE, ...) {
   
   if (reverse) pal <- rev(pal)
   
-  colorRampPalette(pal, ...)
+  grDevices::colorRampPalette(pal, ...)
 }
 
 #' Color scale constructor for dataedu colors
@@ -54,7 +54,7 @@ scale_color_dataedu <- function(palette = "main", discrete = TRUE, reverse = FAL
   if (discrete) {
     discrete_scale("colour", paste0("dataedu_", palette), palette = pal, ...)
   } else {
-    scale_color_gradientn(colours = pal(256), ...)
+    ggplot2::scale_color_gradientn(colours = pal(256), ...)
   }
 }
 
@@ -70,8 +70,8 @@ scale_fill_dataedu <- function(palette = "main", discrete = TRUE, reverse = FALS
   pal <- dataedu_pal(palette = palette, reverse = reverse)
   
   if (discrete) {
-    discrete_scale("fill", paste0("dataedu_", palette), palette = pal, ...)
+    ggplot2::discrete_scale("fill", paste0("dataedu_", palette), palette = pal, ...)
   } else {
-    scale_fill_gradientn(colours = pal(256), ...)
+    ggplot2::scale_fill_gradientn(colours = pal(256), ...)
   }
 }
