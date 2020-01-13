@@ -26,7 +26,7 @@ theme_dataedu <- function() {
     base_family = "Arial Rounded MT Bold"
   ) %+replace%
     ggplot2::theme(
-      legend.background = element_rect(fill = "transparent", colour = NA),
-      legend.key = element_rect(fill = "transparent", colour = NA)
+      legend.background = ggplot2::element_rect(fill = "transparent", colour = NA),
+      legend.key = ggplot2::element_rect(fill = "transparent", colour = NA)
     )
 }

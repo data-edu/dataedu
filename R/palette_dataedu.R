@@ -54,7 +54,7 @@ scale_color_dataedu <- function(palette = "main", discrete = TRUE, reverse = FAL
   pal <- dataedu_pal(palette = palette, reverse = reverse)
 
   if (discrete) {
-    discrete_scale("colour", paste0("dataedu_", palette), palette = pal, ...)
+    ggplot2::discrete_scale("colour", paste0("dataedu_", palette), palette = pal, ...)
   } else {
     ggplot2::scale_color_gradientn(colours = pal(256), ...)
   }
