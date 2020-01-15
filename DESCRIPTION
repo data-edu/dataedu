@@ -33,6 +33,7 @@ Depends:
 Imports: 
     devtools,
     extrafont,
+    ggplot2,
     grDevices,
     nlme,
     pacman,

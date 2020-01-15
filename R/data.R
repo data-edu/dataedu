@@ -58,10 +58,11 @@
 "sci_mo_processed"
 
 #' All packages used in Data Science in Education Using R
-#' 
+#'
 #' @format A character vector
 all_packages <-
-  c("apaTables",
+  c(
+    "apaTables",
     "caret",
     "dummies",
     "ggraph",

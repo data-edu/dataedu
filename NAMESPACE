@@ -2,3 +2,4 @@
 
 export(mass_install)
 export(theme_dataedu)
+importFrom(ggplot2,"%+replace%")

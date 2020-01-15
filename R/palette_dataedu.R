@@ -4,25 +4,27 @@ dataedu_colors <- c(
   `turquoise`  = "#006876",
   `green`      = "#00906b",
   `lightgreen` = "#87af49",
-  `yellow`     = "#ffbc49")
+  `yellow`     = "#ffbc49"
+)
 
 #' Function to extract dataedu colors as hex codes
 #'
-#' @param ... Character names of dataedu_colors 
+#' @param ... Character names of dataedu_colors
 #'
 dataedu_cols <- function(...) {
   cols <- c(...)
-  
-  if (is.null(cols))
-    return (dataedu_colors)
-  
+
+  if (is.null(cols)) {
+    return(dataedu_colors)
+  }
+
   dataedu_colors[cols]
 }
 
 dataedu_cols()
 
 dataedu_palettes <- list(
-  `short`  = dataedu_cols("green", "yellow"),
+  `short` = dataedu_cols("green", "yellow"),
   `main` = dataedu_cols("darkblue", "turquoise", "green", "lightgreen", "yellow")
 )
 
@@ -34,10 +36,10 @@ dataedu_palettes <- list(
 #'
 dataedu_pal <- function(palette = "main", reverse = FALSE, ...) {
   pal <- dataedu_palettes[[palette]]
-  
+
   if (reverse) pal <- rev(pal)
-  
-  colorRampPalette(pal, ...)
+
+  grDevices::colorRampPalette(pal, ...)
 }
 
 #' Color scale constructor for dataedu colors
@@ -50,11 +52,11 @@ dataedu_pal <- function(palette = "main", reverse = FALSE, ...) {
 #'
 scale_color_dataedu <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
   pal <- dataedu_pal(palette = palette, reverse = reverse)
-  
+
   if (discrete) {
-    discrete_scale("colour", paste0("dataedu_", palette), palette = pal, ...)
+    ggplot2::discrete_scale("colour", paste0("dataedu_", palette), palette = pal, ...)
   } else {
-    scale_color_gradientn(colours = pal(256), ...)
+    ggplot2::scale_color_gradientn(colours = pal(256), ...)
   }
 }
 
@@ -68,10 +70,10 @@ scale_color_dataedu <- function(palette = "main", discrete = TRUE, reverse = FAL
 #'
 scale_fill_dataedu <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
   pal <- dataedu_pal(palette = palette, reverse = reverse)
-  
+
   if (discrete) {
-    discrete_scale("fill", paste0("dataedu_", palette), palette = pal, ...)
+    ggplot2::discrete_scale("fill", paste0("dataedu_", palette), palette = pal, ...)
   } else {
-    scale_fill_gradientn(colours = pal(256), ...)
+    ggplot2::scale_fill_gradientn(colours = pal(256), ...)
   }
 }
