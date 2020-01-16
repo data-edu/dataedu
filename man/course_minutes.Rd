@@ -17,8 +17,5 @@ for online science courses
 
 str(dataedu::course_minutes)
 
-\describe{
-}
-
 }
 \keyword{datasets}

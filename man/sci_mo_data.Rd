@@ -16,8 +16,5 @@ in online science classes
 
 str(dataedu::sci_mo_data)
 
-\describe{
-}
-
 }
 \keyword{datasets}
