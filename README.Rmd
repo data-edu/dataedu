@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/ivelasq/dataedu?branch=master&svg=true)](https://ci.appveyor.com/project/ivelasq/dataedu)
 <!-- badges: end -->
 
-The goal of dataedu is to provide readers of [Data Science in Education Using R](https://github.com/data-edu/data-science-in-education) with a package with useful functions, data, and references from the book.
+The goal of dataedu is to provide readers of [Data Science in Education Using R](https://www.datascienceineducation.com/) with a package with useful functions, data, and references from the book.
 
 * [ Installation ](#installation)
 * [ Package Contents ](#package-contents)

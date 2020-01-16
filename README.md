@@ -7,11 +7,13 @@
 
 [![Travis build
 status](https://travis-ci.org/data-edu/dataedu.svg?branch=master)](https://travis-ci.org/data-edu/dataedu)
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/github/ivelasq/dataedu?branch=master&svg=true)](https://ci.appveyor.com/project/ivelasq/dataedu)
 <!-- badges: end -->
 
 The goal of dataedu is to provide readers of [Data Science in Education
-Using R](https://github.com/data-edu/data-science-in-education) with a
-package with useful functions, data, and references from the book.
+Using R](https://www.datascienceineducation.com/) with a package with
+useful functions, data, and references from the book.
 
   - [Installation](#installation)
   - [Package Contents](#package-contents)
@@ -66,6 +68,7 @@ into R however they see fit.
 1.  Mass installation of all the packages used in the book
 2.  Reproducible code for the walkthroughs
 3.  The dataedu theme and color palette for reuse
+4.  Access to all of the data used in each of the walkthroughs
 
 ### Mass Installation of Packages
 
