@@ -16,7 +16,7 @@ library(synthpop)
 # 
 # d_syn <- syn(d_raw)
 # 
-# write_csv(d_syn$syn, here::here("data", "processed", "sci_mo_data.csv"))
+# write_csv(d_syn$syn, here::here("data-raw", "wt01_online-science-motivation", "sci_mo_data.csv"))
 
-sci_mo_data <- read_csv(here::here("data", "processed", "sci_mo_data.csv"))
+sci_mo_data <- read_csv(here::here("data-raw", "wt01_online-science-motivation", "sci_mo_data.csv"))
 usethis::use_data(sci_mo_data, overwrite = TRUE)

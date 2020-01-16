@@ -22,12 +22,12 @@ library(dplyr)
 # s12_course_data_syn_final <- bind_cols(s12_course_data_ss, as_tibble(s12_course_data_syn$syn))
 # 
 # write_csv(s12_course_data_syn_final, here(
-#   "data",
-#   "processed",
+#   "data-raw",
+#   "wt01_online-science-motivation",
 #   "s12-course-data.csv"
 # ))
 
-course_data <- read_csv(here::here("data", "processed", "s12-course-data.csv"))
+course_data <- read_csv(here::here("data-raw", "wt01_online-science-motivation", "s12-course-data.csv"))
 usethis::use_data(course_data, overwrite = TRUE)
 
 # s12_pre_survey <-
@@ -41,18 +41,18 @@ usethis::use_data(course_data, overwrite = TRUE)
 # s12_pre_survey_syn <- syn(s12_pre_survey)
 # 
 # write_csv(as_tibble(s12_pre_survey_syn$syn), here(
-#   "data",
-#   "processed",
+#   "data-raw",
+#   "wt01_online-science-motivation"
 #   "s12-pre-survey.csv"
 # ))
 
-pre_survey <- read_csv(here::here("data", "processed", "s12-pre-survey.csv"))
+pre_survey <- read_csv(here::here("data-raw", "wt01_online-science-motivation", "s12-pre-survey.csv"))
 usethis::use_data(pre_survey, overwrite = TRUE)
 
 # s12_time_spent <-
 #   read_csv(here(
-#     "data",
-#     "raw",
+#     "data-raw",
+#     "wt01_online-science-motivation"
 #     "s12-course-minutes.csv"
 #   ))
 # 
@@ -60,13 +60,13 @@ usethis::use_data(pre_survey, overwrite = TRUE)
 # s12_time_spent_syn <- syn(s12_time_spent)
 # 
 # write_csv(as_tibble(s12_time_spent_syn$syn), here(
-#   "data",
-#   "processed",
+#   "data-raw",
+#   "wt01_online-science-motivation"
 #   "s12-course-minutes.csv"
 # ))
 
-course_minutes <- read_csv(here::here("data", "processed", "s12-course-minutes.csv"))
+course_minutes <- read_csv(here::here("data-raw", "wt01_online-science-motivation", "s12-course-minutes.csv"))
 usethis::use_data(course_minutes, overwrite = TRUE)
 
-sci_mo_processed <- read_csv(here::here("data", "processed", "sci_mo_processed.csv"))
+sci_mo_processed <- read_csv(here::here("data-raw", "wt01_online-science-motivation", "sci_mo_processed.csv"))
 usethis::use_data(sci_mo_processed, overwrite = TRUE)
