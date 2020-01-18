@@ -146,6 +146,7 @@ NULL
 
 #' All packages used in Data Science in Education Using R
 #' 
+#' @name all_packages
 #' @format A character vector
 all_packages <-
   c("apaTables",
