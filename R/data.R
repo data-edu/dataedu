@@ -1,6 +1,3 @@
-#' @importFrom tibble tibble
-NULL
-
 #' Walkthrough 01 - Course Data
 #' 
 #' Dataset on points earned out of points possible 
