@@ -16,6 +16,7 @@ dataedu_colors <- c(
 #' @name dataedu_cols
 #' @param ... Character names of dataedu_colors
 #'
+#' @export
 dataedu_cols <- function(...) {
   cols <- c(...)
 
