@@ -11,7 +11,9 @@ Twitter and TidyTuesday \url{https://thomasmock.netlify.com/post/tidytuesday-a-w
 \description{
 Walkthrough 12 - Tweet dataset gathered from hashtag tidytuesday
 }
-\keyword{#'}
-\keyword{@examples}
+\examples{
+
+str(dataedu::tt_tweets)
+
+}
 \keyword{datasets}
-\keyword{str(dataedu::tt_tweets)}

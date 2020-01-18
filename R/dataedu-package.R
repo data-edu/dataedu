@@ -104,7 +104,7 @@ NULL
 #' @format Dataset of class \code{tibble}.
 #' @source Twitter and TidyTuesday <https://thomasmock.netlify.com/post/tidytuesday-a-weekly-social-data-project-in-r/>
 #' @keywords datasets
-#' #' @examples
+#' @examples
 #' 
 #' str(dataedu::tt_tweets)
 #' 
@@ -121,7 +121,7 @@ NULL
 #' @format Dataset of class \code{tibble}.
 #' @source Minneapolis Public Schools <https://mpls.k12.mn.us/>
 #' @keywords datasets
-#' #' @examples
+#' @examples
 #' 
 #' str(dataedu::district_merged_data)
 #' 

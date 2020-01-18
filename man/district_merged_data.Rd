@@ -12,7 +12,9 @@ Minneapolis Public Schools \url{https://mpls.k12.mn.us/}
 Walkthrough 03 - Dataset with processed district data with
 both FRPL and ethnicity data
 }
-\keyword{#'}
-\keyword{@examples}
+\examples{
+
+str(dataedu::district_merged_data)
+
+}
 \keyword{datasets}
-\keyword{str(dataedu::district_merged_data)}
