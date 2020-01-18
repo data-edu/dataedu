@@ -138,7 +138,7 @@ NULL
 #' @format Dataset of class \code{tibble}.
 #' @source US Department of Education <https://www2.ed.gov/programs/osepidea/618-data/state-level-data-files/index.html>
 #' @keywords datasets
-#' #' @examples
+#' @examples
 #' 
 #' str(dataedu::longitudinal_data)
 #' 
