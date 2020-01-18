@@ -2,7 +2,7 @@
 % Please edit documentation in R/palette_dataedu.R
 \name{dataedu_pal}
 \alias{dataedu_pal}
-\title{Return function to interpolate a dataedu color palette}
+\title{Interpolate a dataedu color palette}
 \usage{
 dataedu_pal(palette = "main", reverse = FALSE, ...)
 }
@@ -14,5 +14,5 @@ dataedu_pal(palette = "main", reverse = FALSE, ...)
 \item{...}{Additional arguments to pass to colorRampPalette()}
 }
 \description{
-Return function to interpolate a dataedu color palette
+Interpolate a dataedu color palette
 }
