@@ -7,6 +7,8 @@
 
 [![Travis build
 status](https://travis-ci.org/data-edu/dataedu.svg?branch=master)](https://travis-ci.org/data-edu/dataedu)
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/github/ivelasq/dataedu?branch=master&svg=true)](https://ci.appveyor.com/project/ivelasq/dataedu)
 <!-- badges: end -->
 
 The goal of dataedu is to provide readers of [Data Science in Education
@@ -65,7 +67,8 @@ into R however they see fit.
 
 1.  Mass installation of all the packages used in the book
 2.  Reproducible code for the walkthroughs
-3.  The dataedu theme and color palette for reuse
+3.  Access to the data used in each of the walkthroughs
+4.  The dataedu theme and color palette for reuse
 
 ### Mass Installation of Packages
 
@@ -105,6 +108,16 @@ Github repo if installing.
 
 ### Reproducible Code for Walkthroughs
 
+Coming soon\!
+
+### Accessing the Walkthrough Data
+
+You can call the dataset as mentioned in the walkthrough.
+
+``` r
+dataedu::course_data
+```
+
 ### Using the {dataedu} Theme and Palette
 
 As in following, simply add the theme and palette to ggplot2-based
@@ -118,6 +131,8 @@ ggplot(midwest, aes(x = area, y = popdensity, color = state)) +
   geom_point() +
   theme_dataedu() +
   scale_color_dataedu()
+#> Importing fonts may take a few minutes, depending on the number of fonts and the speed of the system.
+#> Continue? [y/n]
 ```
 
 <img src="man/figures/README-unnamed-chunk-4-1.png" style="display: block; margin: auto;" />

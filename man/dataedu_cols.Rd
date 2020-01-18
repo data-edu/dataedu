@@ -2,7 +2,7 @@
 % Please edit documentation in R/palette_dataedu.R
 \name{dataedu_cols}
 \alias{dataedu_cols}
-\title{Function to extract dataedu colors as hex codes}
+\title{Extract dataedu colors as hex codes}
 \usage{
 dataedu_cols(...)
 }
@@ -10,5 +10,5 @@ dataedu_cols(...)
 \item{...}{Character names of dataedu_colors}
 }
 \description{
-Function to extract dataedu colors as hex codes
+Extract dataedu colors as hex codes
 }

@@ -3,12 +3,12 @@
 \docType{data}
 \name{dataedu_colors}
 \alias{dataedu_colors}
-\title{Create a palette for Data Science in Education}
+\title{Color palette for Data Science in Education}
 \format{An object of class \code{character} of length 5.}
 \usage{
 dataedu_colors
 }
 \description{
-Create a palette for Data Science in Education
+Color palette for Data Science in Education
 }
 \keyword{datasets}

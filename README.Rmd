@@ -68,8 +68,8 @@ We created this package to provide our readers an opportunity to jump into R how
 
 1. Mass installation of all the packages used in the book
 2. Reproducible code for the walkthroughs
-3. The dataedu theme and color palette for reuse
-4. Access to all of the data used in each of the walkthroughs
+3. Access to the data used in each of the walkthroughs
+4. The dataedu theme and color palette for reuse
 
 ### Mass Installation of Packages
 
@@ -91,11 +91,21 @@ dataedu::all_packages
 
 ### Reproducible Code for Walkthroughs
 
+Coming soon!
+
+### Accessing the Walkthrough Data
+
+You can call the dataset as mentioned in the walkthrough.
+
+``` r
+dataedu::course_data
+```
+
 ### Using the {dataedu} Theme and Palette
 
 As in following, simply add the theme and palette to ggplot2-based plots:
 
-```{r, fig.align = "center", dpi = 300}
+```{r, fig.align = "center", dpi = 300, message = FALSE}
 library(ggplot2)
 library(dataedu)
 

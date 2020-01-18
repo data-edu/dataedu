@@ -139,6 +139,8 @@
 #' 
 #' @name all_packages
 #' @format A character vector
+#' @export all_packages
+#' 
 all_packages <-
   c("apaTables",
     "caret",
@@ -158,3 +160,4 @@ all_packages <-
     "tidyverse",
     "tidytext"
   )
+
