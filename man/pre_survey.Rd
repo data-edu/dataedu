@@ -8,6 +8,9 @@
 \source{
 John Ranellucci and Joshua Rosenberg
 }
+\usage{
+pre_survey
+}
 \description{
 Walkthrough 01 - Dataset on students' motivation administered before
 the start of those students' online science courses

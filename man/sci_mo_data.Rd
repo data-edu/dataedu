@@ -8,6 +8,9 @@
 \source{
 John Ranellucci and Joshua Rosenberg
 }
+\usage{
+sci_mo_data
+}
 \description{
 Walkthrough 01 - Dataset from students on their motivation and
 achievement in online science classes

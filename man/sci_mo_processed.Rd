@@ -8,6 +8,9 @@
 \source{
 John Ranellucci and Joshua Rosenberg
 }
+\usage{
+sci_mo_processed
+}
 \description{
 Walkthrough 01 - Processed dataset (for modeling with multi-level models)
 from students on their motivation and achievement in

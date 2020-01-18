@@ -8,6 +8,9 @@
 \source{
 John Ranellucci and Joshua Rosenberg
 }
+\usage{
+course_data
+}
 \description{
 Dataset on points earned out of points possible
 on more than 29,000 class assignments

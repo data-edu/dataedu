@@ -8,6 +8,9 @@
 \source{
 Twitter and TidyTuesday \url{https://thomasmock.netlify.com/post/tidytuesday-a-weekly-social-data-project-in-r/}
 }
+\usage{
+tt_tweets
+}
 \description{
 Walkthrough 12 - Tweet dataset gathered from hashtag tidytuesday
 }

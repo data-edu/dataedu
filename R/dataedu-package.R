@@ -22,7 +22,7 @@ NULL
 #' 
 #' str(dataedu::course_data)
 #' 
-NULL
+"course_data"
 
 #' Walkthrough 01 - Pre-Survey
 #' 
@@ -39,7 +39,7 @@ NULL
 #' 
 #' str(dataedu::pre_survey)
 #' 
-NULL
+"pre_survey"
 
 #' Walkthrough 01 - Course Minutes
 #' 
@@ -57,7 +57,7 @@ NULL
 #' 
 #' str(dataedu::course_minutes)
 #' 
-NULL
+"course_minutes"
 
 #' Walkthrough 01 - Student Motivation
 #' 
@@ -74,7 +74,7 @@ NULL
 #' 
 #' str(dataedu::sci_mo_data)
 #' 
-NULL
+"sci_mo_data"
 
 #' Walkthrough 01 - Student Motivation (Processed)
 #' 
@@ -92,7 +92,7 @@ NULL
 #' 
 #' str(dataedu::sci_mo_processed)
 #' 
-NULL
+"sci_mo_processed"
 
 #' Walkthrough 12 - Tweet Data
 #' 
@@ -108,7 +108,7 @@ NULL
 #' 
 #' str(dataedu::tt_tweets)
 #' 
-NULL
+"tt_tweets"
 
 #' Walkthrough 03 - Merged Ethnicity and FRPL District Data
 #' 
@@ -125,7 +125,7 @@ NULL
 #' 
 #' str(dataedu::district_merged_data)
 #' 
-NULL
+"district_merged_data"
 
 #' Walkthrough 04 - Students with Disabilities Longitudinal Data
 #' 
@@ -142,7 +142,7 @@ NULL
 #' 
 #' str(dataedu::longitudinal_data)
 #' 
-NULL
+"longitudinal_data"
 
 #' All packages used in Data Science in Education Using R
 #' 

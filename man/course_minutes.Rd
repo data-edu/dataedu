@@ -8,6 +8,9 @@
 \source{
 John Ranellucci and Joshua Rosenberg
 }
+\usage{
+course_minutes
+}
 \description{
 Walkthrough 01 - Dataset on log-trace data from the number of minutes
 students spend on the course learning management system
