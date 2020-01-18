@@ -26,7 +26,7 @@ NULL
 
 #' Walkthrough 01 - Pre-Survey
 #' 
-#' Dataset on students' motivation administered before 
+#' Walkthrough 01 - Dataset on students' motivation administered before 
 #' the start of those students' online science courses
 #'
 #'
@@ -43,7 +43,7 @@ NULL
 
 #' Walkthrough 01 - Course Minutes
 #' 
-#' Dataset on log-trace data from the number of minutes 
+#' Walkthrough 01 - Dataset on log-trace data from the number of minutes 
 #' students spend on the course learning management system 
 #' for online science courses
 #' 
@@ -61,8 +61,8 @@ NULL
 
 #' Walkthrough 01 - Student Motivation
 #' 
-#' Dataset from students on their motivation and achievement 
-#' in online science classes
+#' Walkthrough 01 - Dataset from students on their motivation and 
+#' achievement in online science classes
 #' 
 #' 
 #' @name sci_mo_data
@@ -78,7 +78,7 @@ NULL
 
 #' Walkthrough 01 - Student Motivation (Processed)
 #' 
-#' Processed dataset (for modeling with multi-level models) 
+#' Walkthrough 01 - Processed dataset (for modeling with multi-level models) 
 #' from students on their motivation and achievement in 
 #' online science classes
 #' 
@@ -96,7 +96,7 @@ NULL
 
 #' Walkthrough 12 - Tweet Data
 #' 
-#' Tweet dataset gathered from hashtag tidytuesday
+#' Walkthrough 12 - Tweet dataset gathered from hashtag tidytuesday
 #'
 #'
 #' @name tt_tweets
@@ -112,8 +112,8 @@ NULL
 
 #' Walkthrough 03 - Merged Ethnicity and FRPL District Data
 #' 
-#' Dataset with processed district data with both FRPL and 
-#' ethnicity data
+#' Walkthrough 03 - Dataset with processed district data with 
+#' both FRPL and ethnicity data
 #'
 #'
 #' @name district_merged_data
@@ -129,7 +129,8 @@ NULL
 
 #' Walkthrough 04 - Students with Disabilities Longitudinal Data
 #' 
-#' Datasets containing students with disabilities longitudinal enrollment
+#' Walkthrough 04 - Datasets containing students with disabilities 
+#' longitudinal enrollment
 #'
 #'
 #' @name longitudinal_data
