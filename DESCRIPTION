@@ -39,7 +39,8 @@ Imports:
     pacman,
     rlang (>= 0.4.1)
 Suggests:
-    dplyr
+    dplyr,
+    covr
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
