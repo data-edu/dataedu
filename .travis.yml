@@ -1,13 +1,19 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 
-language: R
+language: r
 cache: packages
 
+after_success:
+  - Rscript -e 'pkgdown::build_site()'
+  - Rscript -e 'covr::codecov()'
+  
 before_cache: Rscript -e 'remotes::install_cran("pkgdown")'
 deploy:
-  provider: script
+  provider: pages
   script: Rscript -e 'pkgdown::deploy_site_github()'
   skip_cleanup: true
-
-after_success:
-    - Rscript -e 'covr::codecov()'
+  github-token: $GITHUB_PAT
+  keep-history: true
+  local-dir: docs
+  on:
+    branch: master
