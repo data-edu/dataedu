@@ -14,7 +14,7 @@ s12_course_data <-
     "s12-course-data.csv"
   ))
 
-s12_course_data_ss <- dplyr::select(s12_course_data, CourseSectionOrigID, Bb_UserPK)
+s12_course_data_ss <- dplyr::select(s12_course_data, CourseSectionOrigID, Bb_UserPK, Gradebook_Item, Grade_Category, FinalGradeCEMS)
 s12_course_data <- dplyr::select(s12_course_data, Points_Possible, Points_Earned, Gender)
 s12_course_data <- s12_course_data %>%
   mutate(Points_Earned = as.numeric(Points_Earned))
