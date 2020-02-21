@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 student_id,course_id,total_points_possible,total_points_earned,percentage_earned,subject,semester,section,Gradebook_Item,Grade_Category,FinalGradeCEMS,Points_Possible,Points_Earned,Gender,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,TimeSpent,TimeSpent_hours,TimeSpent_std
 43146,FrScA-S216-02,3280,2220,0.676829268292683,FrScA,S216,02,POINTS EARNED & TOTAL COURSE POINTS,NA,93.4537246,5,NA,M,5,4,4,5,5,5,5,5,4,5,1555.1667,25.919445,-0.18051496412273402
 44638,OcnA-S116-01,3531,2672,0.75672613990371,OcnA,S116,01,ATTEMPTED,NA,81.70184255,10,10,F,4,4,3,4,4,4,4,5,4,4,1382.7001,23.045001666666668,-0.3078031278514906
