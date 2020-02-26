@@ -1,3 +1,17 @@
+#' Foundational Skills Data 
+#'
+#' Dataset on Massachusetts public schools
+#'
+#' @name ma_data_init
+#' @docType data
+#' @format Dataset of class \code{tibble}.
+#' @keywords datasets
+#' @examples
+#' 
+#' str(dataedu::ma_data_init)
+#' 
+"ma_data_init"
+
 #' Walkthrough 01 - Course Data
 #' 
 #' Dataset on points earned out of points possible 
