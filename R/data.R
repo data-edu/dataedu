@@ -78,7 +78,7 @@
 #' @keywords datasets
 #' @examples
 #' 
-#' str(dataedu::sci_mo_data)
+#' str(dataedu::sci_mo_with_text)
 #' 
 "sci_mo_with_text"
 
