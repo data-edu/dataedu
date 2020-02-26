@@ -64,13 +64,14 @@
 #' 
 "course_minutes"
 
-#' Walkthrough 01 - Student Motivation
+#' Walkthrough 01 - Student Motivation (Processed and With Text)
 #' 
-#' Walkthrough 01 - Dataset from students on their motivation and 
-#' achievement in online science classes
+#' Walkthrough 01 - Processed dataset (for modeling with random forests) 
+#' from students on their motivation and achievement in 
+#' online science classes.
 #' 
 #' 
-#' @name sci_mo_data
+#' @name sci_mo_with_text
 #' @docType data
 #' @format Dataset of class \code{tibble}.
 #' @source John Ranellucci and Joshua Rosenberg
@@ -79,7 +80,7 @@
 #' 
 #' str(dataedu::sci_mo_data)
 #' 
-"sci_mo_data"
+"sci_mo_with_text"
 
 #' Walkthrough 01 - Student Motivation (Processed)
 #' 
