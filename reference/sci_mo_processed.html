@@ -138,7 +138,7 @@ online science classes</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span>(<span class='kw pkg'>dataedu</span><span class='kw ns'>::</span><span class='no'><a href='https://rdrr.io/pkg/dataedu/man/sci_mo_processed.html'>sci_mo_processed</a></span>)</div><div class='output co'>#&gt; Classes ‘spec_tbl_df’, ‘tbl_df’, ‘tbl’ and 'data.frame':	603 obs. of  27 variables:
+<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span>(<span class='kw pkg'>dataedu</span><span class='kw ns'>::</span><span class='no'><a href='https://rdrr.io/pkg/dataedu/man/sci_mo_processed.html'>sci_mo_processed</a></span>)</div><div class='output co'>#&gt; Classes ‘spec_tbl_df’, ‘tbl_df’, ‘tbl’ and 'data.frame':	603 obs. of  30 variables:
 #&gt;  $ student_id           : num  43146 44638 47448 47979 48797 ...
 #&gt;  $ course_id            : chr  "FrScA-S216-02" "OcnA-S116-01" "FrScA-S216-01" "OcnA-S216-01" ...
 #&gt;  $ total_points_possible: num  3280 3531 2870 4562 2207 ...
@@ -166,8 +166,11 @@ online science classes</p>
 #&gt;  $ TimeSpent            : num  1555 1383 860 1599 1482 ...
 #&gt;  $ TimeSpent_hours      : num  25.9 23 14.3 26.6 24.7 ...
 #&gt;  $ TimeSpent_std        : num  -0.181 -0.308 -0.693 -0.148 -0.235 ...
+#&gt;  $ int                  : num  5 4.2 5 5 3.8 4.6 5 3 4.2 NA ...
+#&gt;  $ pc                   : num  4.5 3.5 4 3.5 3.5 4 3.5 3 3 NA ...
+#&gt;  $ uv                   : num  4.33 4 3.67 5 3.5 ...
 #&gt;  - attr(*, "spec")=List of 3
-#&gt;   ..$ cols   :List of 27
+#&gt;   ..$ cols   :List of 30
 #&gt;   .. ..$ student_id           : list()
 #&gt;   .. .. ..- attr(*, "class")= chr  "collector_double" "collector"
 #&gt;   .. ..$ course_id            : list()
@@ -221,6 +224,12 @@ online science classes</p>
 #&gt;   .. ..$ TimeSpent_hours      : list()
 #&gt;   .. .. ..- attr(*, "class")= chr  "collector_double" "collector"
 #&gt;   .. ..$ TimeSpent_std        : list()
+#&gt;   .. .. ..- attr(*, "class")= chr  "collector_double" "collector"
+#&gt;   .. ..$ int                  : list()
+#&gt;   .. .. ..- attr(*, "class")= chr  "collector_double" "collector"
+#&gt;   .. ..$ pc                   : list()
+#&gt;   .. .. ..- attr(*, "class")= chr  "collector_double" "collector"
+#&gt;   .. ..$ uv                   : list()
 #&gt;   .. .. ..- attr(*, "class")= chr  "collector_double" "collector"
 #&gt;   ..$ default: list()
 #&gt;   .. ..- attr(*, "class")= chr  "collector_guess" "collector"
