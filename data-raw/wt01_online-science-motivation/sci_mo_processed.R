@@ -15,5 +15,3 @@ sci_mo_with_text <- sci_mo_processed %>%
   left_join(old_data_with_liwc)
 
 usethis::use_data(sci_mo_with_text, overwrite = TRUE)
-
-
