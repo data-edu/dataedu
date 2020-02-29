@@ -170,6 +170,7 @@ all_packages <-
     "rtweet",
     "randomNames",
     "sjPlot",
+    "textdata",
     "tidygraph",
     "tidylog",
     "tidyverse",
