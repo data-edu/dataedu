@@ -129,14 +129,14 @@
 <h3 class="hasAnchor">
 <a href="#mass-installation-of-packages" class="anchor"></a>Mass Installation of Packages</h3>
 <p>We strived to use packages that we use in our daily work when creating the walkthroughs in the book. Because we covered a variety of subjects, that means we used a lot of packages! As described in the Foundational Skills chapter, you can install the packages individually as they suit your needs.</p>
-<p>However, if you want to quickly get started and download all the packages at once, please use <code><a href="https://rdrr.io/pkg/dataedu/man/mass_install.html">mass_install()</a></code>. This function uses the very handy <code>p_install()</code> from the <a href="https://github.com/trinker/pacman">pacman</a> package, which facilitates the installation and loading of packages.</p>
+<p>However, if you want to quickly get started and download all the packages at once, please use <code><a href="https://rdrr.io/pkg/dataedu/man/mass_install.html">mass_install()</a></code>.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">dataedu<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/dataedu/man/mass_install.html">mass_install</a></span>()</a></code></pre></div>
 <p>To see the packages used in the book, run:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">dataedu<span class="op">::</span>all_packages</a>
 <a class="sourceLine" id="cb6-2" data-line-number="2"><span class="co">#&gt;  [1] "apaTables"   "caret"       "dummies"     "ggraph"      "here"       </span></a>
 <a class="sourceLine" id="cb6-3" data-line-number="3"><span class="co">#&gt;  [6] "janitor"     "lme4"        "lubridate"   "performance" "readxl"     </span></a>
-<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="co">#&gt; [11] "rtweet"      "randomNames" "sjPlot"      "tidygraph"   "tidylog"    </span></a>
-<a class="sourceLine" id="cb6-5" data-line-number="5"><span class="co">#&gt; [16] "tidyverse"   "tidytext"</span></a></code></pre></div>
+<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="co">#&gt; [11] "rtweet"      "randomNames" "sjPlot"      "textdata"    "tidygraph"  </span></a>
+<a class="sourceLine" id="cb6-5" data-line-number="5"><span class="co">#&gt; [16] "tidylog"     "tidyverse"   "tidytext"</span></a></code></pre></div>
 <p><strong>A special note on {tabulizer}:</strong> One of the walkthroughs uses <a href="https://github.com/ropensci/tabulizer">tabulizer</a>, created by ROpenSci to read PDFs. {tabulizer} requires the installation of <a href="https://cran.r-project.org/web/packages/rJava/index.html">RJava</a>, which can be a tricky process on Mac computers. {tabulizer} is not included in <code><a href="https://rdrr.io/pkg/dataedu/man/mass_install.html">mass_install()</a></code> and we recommend reading through the notes on its Github repo if installing.</p>
 </div>
 <div id="reproducible-code-for-walkthroughs" class="section level3">
@@ -160,9 +160,7 @@
 <a class="sourceLine" id="cb8-4" data-line-number="4"><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(midwest, <span class="kw"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="dt">x =</span> area, <span class="dt">y =</span> popdensity, <span class="dt">color =</span> state)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb8-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb8-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="https://rdrr.io/pkg/dataedu/man/theme_dataedu.html">theme_dataedu</a></span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb8-7" data-line-number="7"><span class="st">  </span><span class="kw"><a href="https://rdrr.io/pkg/dataedu/man/scale_color_dataedu.html">scale_color_dataedu</a></span>()</a>
-<a class="sourceLine" id="cb8-8" data-line-number="8"><span class="co">#&gt; Importing fonts may take a few minutes, depending on the number of fonts and the speed of the system.</span></a>
-<a class="sourceLine" id="cb8-9" data-line-number="9"><span class="co">#&gt; Continue? [y/n]</span></a></code></pre></div>
+<a class="sourceLine" id="cb8-7" data-line-number="7"><span class="st">  </span><span class="kw"><a href="https://rdrr.io/pkg/dataedu/man/scale_color_dataedu.html">scale_color_dataedu</a></span>()</a></code></pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-4-1.png" style="display: block; margin: auto;"></p>
 </div>
 </div>
@@ -209,8 +207,8 @@
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://travis-ci.org/data-edu/dataedu"><img src="https://travis-ci.org/data-edu/dataedu.svg?branch=master" alt="Travis build status"></a></li>
-<li><a href="https://ci.appveyor.com/project/data-edu/dataedu"><img src="https://ci.appveyor.com/api/projects/status/github/data-edu/dataedu?branch=master&amp;svg=true" alt="AppVeyor build status"></a></li>
-<li><a href="https://codecov.io/gh/data-edu/dataedu?branch=master"><img src="https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
+<li><a href="https://ci.appveyor.com/project/ivelasq/dataedu"><img src="https://ci.appveyor.com/api/projects/status/github/ivelasq/dataedu?branch=master&amp;svg=true" alt="AppVeyor build status"></a></li>
+<li><a href="https://codecov.io/gh/ivelasq/dataedu?branch=master"><img src="https://codecov.io/gh/ivelasq/dataedu/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
 </ul>
 </div>
 </div>
