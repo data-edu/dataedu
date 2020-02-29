@@ -76,7 +76,7 @@ We created this package to provide our readers an opportunity to jump into R how
 
 We strived to use packages that we use in our daily work when creating the walkthroughs in the book. Because we covered a variety of subjects, that means we used a lot of packages! As described in the Foundational Skills chapter, you can install the packages individually as they suit your needs. 
 
-However, if you want to quickly get started and download all the packages at once, please use `mass_install()`. This function uses the very handy `p_install()` from the [pacman](https://github.com/trinker/pacman) package, which facilitates the installation and loading of packages.
+However, if you want to quickly get started and download all the packages at once, please use `mass_install()`.
 
 ``` r
 dataedu::mass_install()
@@ -106,7 +106,7 @@ dataedu::course_data
 
 As in following, simply add the theme and palette to ggplot2-based plots:
 
-```{r, fig.align = "center", dpi = 300, message = FALSE}
+```{r, fig.align = "center", dpi = 300, message = FALSE, results = "hide"}
 library(ggplot2)
 library(dataedu)
 

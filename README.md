@@ -8,9 +8,9 @@
 [![Travis build
 status](https://travis-ci.org/data-edu/dataedu.svg?branch=master)](https://travis-ci.org/data-edu/dataedu)
 [![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/data-edu/dataedu?branch=master&svg=true)](https://ci.appveyor.com/project/data-edu/dataedu)
+status](https://ci.appveyor.com/api/projects/status/github/ivelasq/dataedu?branch=master&svg=true)](https://ci.appveyor.com/project/ivelasq/dataedu)
 [![Codecov test
-coverage](https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg)](https://codecov.io/gh/data-edu/dataedu?branch=master)
+coverage](https://codecov.io/gh/ivelasq/dataedu/branch/master/graph/badge.svg)](https://codecov.io/gh/ivelasq/dataedu?branch=master)
 <!-- badges: end -->
 
 The goal of dataedu is to provide readers of [Data Science in Education
@@ -81,10 +81,7 @@ Skills chapter, you can install the packages individually as they suit
 your needs.
 
 However, if you want to quickly get started and download all the
-packages at once, please use `mass_install()`. This function uses the
-very handy `p_install()` from the
-[pacman](https://github.com/trinker/pacman) package, which facilitates
-the installation and loading of packages.
+packages at once, please use `mass_install()`.
 
 ``` r
 dataedu::mass_install()
@@ -96,8 +93,8 @@ To see the packages used in the book, run:
 dataedu::all_packages
 #>  [1] "apaTables"   "caret"       "dummies"     "ggraph"      "here"       
 #>  [6] "janitor"     "lme4"        "lubridate"   "performance" "readxl"     
-#> [11] "rtweet"      "randomNames" "sjPlot"      "tidygraph"   "tidylog"    
-#> [16] "tidyverse"   "tidytext"
+#> [11] "rtweet"      "randomNames" "sjPlot"      "textdata"    "tidygraph"  
+#> [16] "tidylog"     "tidyverse"   "tidytext"
 ```
 
 **A special note on {tabulizer}:** One of the walkthroughs uses
@@ -133,8 +130,6 @@ ggplot(midwest, aes(x = area, y = popdensity, color = state)) +
   geom_point() +
   theme_dataedu() +
   scale_color_dataedu()
-#> Importing fonts may take a few minutes, depending on the number of fonts and the speed of the system.
-#> Continue? [y/n]
 ```
 
 <img src="man/figures/README-unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
