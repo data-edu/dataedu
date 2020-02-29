@@ -12,6 +12,8 @@ old_data_with_liwc <- old_data_with_liwc %>%
 sci_mo_with_text <- sci_mo_processed %>% 
   left_join(old_data_with_liwc)
 
-sci_mo_with_text
+sci_mo_with_text <- sci_mo_with_text %>% 
+  rename(final_grade = FinalGradeCEMS,
+         time_spent = TimeSpent)
 
 usethis::use_data(sci_mo_with_text, overwrite = TRUE)
