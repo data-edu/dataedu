@@ -12,5 +12,5 @@
 mass_install <- function() {
   message("This may take a while...")
   Sys.sleep(2)
-  pacman::p_install(all_packages, character.only = TRUE)
+  install.packages(all_packages)
 }

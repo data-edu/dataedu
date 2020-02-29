@@ -36,7 +36,6 @@ Imports:
     ggplot2,
     grDevices,
     nlme,
-    pacman,
     rlang (>= 0.4.1)
 Suggests:
     dplyr,
