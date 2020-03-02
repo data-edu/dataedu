@@ -8,9 +8,9 @@
 [![Travis build
 status](https://travis-ci.org/data-edu/dataedu.svg?branch=master)](https://travis-ci.org/data-edu/dataedu)
 [![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/ivelasq/dataedu?branch=master&svg=true)](https://ci.appveyor.com/project/ivelasq/dataedu)
+status](https://ci.appveyor.com/api/projects/status/github/data-edu/dataedu?branch=master&svg=true)](https://ci.appveyor.com/project/data-edu/dataedu)
 [![Codecov test
-coverage](https://codecov.io/gh/ivelasq/dataedu/branch/master/graph/badge.svg)](https://codecov.io/gh/ivelasq/dataedu?branch=master)
+coverage](https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg)](https://codecov.io/gh/data-edu/dataedu?branch=master)
 [![minimal R
 version](https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg)](https://cran.r-project.org/)
 [![Last-changedate](https://img.shields.io/badge/last%20change-2020--03--01-yellowgreen.svg)](/commits/master)
