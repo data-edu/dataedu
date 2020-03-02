@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# dataedu <img src='man/figures/logo.png' align="right" height="150" />
+# dataedu <img src = 'man/figures/logo.png' align="right" height="150" />
 
 <!-- badges: start -->
 
@@ -11,6 +11,9 @@ status](https://travis-ci.org/data-edu/dataedu.svg?branch=master)](https://travi
 status](https://ci.appveyor.com/api/projects/status/github/ivelasq/dataedu?branch=master&svg=true)](https://ci.appveyor.com/project/ivelasq/dataedu)
 [![Codecov test
 coverage](https://codecov.io/gh/ivelasq/dataedu/branch/master/graph/badge.svg)](https://codecov.io/gh/ivelasq/dataedu?branch=master)
+[![minimal R
+version](https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg)](https://cran.r-project.org/)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2020--03--01-yellowgreen.svg)](/commits/master)
 <!-- badges: end -->
 
 The goal of dataedu is to provide readers of [Data Science in Education
