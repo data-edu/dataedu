@@ -18,6 +18,5 @@ both FRPL and ethnicity data
 \examples{
 
 str(dataedu::district_merged_data)
-
 }
 \keyword{datasets}

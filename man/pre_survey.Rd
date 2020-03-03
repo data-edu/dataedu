@@ -18,6 +18,5 @@ the start of those students' online science courses
 \examples{
 
 str(dataedu::pre_survey)
-
 }
 \keyword{datasets}

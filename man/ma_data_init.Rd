@@ -14,6 +14,5 @@ Dataset on Massachusetts public schools
 \examples{
 
 str(dataedu::ma_data_init)
-
 }
 \keyword{datasets}

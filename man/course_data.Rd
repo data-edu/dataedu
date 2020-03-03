@@ -18,6 +18,5 @@ on more than 29,000 class assignments
 \examples{
 
 str(dataedu::course_data)
-
 }
 \keyword{datasets}

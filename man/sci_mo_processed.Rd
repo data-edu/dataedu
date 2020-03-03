@@ -19,6 +19,5 @@ online science classes
 \examples{
 
 str(dataedu::sci_mo_processed)
-
 }
 \keyword{datasets}

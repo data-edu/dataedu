@@ -17,6 +17,5 @@ Walkthrough 12 - Tweet dataset gathered from hashtag tidytuesday
 \examples{
 
 str(dataedu::tt_tweets)
-
 }
 \keyword{datasets}
