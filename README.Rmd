@@ -12,9 +12,9 @@ knitr::opts_chunk$set(
 )
 
 dep <- as.vector(read.dcf('DESCRIPTION')[, 'Depends'])
-m <- regexpr('R *\\\\(>= \\\\d+.\\\\d+.\\\\d+\\\\)', dep)
-rm <- regmatches(dep, m)
-rvers <- gsub('.*(\\\\d+.\\\\d+.\\\\d+).*', '\\\\1', rm)
+# m <- regexpr('R *\\\\(>= \\\\d+.\\\\d+.\\\\d+\\\\)', dep)
+# rm <- regmatches(dep, m)
+# rvers <- gsub('.*(\\\\d+.\\\\d+.\\\\d+).*', '\\\\1', rm)
 ```
 
 # dataedu <img src = 'man/figures/logo.png' align="right" height="150" />
@@ -27,7 +27,7 @@ rvers <- gsub('.*(\\\\d+.\\\\d+.\\\\d+).*', '\\\\1', rm)
 [![Last-changedate](https://img.shields.io/badge/last%20change-`r gsub('-', '--', Sys.Date())`-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
 <!-- badges: end -->
 
-The goal of dataedu is to provide readers of [Data Science in Education Using R](https://github.com/data-edu/data-science-in-education) with a package with useful functions, data, and references from the book.
+The goal of {dataedu} is to provide readers of [Data Science in Education Using R](https://github.com/data-edu/data-science-in-education) with a package with useful functions, data, and references from the book.
 
 * [ Installation ](#installation)
 * [ Package Contents ](#package-contents)
@@ -37,7 +37,7 @@ The goal of dataedu is to provide readers of [Data Science in Education Using R]
 
 ### 1. Install {devtools}
 
-First, let's install [devtools](https://github.com/r-lib/devtools), an R package with many handy R tools. In your R console, type in:
+First, let's install [{devtools}](https://github.com/r-lib/devtools), an R package with many handy R tools. In your R console, type in:
 
 ``` r
 install.packages("devtools")

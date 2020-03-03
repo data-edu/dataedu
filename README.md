@@ -16,9 +16,10 @@ version](https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg)](https://cran.r-pr
 [![Last-changedate](https://img.shields.io/badge/last%20change-2020--03--02-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
 <!-- badges: end -->
 
-The goal of dataedu is to provide readers of [Data Science in Education
-Using R](https://github.com/data-edu/data-science-in-education) with a
-package with useful functions, data, and references from the book.
+The goal of {dataedu} is to provide readers of [Data Science in
+Education Using
+R](https://github.com/data-edu/data-science-in-education) with a package
+with useful functions, data, and references from the book.
 
   - [Installation](#installation)
   - [Package Contents](#package-contents)
@@ -28,8 +29,8 @@ package with useful functions, data, and references from the book.
 
 ### 1\. Install {devtools}
 
-First, let’s install [devtools](https://github.com/r-lib/devtools), an R
-package with many handy R tools. In your R console, type in:
+First, let’s install [{devtools}](https://github.com/r-lib/devtools), an
+R package with many handy R tools. In your R console, type in:
 
 ``` r
 install.packages("devtools")
