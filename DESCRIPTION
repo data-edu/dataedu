@@ -38,6 +38,7 @@ Imports:
     nlme,
     rlang (>= 0.4.1)
 Suggests:
+    apaTables,
     dplyr,
     covr,
     glue,
