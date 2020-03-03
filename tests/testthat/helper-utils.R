@@ -19,3 +19,7 @@ expect_hexcolor <- function(object) {
   
   invisible(act$val)
 }
+
+expect_error_free <- function(...) {
+  expect_error(..., regexp = NA)
+}
