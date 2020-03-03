@@ -13,7 +13,7 @@ status](https://ci.appveyor.com/api/projects/status/github/data-edu/dataedu?bran
 coverage](https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg)](https://codecov.io/gh/data-edu/dataedu?branch=master)
 [![minimal R
 version](https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg)](https://cran.r-project.org/)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2020--03--02-yellowgreen.svg)](/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2020--03--02-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
 <!-- badges: end -->
 
 The goal of dataedu is to provide readers of [Data Science in Education
@@ -83,7 +83,7 @@ that means we used a lot of packages\! As described in the Foundational
 Skills chapter, you can install the packages individually as they suit
 your needs.
 
-However, if you want to quickly get started and download all the
+However, if you want to get started quickly and download all the
 packages at once, please use `mass_install()`.
 
 ``` r
@@ -122,8 +122,8 @@ dataedu::course_data
 
 ### Using the {dataedu} Theme and Palette
 
-As in following, simply add the theme and palette to ggplot2-based
-plots:
+Add the theme and palette to ggplot2-based plots using `theme_dataedu()`
+and `scale_*_dataedu()`.
 
 ``` r
 library(ggplot2)
@@ -142,6 +142,6 @@ ggplot(midwest, aes(x = area, y = popdensity, color = state)) +
   - Please report ideas or issues on the [Issues
     page](https://github.com/data-edu/dataedu/issues). If possible, make
     your post reproducible using the
-    [reprex](https://github.com/tidyverse/reprex) package.
+    [{reprex}](https://github.com/tidyverse/reprex) package.
   - Send any pull requests on the [Github
     repository](https://github.com/data-edu/dataedu).
