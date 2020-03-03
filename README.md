@@ -13,7 +13,7 @@ status](https://ci.appveyor.com/api/projects/status/github/data-edu/dataedu?bran
 coverage](https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg)](https://codecov.io/gh/data-edu/dataedu?branch=master)
 [![minimal R
 version](https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg)](https://cran.r-project.org/)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2020--03--01-yellowgreen.svg)](/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2020--03--02-yellowgreen.svg)](/commits/master)
 <!-- badges: end -->
 
 The goal of dataedu is to provide readers of [Data Science in Education
