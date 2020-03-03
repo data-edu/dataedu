@@ -1,7 +1,7 @@
 #' Color palette for Data Science in Education
-#' 
+#'
 #' Color palette for Data Science in Education
-#' 
+#'
 #'
 dataedu_colors <- c(
   `darkblue`   = "#003f5c",
@@ -37,7 +37,7 @@ dataedu_palettes <- list(
 #' Interpolate a dataedu color palette
 #'
 #' @name dataedu_pal
-#' 
+#'
 #' @param palette Character name of palette in dataedu_palettes
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments to pass to colorRampPalette()
@@ -51,10 +51,10 @@ dataedu_pal <- function(palette = "main", reverse = FALSE, ...) {
 }
 
 #' Color scale constructor for dataedu colors
-#' 
+#'
 #' @name scale_color_dataedu
-#' 
-#' 
+#'
+#'
 #' @param palette Character name of palette in dataedu_palettes
 #' @param discrete Boolean indicating whether color aesthetic is discrete or not
 #' @param reverse Boolean indicating whether the palette should be reversed
@@ -75,14 +75,14 @@ scale_color_dataedu <- function(palette = "main", discrete = TRUE, reverse = FAL
 #' Fill scale constructor for dataedu colors
 #'
 #' @name scale_fill_dataedu
-#' 
-#' 
+#'
+#'
 #' @param palette Character name of palette in dataedu_palettes
 #' @param discrete Boolean indicating whether color aesthetic is discrete or not
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments passed to discrete_scale() or
 #'            scale_fill_gradientn(), used respectively when discrete is TRUE or FALSE
-#' 
+#'
 #' @export
 scale_fill_dataedu <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
   pal <- dataedu_pal(palette = palette, reverse = reverse)

@@ -38,8 +38,12 @@ Imports:
     nlme,
     rlang (>= 0.4.1)
 Suggests:
+    apaTables,
     dplyr,
-    covr
+    covr,
+    glue,
+    stringr,
+    testthat (>= 2.1.0)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)

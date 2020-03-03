@@ -18,6 +18,5 @@ longitudinal enrollment
 \examples{
 
 str(dataedu::longitudinal_data)
-
 }
 \keyword{datasets}
