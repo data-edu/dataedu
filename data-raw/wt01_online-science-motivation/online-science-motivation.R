@@ -29,10 +29,12 @@ write_csv(s12_course_data_syn_final, here(
   "s12-course-data.csv"
 ))
 
-course_data <- read_csv(here::here("data-raw", 
-                                   "wt01_online-science-motivation",
-                                   "processed",
-                                   "s12-course-data.csv"))
+course_data <- read_csv(here::here(
+  "data-raw",
+  "wt01_online-science-motivation",
+  "processed",
+  "s12-course-data.csv"
+))
 
 usethis::use_data(course_data, overwrite = TRUE)
 
@@ -49,10 +51,12 @@ s12_pre_survey_syn <- syn(s12_pre_survey_ss)
 
 s12_pre_survey_fin <- bind_cols(s12_pre_survey_no_syn, as_tibble(s12_pre_survey_syn$syn))
 
-s12_pre_survey_fin <- s12_pre_survey_fin %>% 
-  select(opdata_username,
-         opdata_CourseID,
-         everything())
+s12_pre_survey_fin <- s12_pre_survey_fin %>%
+  select(
+    opdata_username,
+    opdata_CourseID,
+    everything()
+  )
 
 write_csv(s12_pre_survey_fin, here(
   "data-raw", "wt01_online-science-motivation",
@@ -71,7 +75,7 @@ s12_time_spent <-
   ))
 
 # s12_time_spent_ss <- dplyr::select(s12_time_spent, TimeSpent)
-s12_time_spent_fin <- dplyr::select(s12_time_spent,Bb_UserPK, CourseSectionOrigID, TimeSpent)
+s12_time_spent_fin <- dplyr::select(s12_time_spent, Bb_UserPK, CourseSectionOrigID, TimeSpent)
 # s12_time_spent_syn <- syn(s12_time_spent_ss)
 # s12_time_spent_fin <- bind_cols(s12_time_spent_no_syn, s12_time_spent_syn)
 
