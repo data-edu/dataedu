@@ -7,7 +7,7 @@
 #' theme_dataedu()
 #'
 #' @details
-#' The dataedu theme uses the [extrafont](https://github.com/wch/extrafont) package to download Arial Rounded Bold.
+#' The dataedu theme uses the [extrafont](https://github.com/wch/extrafont) package to download Gill Sans MT.
 #'
 #' To use [extrafont](https://github.com/wch/extrafont), the extrafont database is required. More information can be found on the [extrafont](https://github.com/wch/extrafont) help page.
 #'
@@ -15,7 +15,7 @@
 #' @export
 theme_dataedu <- function() {
   if (.Platform$OS.type == "windows") {
-    extrafont::font_import(pattern = "GIL", prompt = FALSE)
+    extrafont::font_import(pattern = "GIL_____", prompt = FALSE)
     extrafont::loadfonts(device = "win", quiet = TRUE)
   } else {
     extrafont::font_import(pattern = "Gill Sans MT", prompt = FALSE)
