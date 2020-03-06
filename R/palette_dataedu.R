@@ -3,7 +3,7 @@
 #' Color palette for Data Science in Education
 #'
 #'
-dataedu_colors <- c(
+dataedu_palette <- c(
   `darkblue`   = "#003f5c",
   `turquoise`  = "#006876",
   `green`      = "#00906b",
@@ -13,25 +13,25 @@ dataedu_colors <- c(
 
 #' Extract dataedu colors as hex codes
 #'
-#' @name dataedu_cols
-#' @param ... Character names of dataedu_colors
+#' @name dataedu_colors
+#' @param ... Character names of dataedu_palette
 #'
 #' @export
-dataedu_cols <- function(...) {
+dataedu_colors <- function(...) {
   cols <- c(...)
 
   if (is.null(cols)) {
-    return(dataedu_colors)
+    return(dataedu_palette)
   }
 
-  dataedu_colors[cols]
+  dataedu_palette[cols]
 }
 
-dataedu_cols()
+dataedu_colors()
 
 dataedu_palettes <- list(
-  `short` = dataedu_cols("green", "yellow"),
-  `main` = dataedu_cols("darkblue", "turquoise", "green", "lightgreen", "yellow")
+  `short` = dataedu_colors("green", "yellow"),
+  `main` = dataedu_colors("darkblue", "turquoise", "green", "lightgreen", "yellow")
 )
 
 #' Interpolate a dataedu color palette

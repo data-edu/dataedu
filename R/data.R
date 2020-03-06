@@ -143,11 +143,11 @@
 
 #' All packages used in Data Science in Education Using R
 #'
-#' @name all_packages
+#' @name dataedu_packages
 #' @format A character vector
-#' @export all_packages
+#' @export dataedu_packages
 #'
-all_packages <-
+dataedu_packages <-
   c(
     "apaTables",
     "caret",
