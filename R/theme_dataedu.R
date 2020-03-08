@@ -7,7 +7,7 @@
 #' theme_dataedu()
 #'
 #' @details
-#' The dataedu theme uses the [extrafont](https://github.com/wch/extrafont) package to download Arial Rounded Bold.
+#' The dataedu theme uses the [extrafont](https://github.com/wch/extrafont) package to download Gill Sans MT.
 #'
 #' To use [extrafont](https://github.com/wch/extrafont), the extrafont database is required. More information can be found on the [extrafont](https://github.com/wch/extrafont) help page.
 #'
@@ -15,15 +15,15 @@
 #' @export
 theme_dataedu <- function() {
   if (.Platform$OS.type == "windows") {
-    extrafont::font_import(pattern = "ARLRDBD")
+    extrafont::font_import(pattern = "GIL_____", prompt = FALSE)
     extrafont::loadfonts(device = "win", quiet = TRUE)
   } else {
-    extrafont::font_import(pattern = "Arial Rounded Bold")
+    extrafont::font_import(pattern = "Gill Sans MT", prompt = FALSE)
     extrafont::loadfonts(quiet = TRUE)
   }
   ggplot2::theme_minimal(
     base_size = 12,
-    base_family = "Arial Rounded MT Bold"
+    base_family = "Gill Sans MT"
   ) %+replace%
     ggplot2::theme(
       legend.background = ggplot2::element_rect(fill = "transparent", colour = NA),
