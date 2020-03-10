@@ -13,7 +13,8 @@ Authors@R:
              email = "ryan.estrellado@gmail.com"),
       person(given = "Jesse",
              family = "Mostipak",
-             role = "aut"),
+             role = "aut"
+             email = "jesse.maegan@gmail.com"),
       person(given = "Joshua",
              family = "Rosenberg",
              role = "aut",
