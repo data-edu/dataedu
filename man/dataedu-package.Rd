@@ -27,7 +27,7 @@ Authors:
 \itemize{
   \item Emily Bovee \email{emily.a.bovee@gmail.com}
   \item Ryan Estrellado \email{ryan.estrellado@gmail.com}
-  \item Jesse Mostipak
+  \item Jesse Mostipak \email{jesse.maegan@gmail.com}
   \item Joshua Rosenberg \email{jmichaelrosenberg@gmail.com}
 }
 

@@ -4,7 +4,9 @@
 \name{longitudinal_data}
 \alias{longitudinal_data}
 \title{Walkthrough 04 - Students with Disabilities Longitudinal Data}
-\format{Dataset of class \code{tibble}.}
+\format{
+Dataset of class \code{tibble}.
+}
 \source{
 US Department of Education \url{https://www2.ed.gov/programs/osepidea/618-data/state-level-data-files/index.html}
 }

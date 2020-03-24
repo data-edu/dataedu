@@ -4,7 +4,9 @@
 \name{sci_mo_processed}
 \alias{sci_mo_processed}
 \title{Walkthrough 01 - Student Motivation (Processed)}
-\format{Dataset of class \code{tibble}.}
+\format{
+Dataset of class \code{tibble}.
+}
 \source{
 John Ranellucci and Joshua Rosenberg
 }

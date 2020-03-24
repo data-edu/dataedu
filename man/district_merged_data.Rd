@@ -4,7 +4,9 @@
 \name{district_merged_data}
 \alias{district_merged_data}
 \title{Walkthrough 03 - Merged Ethnicity and FRPL District Data}
-\format{Dataset of class \code{tibble}.}
+\format{
+Dataset of class \code{tibble}.
+}
 \source{
 Minneapolis Public Schools \url{https://mpls.k12.mn.us/}
 }

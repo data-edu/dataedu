@@ -4,7 +4,9 @@
 \name{dataedu_packages}
 \alias{dataedu_packages}
 \title{All packages used in Data Science in Education Using R}
-\format{A character vector}
+\format{
+A character vector
+}
 \usage{
 dataedu_packages
 }

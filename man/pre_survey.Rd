@@ -4,7 +4,9 @@
 \name{pre_survey}
 \alias{pre_survey}
 \title{Walkthrough 01 - Pre-Survey}
-\format{Dataset of class \code{tibble}.}
+\format{
+Dataset of class \code{tibble}.
+}
 \source{
 John Ranellucci and Joshua Rosenberg
 }
