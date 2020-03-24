@@ -7,10 +7,7 @@
 #' theme_dataedu()
 #'
 #' @details
-#' The dataedu theme uses the [extrafont](https://github.com/wch/extrafont) package to download Gill Sans MT.
-#'
-#' To use [extrafont](https://github.com/wch/extrafont), the extrafont database is required. More information can be found on the [extrafont](https://github.com/wch/extrafont) help page.
-#'
+#' The dataedu theme uses Gills Sans Mt.
 #' @rdname theme_dataedu
 #' @export
 theme_dataedu <- function() {
