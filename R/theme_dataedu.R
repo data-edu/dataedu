@@ -16,5 +16,6 @@
 theme_dataedu <- function() {
   ggplot2::theme_minimal(
     base_size = 12,
-    base_family = "Gill Sans MT")
+    base_family = "Gill Sans MT"
+  )
 }
