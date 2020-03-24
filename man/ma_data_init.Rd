@@ -4,7 +4,9 @@
 \name{ma_data_init}
 \alias{ma_data_init}
 \title{Foundational Skills Data}
-\format{Dataset of class \code{tibble}.}
+\format{
+Dataset of class \code{tibble}.
+}
 \usage{
 ma_data_init
 }

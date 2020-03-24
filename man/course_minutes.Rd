@@ -4,7 +4,9 @@
 \name{course_minutes}
 \alias{course_minutes}
 \title{Walkthrough 01 - Course Minutes}
-\format{Dataset of class \code{tibble}.}
+\format{
+Dataset of class \code{tibble}.
+}
 \source{
 John Ranellucci and Joshua Rosenberg
 }

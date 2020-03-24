@@ -13,7 +13,7 @@ status](https://ci.appveyor.com/api/projects/status/github/data-edu/dataedu?bran
 coverage](https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg)](https://codecov.io/gh/data-edu/dataedu?branch=master)
 [![minimal R
 version](https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg)](https://cran.r-project.org/)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2020--03--05-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2020--03--24-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
 <!-- badges: end -->
 
 The goal of {dataedu} is to provide readers of [Data Science in
@@ -71,10 +71,14 @@ library(dataedu)
 We created this package to provide our readers an opportunity to jump
 into R however they see fit.
 
-1.  Mass installation of all the packages used in the book
-2.  Reproducible code for the walkthroughs
-3.  Access to the data used in each of the walkthroughs
-4.  The dataedu theme and color palette for reuse
+1.  [Mass installation of all the packages used in the
+    book](#mass-installation-of-packages)
+2.  [Reproducible code for the
+    walkthroughs](#reproducible-code-for-walkthroughs)
+3.  [Access to the data used in each of the
+    walkthroughs](#accessing-the-walkthrough-data)
+4.  [The dataedu theme and color palette for
+    reuse](#using-the-dataedu-theme-and-palette)
 
 ### Mass Installation of Packages
 
@@ -115,10 +119,18 @@ Coming soon\!
 
 ### Accessing the Walkthrough Data
 
-You can call the dataset as mentioned in the walkthrough.
+To get the data, run `dataedu::` then the dataset as it is named in the
+book:
 
 ``` r
 dataedu::course_data
+```
+
+To see all the datasets in the package, run `data(package = "dataedu")`.
+
+``` r
+a <- data(package = "dataedu")
+a
 ```
 
 ### Using the {dataedu} Theme and Palette
@@ -136,7 +148,7 @@ ggplot(midwest, aes(x = area, y = popdensity, color = state)) +
   scale_color_dataedu()
 ```
 
-<img src="man/figures/README-unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
+<img src="man/figures/README-unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
 
 ## Contact
 

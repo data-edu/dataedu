@@ -10,13 +10,13 @@ is_hexcolor <- function(x) {
 expect_hexcolor <- function(object) {
   # capture object and label
   act <- quasi_label(rlang::enquo(object))
-  
+
   valid <- is_hexcolor(act$val)
   expect(
     all(valid),
     glue::glue("Not all elements of {act$lab} are hex colors.")
   )
-  
+
   invisible(act$val)
 }
 
