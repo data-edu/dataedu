@@ -14,19 +14,7 @@
 #' @rdname theme_dataedu
 #' @export
 theme_dataedu <- function() {
-  if (.Platform$OS.type == "windows") {
-    extrafont::font_import(pattern = "GIL_____", prompt = FALSE)
-    extrafont::loadfonts(device = "win", quiet = TRUE)
-  } else {
-    extrafont::font_import(pattern = "Gill Sans MT", prompt = FALSE)
-    extrafont::loadfonts(quiet = TRUE)
-  }
   ggplot2::theme_minimal(
     base_size = 12,
-    base_family = "Gill Sans MT"
-  ) %+replace%
-    ggplot2::theme(
-      legend.background = ggplot2::element_rect(fill = "transparent", colour = NA),
-      legend.key = ggplot2::element_rect(fill = "transparent", colour = NA)
-    )
+    base_family = "Gill Sans MT")
 }
