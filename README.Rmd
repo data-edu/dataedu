@@ -62,7 +62,7 @@ You can install the development version of {dataedu} by running this in your RSt
 devtools::install_github("data-edu/dataedu")
 ```
 
-**Important Notes on Installation**
+#### Important Notes on Installation
 
 * If you have installed {devtools} previously but have not updated it in a while, and you try to download the {dataedu} package, you may see a messsage such as `devtools::install_github("data-edu/dataedu")  Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : namespace ‘remotes’ 2.1.0 is being loaded, but >= 2.1.1 is required.` Please read through the message to see what is needed (in this case, updating {remotes}). It's always best to keep {devtools} (and all your packages) up-to-date to limit issues.
 

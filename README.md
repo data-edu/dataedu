@@ -59,7 +59,7 @@ your RStudio console:
 devtools::install_github("data-edu/dataedu")
 ```
 
-**Important Notes on Installation**
+#### Important Notes on Installation
 
   - If you have installed {devtools} previously but have not updated it
     in a while, and you try to download the {dataedu} package, you may
