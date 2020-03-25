@@ -96,7 +96,7 @@
 <p>First, let’s install <a href="https://github.com/r-lib/devtools">{devtools}</a>, an R package with many handy R tools. In your R console, type in:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"devtools"</span>)</a></code></pre></div>
 <p>If you already have {devtools} installed, you can move on to the next step.</p>
-<p>If you are not sure whether you have it installed, you can run this function, which will install {devtools} if you do not already have it.</p>
+<p>If you are not sure whether you have it installed, you can run this function, which will install the newest version of {devtools} if you do not already have it.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="cf">if</span> (<span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html">require</a></span>(devtools)) {</a>
 <a class="sourceLine" id="cb2-2" data-line-number="2">  <span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"devtools"</span>)</a>
 <a class="sourceLine" id="cb2-3" data-line-number="3">  <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(devtools)</a>
@@ -105,8 +105,17 @@
 <div id="install-dataedu" class="section level3">
 <h3 class="hasAnchor">
 <a href="#install-dataedu" class="anchor"></a>2. Install {dataedu}</h3>
-<p>You can install the development version of {dataedu} by running this in your R Studio console:</p>
+<p>You can install the development version of {dataedu} by running this in your RStudio console:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">devtools<span class="op">::</span><span class="kw"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span>(<span class="st">"data-edu/dataedu"</span>)</a></code></pre></div>
+<div id="important-notes-on-installation" class="section level4">
+<h4 class="hasAnchor">
+<a href="#important-notes-on-installation" class="anchor"></a>Important Notes on Installation</h4>
+<ul>
+<li><p>If you have installed {devtools} previously but have not updated it in a while, and you try to download the {dataedu} package, you may see a messsage such as <code>devtools::install_github("data-edu/dataedu") Error in loadNamespace(j &lt;- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : namespace ‘remotes’ 2.1.0 is being loaded, but &gt;= 2.1.1 is required.</code> Please read through the message to see what is needed (in this case, updating {remotes}). It’s always best to keep {devtools} (and all your packages) up-to-date to limit issues.</p></li>
+<li><p>Relatedly, if you have installed related packages previously and have not updated them in a while, RStudio may prompt you to update them. You can choose to (1) ignore this prompt, (2) exit the prompt and update your packages, or (3) try to update your packages through the prompt. It’s usually easier to exit and update your packages outside the prompt (one way to do this is to go to the RStudio Packages pane and click Update, then select the packages you’d like to update). In any case, keeping your packages up-to-date makes this process a lot easier.</p></li>
+<li><p>{dataedu} has other packages that it needs to be able to run (these would be the ones to update if they are out-of-date). You can see the full list under “Imports” (imported when downloading the package) and “Suggests” (we think you should include these too!) in the <a href="https://github.com/data-edu/dataedu/blob/master/DESCRIPTION#L34">DESCRIPTION file</a>.</p></li>
+</ul>
+</div>
 </div>
 <div id="call-the-package" class="section level3">
 <h3 class="hasAnchor">
@@ -149,9 +158,31 @@
 <a href="#accessing-the-walkthrough-data" class="anchor"></a>Accessing the Walkthrough Data</h3>
 <p>To get the data, run <code>dataedu::</code> then the dataset as it is named in the book:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1">dataedu<span class="op">::</span>course_data</a></code></pre></div>
-<p>To see all the datasets in the package, run <code><a href="https://rdrr.io/r/utils/data.html">data(package = "dataedu")</a></code>.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1">a &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/utils/data.html">data</a></span>(<span class="dt">package =</span> <span class="st">"dataedu"</span>)</a>
-<a class="sourceLine" id="cb8-2" data-line-number="2">a</a></code></pre></div>
+<p>To see all the datasets available in the package, run <code><a href="https://rdrr.io/r/utils/data.html">data(package = "dataedu")</a></code>.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="co"># this is to print the results for the README</span></a>
+<a class="sourceLine" id="cb8-2" data-line-number="2"><span class="co"># only `data(package = "dataedu")` is needed to see this list</span></a>
+<a class="sourceLine" id="cb8-3" data-line-number="3">a &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/r/utils/data.html">data</a></span>(<span class="dt">package =</span> <span class="st">"dataedu"</span>)</a>
+<a class="sourceLine" id="cb8-4" data-line-number="4">a<span class="op">$</span>result[ , <span class="dv">3</span><span class="op">:</span><span class="dv">4</span>]</a>
+<a class="sourceLine" id="cb8-5" data-line-number="5"><span class="co">#&gt;       Item                  </span></a>
+<a class="sourceLine" id="cb8-6" data-line-number="6"><span class="co">#&gt;  [1,] "course_data"         </span></a>
+<a class="sourceLine" id="cb8-7" data-line-number="7"><span class="co">#&gt;  [2,] "course_minutes"      </span></a>
+<a class="sourceLine" id="cb8-8" data-line-number="8"><span class="co">#&gt;  [3,] "district_merged_data"</span></a>
+<a class="sourceLine" id="cb8-9" data-line-number="9"><span class="co">#&gt;  [4,] "longitudinal_data"   </span></a>
+<a class="sourceLine" id="cb8-10" data-line-number="10"><span class="co">#&gt;  [5,] "ma_data_init"        </span></a>
+<a class="sourceLine" id="cb8-11" data-line-number="11"><span class="co">#&gt;  [6,] "pre_survey"          </span></a>
+<a class="sourceLine" id="cb8-12" data-line-number="12"><span class="co">#&gt;  [7,] "sci_mo_processed"    </span></a>
+<a class="sourceLine" id="cb8-13" data-line-number="13"><span class="co">#&gt;  [8,] "sci_mo_with_text"    </span></a>
+<a class="sourceLine" id="cb8-14" data-line-number="14"><span class="co">#&gt;  [9,] "tt_tweets"           </span></a>
+<a class="sourceLine" id="cb8-15" data-line-number="15"><span class="co">#&gt;       Title                                                          </span></a>
+<a class="sourceLine" id="cb8-16" data-line-number="16"><span class="co">#&gt;  [1,] "Walkthrough 01 - Course Data"                                 </span></a>
+<a class="sourceLine" id="cb8-17" data-line-number="17"><span class="co">#&gt;  [2,] "Walkthrough 01 - Course Minutes"                              </span></a>
+<a class="sourceLine" id="cb8-18" data-line-number="18"><span class="co">#&gt;  [3,] "Walkthrough 03 - Merged Ethnicity and FRPL District Data"     </span></a>
+<a class="sourceLine" id="cb8-19" data-line-number="19"><span class="co">#&gt;  [4,] "Walkthrough 04 - Students with Disabilities Longitudinal Data"</span></a>
+<a class="sourceLine" id="cb8-20" data-line-number="20"><span class="co">#&gt;  [5,] "Foundational Skills Data"                                     </span></a>
+<a class="sourceLine" id="cb8-21" data-line-number="21"><span class="co">#&gt;  [6,] "Walkthrough 01 - Pre-Survey"                                  </span></a>
+<a class="sourceLine" id="cb8-22" data-line-number="22"><span class="co">#&gt;  [7,] "Walkthrough 01 - Student Motivation (Processed)"              </span></a>
+<a class="sourceLine" id="cb8-23" data-line-number="23"><span class="co">#&gt;  [8,] "Walkthrough 01 - Student Motivation (Processed and With Text)"</span></a>
+<a class="sourceLine" id="cb8-24" data-line-number="24"><span class="co">#&gt;  [9,] "Walkthrough 12 - Tweet Data"</span></a></code></pre></div>
 </div>
 <div id="using-the-dataedu-theme-and-palette" class="section level3">
 <h3 class="hasAnchor">
@@ -213,7 +244,7 @@
 <li><a href="https://ci.appveyor.com/project/data-edu/dataedu"><img src="https://ci.appveyor.com/api/projects/status/github/data-edu/dataedu?branch=master&amp;svg=true" alt="AppVeyor build status"></a></li>
 <li><a href="https://codecov.io/gh/data-edu/dataedu?branch=master"><img src="https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
 <li><a href="https://cran.r-project.org/"><img src="https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg" alt="minimal R version"></a></li>
-<li><a href="https://github.com/data-edu/dataedu/commits/master"><img src="https://img.shields.io/badge/last%20change-2020--03--24-yellowgreen.svg" alt="Last-changedate"></a></li>
+<li><a href="https://github.com/data-edu/dataedu/commits/master"><img src="https://img.shields.io/badge/last%20change-2020--03--25-yellowgreen.svg" alt="Last-changedate"></a></li>
 </ul>
 </div>
 </div>
