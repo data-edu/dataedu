@@ -71,24 +71,23 @@ devtools::install_github("data-edu/dataedu")
     to keep {devtools} (and all your packages) up-to-date to limit
     issues.
 
-  - Relatedly, if you have installed related packages previously and
-    have not updated them in a while, RStudio may prompt you to update
-    them. You can choose to (1) ignore this prompt, (2) exit the prompt
-    and update your packages, or (3) try to update your packages through
-    the prompt. It’s usually easier to exit and update your packages
-    outside the prompt (one way to do this is to go to the RStudio
-    Packages pane and click Update, then select the packages you’d like
-    to update). In any case, keeping your packages up-to-date makes this
-    process a lot easier.
-
-  - {dataedu} has other packages that it needs to be able to run (these
-    would be the ones to update if they are out-of-date). You can see
-    the full list under “Imports” (imported when downloading the
+  - {dataedu} has other packages that it needs to be able to run. You
+    can see the full list under “Imports” (imported when downloading the
     package) and “Suggests” (we think you should include these too\!) in
     the [DESCRIPTION
     file](https://github.com/data-edu/dataedu/blob/master/DESCRIPTION#L34).
 
-### 3\. Call the package
+  - If you have installed these imported/suggested packages previously
+    and have not updated them in a while, RStudio may prompt you to
+    update them. You can choose to (1) ignore this prompt, (2) exit the
+    prompt and update your packages, or (3) try to update your packages
+    through the prompt. It’s usually easier to exit and update your
+    packages outside the prompt (one way to do this is to go to the
+    RStudio Packages pane and click Update, then select the packages
+    you’d like to update). In any case, keeping all your packages
+    up-to-date all the time makes this process a lot smoother.
+
+### 3\. Call the Package
 
 Before you can use the package, make sure to call it using `library()`:
 
