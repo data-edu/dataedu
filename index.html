@@ -112,14 +112,14 @@
 <a href="#important-notes-on-installation" class="anchor"></a>Important Notes on Installation</h4>
 <ul>
 <li><p>If you have installed {devtools} previously but have not updated it in a while, and you try to download the {dataedu} package, you may see a messsage such as <code>devtools::install_github("data-edu/dataedu") Error in loadNamespace(j &lt;- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : namespace ‘remotes’ 2.1.0 is being loaded, but &gt;= 2.1.1 is required.</code> Please read through the message to see what is needed (in this case, updating {remotes}). It’s always best to keep {devtools} (and all your packages) up-to-date to limit issues.</p></li>
-<li><p>Relatedly, if you have installed related packages previously and have not updated them in a while, RStudio may prompt you to update them. You can choose to (1) ignore this prompt, (2) exit the prompt and update your packages, or (3) try to update your packages through the prompt. It’s usually easier to exit and update your packages outside the prompt (one way to do this is to go to the RStudio Packages pane and click Update, then select the packages you’d like to update). In any case, keeping your packages up-to-date makes this process a lot easier.</p></li>
-<li><p>{dataedu} has other packages that it needs to be able to run (these would be the ones to update if they are out-of-date). You can see the full list under “Imports” (imported when downloading the package) and “Suggests” (we think you should include these too!) in the <a href="https://github.com/data-edu/dataedu/blob/master/DESCRIPTION#L34">DESCRIPTION file</a>.</p></li>
+<li><p>{dataedu} has other packages that it needs to be able to run. You can see the full list under “Imports” (imported when downloading the package) and “Suggests” (we think you should include these too!) in the <a href="https://github.com/data-edu/dataedu/blob/master/DESCRIPTION#L34">DESCRIPTION file</a>.</p></li>
+<li><p>If you have installed these imported/suggested packages previously and have not updated them in a while, RStudio may prompt you to update them. You can choose to (1) ignore this prompt, (2) exit the prompt and update your packages, or (3) try to update your packages through the prompt. It’s usually easier to exit and update your packages outside the prompt (one way to do this is to go to the RStudio Packages pane and click Update, then select the packages you’d like to update). In any case, keeping all your packages up-to-date all the time makes this process a lot smoother.</p></li>
 </ul>
 </div>
 </div>
 <div id="call-the-package" class="section level3">
 <h3 class="hasAnchor">
-<a href="#call-the-package" class="anchor"></a>3. Call the package</h3>
+<a href="#call-the-package" class="anchor"></a>3. Call the Package</h3>
 <p>Before you can use the package, make sure to call it using <code><a href="https://rdrr.io/r/base/library.html">library()</a></code>:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(dataedu)</a></code></pre></div>
 </div>
