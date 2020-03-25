@@ -13,7 +13,7 @@ status](https://ci.appveyor.com/api/projects/status/github/data-edu/dataedu?bran
 coverage](https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg)](https://codecov.io/gh/data-edu/dataedu?branch=master)
 [![minimal R
 version](https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg)](https://cran.r-project.org/)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2020--03--24-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2020--03--25-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
 <!-- badges: end -->
 
 The goal of {dataedu} is to provide readers of [Data Science in
@@ -40,7 +40,8 @@ If you already have {devtools} installed, you can move on to the next
 step.
 
 If you are not sure whether you have it installed, you can run this
-function, which will install {devtools} if you do not already have it.
+function, which will install the newest version of {devtools} if you do
+not already have it.
 
 ``` r
 if (!require(devtools)) {
@@ -52,11 +53,40 @@ if (!require(devtools)) {
 ### 2\. Install {dataedu}
 
 You can install the development version of {dataedu} by running this in
-your R Studio console:
+your RStudio console:
 
 ``` r
 devtools::install_github("data-edu/dataedu")
 ```
+
+**Important Notes on Installation**
+
+  - If you have installed {devtools} previously but have not updated it
+    in a while, and you try to download the {dataedu} package, you may
+    see a messsage such as `devtools::install_github("data-edu/dataedu")
+    Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()),
+    versionCheck = vI[[j]]) : namespace ‘remotes’ 2.1.0 is being loaded,
+    but >= 2.1.1 is required.` Please read through the message to see
+    what is needed (in this case, updating {remotes}). It’s always best
+    to keep {devtools} (and all your packages) up-to-date to limit
+    issues.
+
+  - Relatedly, if you have installed related packages previously and
+    have not updated them in a while, RStudio may prompt you to update
+    them. You can choose to (1) ignore this prompt, (2) exit the prompt
+    and update your packages, or (3) try to update your packages through
+    the prompt. It’s usually easier to exit and update your packages
+    outside the prompt (one way to do this is to go to the RStudio
+    Packages pane and click Update, then select the packages you’d like
+    to update). In any case, keeping your packages up-to-date makes this
+    process a lot easier.
+
+  - {dataedu} has other packages that it needs to be able to run (these
+    would be the ones to update if they are out-of-date). You can see
+    the full list under “Imports” (imported when downloading the
+    package) and “Suggests” (we think you should include these too\!) in
+    the [DESCRIPTION
+    file](https://github.com/data-edu/dataedu/blob/master/DESCRIPTION#L34).
 
 ### 3\. Call the package
 
@@ -126,11 +156,34 @@ book:
 dataedu::course_data
 ```
 
-To see all the datasets in the package, run `data(package = "dataedu")`.
+To see all the datasets available in the package, run `data(package =
+"dataedu")`.
 
 ``` r
+# this is to print the results for the README
+# only `data(package = "dataedu")` is needed to see this list
 a <- data(package = "dataedu")
-a
+a$result[ , 3:4]
+#>       Item                  
+#>  [1,] "course_data"         
+#>  [2,] "course_minutes"      
+#>  [3,] "district_merged_data"
+#>  [4,] "longitudinal_data"   
+#>  [5,] "ma_data_init"        
+#>  [6,] "pre_survey"          
+#>  [7,] "sci_mo_processed"    
+#>  [8,] "sci_mo_with_text"    
+#>  [9,] "tt_tweets"           
+#>       Title                                                          
+#>  [1,] "Walkthrough 01 - Course Data"                                 
+#>  [2,] "Walkthrough 01 - Course Minutes"                              
+#>  [3,] "Walkthrough 03 - Merged Ethnicity and FRPL District Data"     
+#>  [4,] "Walkthrough 04 - Students with Disabilities Longitudinal Data"
+#>  [5,] "Foundational Skills Data"                                     
+#>  [6,] "Walkthrough 01 - Pre-Survey"                                  
+#>  [7,] "Walkthrough 01 - Student Motivation (Processed)"              
+#>  [8,] "Walkthrough 01 - Student Motivation (Processed and With Text)"
+#>  [9,] "Walkthrough 12 - Tweet Data"
 ```
 
 ### Using the {dataedu} Theme and Palette
