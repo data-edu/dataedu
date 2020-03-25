@@ -64,7 +64,9 @@ devtools::install_github("data-edu/dataedu")
 
 #### Important Notes on Installation
 
-* If you have installed {devtools} previously but have not updated it in a while, and you try to download the {dataedu} package, you may see a messsage such as `devtools::install_github("data-edu/dataedu")  Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : namespace ‘remotes’ 2.1.0 is being loaded, but >= 2.1.1 is required.` Please read through the message to see what is needed (in this case, updating {remotes}). It's always best to keep {devtools} (and all your packages) up-to-date to limit issues.
+* {dataedu} requires R 3.6 or above to be installed.
+
+* If you have installed {devtools} previously but have not updated it in a while, and you try to install the {dataedu} package, you may see a messsage such as `devtools::install_github("data-edu/dataedu")  Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : namespace ‘remotes’ 2.1.0 is being loaded, but >= 2.1.1 is required.` Please read through the message to see what is needed (in this case, updating {remotes}). It's always best to keep {devtools} (and all your packages) up-to-date to limit issues.
 
 * {dataedu} has other packages that it needs to be able to run. You can see the full list under "Imports" (imported when downloading the package) and  "Suggests" (we think you should include these too!) in the [DESCRIPTION file](https://github.com/data-edu/dataedu/blob/master/DESCRIPTION#L34).
 
