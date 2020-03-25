@@ -61,8 +61,10 @@ devtools::install_github("data-edu/dataedu")
 
 #### Important Notes on Installation
 
+  - {dataedu} requires R 3.6 or above to be installed.
+
   - If you have installed {devtools} previously but have not updated it
-    in a while, and you try to download the {dataedu} package, you may
+    in a while, and you try to install the {dataedu} package, you may
     see a messsage such as `devtools::install_github("data-edu/dataedu")
     Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()),
     versionCheck = vI[[j]]) : namespace ‘remotes’ 2.1.0 is being loaded,
