@@ -109,21 +109,70 @@
 #' str(dataedu::tt_tweets)
 "tt_tweets"
 
+#' Walkthrough 03 - Tabulizer Output from Race PDF
+#'
+#' Walkthrough 03 - RDS file with tabulizer output
+#' from the Race PDF.
+#' 
+#'
+#' @name race_pdf
+#' @docType data
+#' @format Dataset of class \code{list}.
+#' @source Minneapolis Public Schools <https://mpls.k12.mn.us/>
+#' @keywords datasets
+#' @examples
+#'
+#' str(dataedu::race_pdf)
+"race_pdf"
+
+
+#' Walkthrough 03 - Tabulizer Output from FRPL PDF
+#'
+#' Walkthrough 03 - RDS file with tabulizer output
+#' from the FRPL PDF.
+#' 
+#'
+#' @name frpl_pdf
+#' @docType data
+#' @format Dataset of class \code{list}.
+#' @source Minneapolis Public Schools <https://mpls.k12.mn.us/>
+#' @keywords datasets
+#' @examples
+#'
+#' str(dataedu::frpl_pdf)
+"frpl_pdf"
+
 #' Walkthrough 03 - Merged Ethnicity and FRPL District Data
 #'
 #' Walkthrough 03 - Dataset with processed district data with
 #' both FRPL and ethnicity data
 #'
 #'
-#' @name district_merged_data
+#' @name district_merged_df
 #' @docType data
 #' @format Dataset of class \code{tibble}.
 #' @source Minneapolis Public Schools <https://mpls.k12.mn.us/>
 #' @keywords datasets
 #' @examples
 #'
-#' str(dataedu::district_merged_data)
-"district_merged_data"
+#' str(dataedu::district_merged_df)
+"district_merged_df"
+
+#' Walkthrough 03 - Merged and Tidy Ethnicity and FRPL District Data
+#'
+#' Walkthrough 03 - Dataset with processed district data with
+#' both FRPL and ethnicity data in tidy format
+#'
+#'
+#' @name district_tidy_df
+#' @docType data
+#' @format Dataset of class \code{tibble}.
+#' @source Minneapolis Public Schools <https://mpls.k12.mn.us/>
+#' @keywords datasets
+#' @examples
+#'
+#' str(dataedu::district_tidy_df)
+"district_tidy_df"
 
 #' Walkthrough 04 - Students with Disabilities Longitudinal Data
 #'

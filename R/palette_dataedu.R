@@ -5,9 +5,9 @@
 #'
 dataedu_palette <- c(
   `darkblue`   = "#003f5c",
-  `turquoise`  = "#006876",
-  `green`      = "#00906b",
-  `lightgreen` = "#87af49",
+  `purple`  = "#58508d",
+  `pink`      = "#bc5090",
+  `coral` = "#ff6361",
   `yellow`     = "#ffbc49"
 )
 
@@ -30,8 +30,8 @@ dataedu_colors <- function(...) {
 dataedu_colors()
 
 dataedu_palettes <- list(
-  `short` = dataedu_colors("green", "yellow"),
-  `main` = dataedu_colors("darkblue", "turquoise", "green", "lightgreen", "yellow")
+  `short` = dataedu_colors("darkblue", "yellow"),
+  `main` = dataedu_colors("darkblue", "purple", "pink", "coral", "yellow")
 )
 
 #' Interpolate a dataedu color palette
