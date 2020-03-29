@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Walkthrough 01 - Course Minutes — course_minutes • dataedu</title>
+<title>Walkthrough 03 - Merged and Tidy Ethnicity and FRPL District Data — district_tidy_df • dataedu</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,10 +46,9 @@
 
 
 
-<meta property="og:title" content="Walkthrough 01 - Course Minutes — course_minutes" />
-<meta property="og:description" content="Walkthrough 01 - Dataset on log-trace data from the number of minutes
-students spend on the course learning management system
-for online science courses" />
+<meta property="og:title" content="Walkthrough 03 - Merged and Tidy Ethnicity and FRPL District Data — district_tidy_df" />
+<meta property="og:description" content="Walkthrough 03 - Dataset with processed district data with
+both FRPL and ethnicity data in tidy format" />
 <meta property="og:image" content="/logo.png" />
 
 
@@ -118,18 +117,17 @@ for online science courses" />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Walkthrough 01 - Course Minutes</h1>
+    <h1>Walkthrough 03 - Merged and Tidy Ethnicity and FRPL District Data</h1>
     <small class="dont-index">Source: <a href='https://github.com/data-edu/dataedu/blob/master/R/data.R'><code>R/data.R</code></a></small>
-    <div class="hidden name"><code>course_minutes.Rd</code></div>
+    <div class="hidden name"><code>district_tidy_df.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Walkthrough 01 - Dataset on log-trace data from the number of minutes
-students spend on the course learning management system
-for online science courses</p>
+    <p>Walkthrough 03 - Dataset with processed district data with
+both FRPL and ethnicity data in tidy format</p>
     </div>
 
-    <pre class="usage"><span class='no'>course_minutes</span></pre>
+    <pre class="usage"><span class='no'>district_tidy_df</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
@@ -137,21 +135,21 @@ for online science courses</p>
     <p>Dataset of class <code>tibble</code>.</p>
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>John Ranellucci and Joshua Rosenberg</p>
+    <p>Minneapolis Public Schools <a href='https://mpls.k12.mn.us/'>https://mpls.k12.mn.us/</a></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span>(<span class='kw pkg'>dataedu</span><span class='kw ns'>::</span><span class='no'>course_minutes</span>)</div><div class='output co'>#&gt; Classes ‘spec_tbl_df’, ‘tbl_df’, ‘tbl’ and 'data.frame':	598 obs. of  3 variables:
-#&gt;  $ Bb_UserPK          : num  44638 54346 57981 66740 67920 ...
-#&gt;  $ CourseSectionOrigID: chr  "OcnA-S116-01" "OcnA-S116-01" "OcnA-S116-01" "OcnA-S116-01" ...
-#&gt;  $ TimeSpent          : num  1383 1191 3343 965 4095 ...
+<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span>(<span class='kw pkg'>dataedu</span><span class='kw ns'>::</span><span class='no'>district_tidy_df</span>)</div><div class='output co'>#&gt; Classes ‘spec_tbl_df’, ‘tbl_df’, ‘tbl’ and 'data.frame':	1924 obs. of  3 variables:
+#&gt;  $ school_name: chr  "ARMATAGE" "BANCROFT" "BETHUNE" "BRYN MAWR" ...
+#&gt;  $ category   : chr  "na_num" "na_num" "na_num" "na_num" ...
+#&gt;  $ value      : num  5 49 3 11 6 12 11 8 6 4 ...
 #&gt;  - attr(*, "spec")=List of 3
 #&gt;   ..$ cols   :List of 3
-#&gt;   .. ..$ Bb_UserPK          : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_double" "collector"
-#&gt;   .. ..$ CourseSectionOrigID: list()
+#&gt;   .. ..$ school_name: list()
 #&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
-#&gt;   .. ..$ TimeSpent          : list()
+#&gt;   .. ..$ category   : list()
+#&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
+#&gt;   .. ..$ value      : list()
 #&gt;   .. .. ..- attr(*, "class")= chr  "collector_double" "collector"
 #&gt;   ..$ default: list()
 #&gt;   .. ..- attr(*, "class")= chr  "collector_guess" "collector"

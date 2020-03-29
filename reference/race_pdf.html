@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Walkthrough 01 - Course Minutes — course_minutes • dataedu</title>
+<title>Walkthrough 03 - Tabulizer Output from Race PDF — race_pdf • dataedu</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,10 +46,9 @@
 
 
 
-<meta property="og:title" content="Walkthrough 01 - Course Minutes — course_minutes" />
-<meta property="og:description" content="Walkthrough 01 - Dataset on log-trace data from the number of minutes
-students spend on the course learning management system
-for online science courses" />
+<meta property="og:title" content="Walkthrough 03 - Tabulizer Output from Race PDF — race_pdf" />
+<meta property="og:description" content="Walkthrough 03 - RDS file with tabulizer output
+from the Race PDF." />
 <meta property="og:image" content="/logo.png" />
 
 
@@ -118,45 +117,43 @@ for online science courses" />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Walkthrough 01 - Course Minutes</h1>
+    <h1>Walkthrough 03 - Tabulizer Output from Race PDF</h1>
     <small class="dont-index">Source: <a href='https://github.com/data-edu/dataedu/blob/master/R/data.R'><code>R/data.R</code></a></small>
-    <div class="hidden name"><code>course_minutes.Rd</code></div>
+    <div class="hidden name"><code>race_pdf.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Walkthrough 01 - Dataset on log-trace data from the number of minutes
-students spend on the course learning management system
-for online science courses</p>
+    <p>Walkthrough 03 - RDS file with tabulizer output
+from the Race PDF.</p>
     </div>
 
-    <pre class="usage"><span class='no'>course_minutes</span></pre>
+    <pre class="usage"><span class='no'>race_pdf</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>Dataset of class <code>tibble</code>.</p>
+    <p>Dataset of class <code>list</code>.</p>
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>John Ranellucci and Joshua Rosenberg</p>
+    <p>Minneapolis Public Schools <a href='https://mpls.k12.mn.us/'>https://mpls.k12.mn.us/</a></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span>(<span class='kw pkg'>dataedu</span><span class='kw ns'>::</span><span class='no'>course_minutes</span>)</div><div class='output co'>#&gt; Classes ‘spec_tbl_df’, ‘tbl_df’, ‘tbl’ and 'data.frame':	598 obs. of  3 variables:
-#&gt;  $ Bb_UserPK          : num  44638 54346 57981 66740 67920 ...
-#&gt;  $ CourseSectionOrigID: chr  "OcnA-S116-01" "OcnA-S116-01" "OcnA-S116-01" "OcnA-S116-01" ...
-#&gt;  $ TimeSpent          : num  1383 1191 3343 965 4095 ...
-#&gt;  - attr(*, "spec")=List of 3
-#&gt;   ..$ cols   :List of 3
-#&gt;   .. ..$ Bb_UserPK          : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_double" "collector"
-#&gt;   .. ..$ CourseSectionOrigID: list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
-#&gt;   .. ..$ TimeSpent          : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_double" "collector"
-#&gt;   ..$ default: list()
-#&gt;   .. ..- attr(*, "class")= chr  "collector_guess" "collector"
-#&gt;   ..$ skip   : num 1
-#&gt;   ..- attr(*, "class")= chr "col_spec"</div></pre>
+<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span>(<span class='kw pkg'>dataedu</span><span class='kw ns'>::</span><span class='no'>race_pdf</span>)</div><div class='output co'>#&gt; List of 14
+#&gt;  $ : chr [1:36, 1:16] "School" "Group" "K-5" "K-5" ...
+#&gt;  $ : chr [1:36, 1:16] "School" "Group" "" "K-5" ...
+#&gt;  $ : chr [1:36, 1:16] "School" "Group" "" "K-5" ...
+#&gt;  $ : chr [1:36, 1:16] "School" "Group" "" "K-5" ...
+#&gt;  $ : chr [1:36, 1:16] "School" "Group" "K-5" "K-5" ...
+#&gt;  $ : chr [1:36, 1:16] "School" "Group" "K-5" "K-5" ...
+#&gt;  $ : chr [1:36, 1:16] "School" "Group" "K-8" "K-8" ...
+#&gt;  $ : chr [1:36, 1:16] "School" "Group" "K-8" "" ...
+#&gt;  $ : chr [1:36, 1:16] "School" "Group" "" "K-8" ...
+#&gt;  $ : chr [1:36, 1:16] "School" "Group" "" "Mid Schl" ...
+#&gt;  $ : chr [1:36, 1:16] "School" "Group" "" "High Schl" ...
+#&gt;  $ : chr [1:36, 1:16] "School" "Group" "High Schl" "High Schl" ...
+#&gt;  $ : chr [1:36, 1:16] "School" "Group" "Spec Ed" "Spec Ed" ...
+#&gt;  $ : chr [1:17, 1:16] "School" "Group" "Cont Alt" "Cont Alt" ...</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
