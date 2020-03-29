@@ -13,7 +13,7 @@ status](https://ci.appveyor.com/api/projects/status/github/data-edu/dataedu?bran
 coverage](https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg)](https://codecov.io/gh/data-edu/dataedu?branch=master)
 [![minimal R
 version](https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg)](https://cran.r-project.org/)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2020--03--25-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2020--03--29-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
 <!-- badges: end -->
 
 The goal of {dataedu} is to provide readers of [Data Science in
@@ -63,31 +63,32 @@ devtools::install_github("data-edu/dataedu")
 
   - {dataedu} requires R 3.6 or above to be installed.
 
-  - If you have installed {devtools} previously but have not updated it
-    in a while, and you try to install the {dataedu} package, you may
-    see a messsage such as `devtools::install_github("data-edu/dataedu")
-    Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()),
-    versionCheck = vI[[j]]) : namespace ‘remotes’ 2.1.0 is being loaded,
-    but >= 2.1.1 is required.` Please read through the message to see
-    what is needed (in this case, updating {remotes}). It’s always best
-    to keep {devtools} (and all your packages) up-to-date to limit
-    issues.
-
   - {dataedu} has other packages that it needs to be able to run. You
     can see the full list under “Imports” (imported when downloading the
     package) and “Suggests” (we think you should include these too\!) in
     the [DESCRIPTION
     file](https://github.com/data-edu/dataedu/blob/master/DESCRIPTION#L34).
 
-  - If you have installed these imported/suggested packages previously
-    and have not updated them in a while, RStudio may prompt you to
-    update them. You can choose to (1) ignore this prompt, (2) exit the
-    prompt and update your packages, or (3) try to update your packages
-    through the prompt. It’s usually easier to exit and update your
-    packages outside the prompt (one way to do this is to go to the
-    RStudio Packages pane and click Update, then select the packages
-    you’d like to update). In any case, keeping all your packages
-    up-to-date all the time makes this process a lot smoother.
+  - **We recommend first checking to see if your packages are all
+    up-to-date if you are running into issues with installation.** If
+    you have installed these imported/suggested packages previously and
+    have not updated them in a while, RStudio may prompt you to update
+    them. You can choose to (1) ignore this prompt, (2) exit the prompt
+    and update your packages, or (3) try to update your packages through
+    the prompt. It’s usually easier to exit and update your packages
+    outside the prompt (one way to do this is to go to the RStudio
+    Packages pane and click Update, then select the packages you’d like
+    to update).
+
+  - In particular, if you have installed {devtools} previously but have
+    not updated it in a while, and you try to install the {dataedu}
+    package, you may see a messsage such as
+    `devtools::install_github("data-edu/dataedu") Error in
+    loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck =
+    vI[[j]]) : namespace ‘remotes’ 2.1.0 is being loaded, but >= 2.1.1
+    is required.` Please read through the message to see what is needed
+    (in this case, updating {remotes}). It’s always best to keep
+    {devtools} (and all your packages) up-to-date to limit issues.
 
 ### 3\. Call the Package
 
