@@ -19,11 +19,11 @@ dataedu_palette <- c(
 #' @export
 dataedu_colors <- function(...) {
   cols <- c(...)
-
+  
   if (is.null(cols)) {
     return(dataedu_palette)
   }
-
+  
   dataedu_palette[cols]
 }
 
@@ -44,9 +44,9 @@ dataedu_palettes <- list(
 #'
 dataedu_pal <- function(palette = "main", reverse = FALSE, ...) {
   pal <- dataedu_palettes[[palette]]
-
+  
   if (reverse) pal <- rev(pal)
-
+  
   grDevices::colorRampPalette(pal, ...)
 }
 
@@ -64,7 +64,7 @@ dataedu_pal <- function(palette = "main", reverse = FALSE, ...) {
 #' @export
 scale_color_dataedu <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
   pal <- dataedu_pal(palette = palette, reverse = reverse)
-
+  
   if (discrete) {
     ggplot2::discrete_scale("colour", paste0("dataedu_", palette), palette = pal, ...)
   } else {
@@ -86,7 +86,7 @@ scale_color_dataedu <- function(palette = "main", discrete = TRUE, reverse = FAL
 #' @export
 scale_fill_dataedu <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
   pal <- dataedu_pal(palette = palette, reverse = reverse)
-
+  
   if (discrete) {
     ggplot2::discrete_scale("fill", paste0("dataedu_", palette), palette = pal, ...)
   } else {
