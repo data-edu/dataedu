@@ -139,20 +139,20 @@ both FRPL and ethnicity data in tidy format</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span>(<span class='kw pkg'>dataedu</span><span class='kw ns'>::</span><span class='no'>district_tidy_df</span>)</div><div class='output co'>#&gt; Classes ‘spec_tbl_df’, ‘tbl_df’, ‘tbl’ and 'data.frame':	1924 obs. of  3 variables:
-#&gt;  $ school_name: chr  "ARMATAGE" "BANCROFT" "BETHUNE" "BRYN MAWR" ...
-#&gt;  $ category   : chr  "na_num" "na_num" "na_num" "na_num" ...
-#&gt;  $ value      : num  5 49 3 11 6 12 11 8 6 4 ...
+<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span>(<span class='kw pkg'>dataedu</span><span class='kw ns'>::</span><span class='no'>district_tidy_df</span>)</div><div class='output co'>#&gt; tibble [1,924 × 3] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+#&gt;  $ school_name: chr [1:1924] "ARMATAGE" "BANCROFT" "BETHUNE" "BRYN MAWR" ...
+#&gt;  $ category   : chr [1:1924] "na_num" "na_num" "na_num" "na_num" ...
+#&gt;  $ value      : num [1:1924] 5 49 3 11 6 12 11 8 6 4 ...
 #&gt;  - attr(*, "spec")=List of 3
 #&gt;   ..$ cols   :List of 3
 #&gt;   .. ..$ school_name: list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
+#&gt;   .. .. ..- attr(*, "class")= chr [1:2] "collector_character" "collector"
 #&gt;   .. ..$ category   : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_character" "collector"
+#&gt;   .. .. ..- attr(*, "class")= chr [1:2] "collector_character" "collector"
 #&gt;   .. ..$ value      : list()
-#&gt;   .. .. ..- attr(*, "class")= chr  "collector_double" "collector"
+#&gt;   .. .. ..- attr(*, "class")= chr [1:2] "collector_double" "collector"
 #&gt;   ..$ default: list()
-#&gt;   .. ..- attr(*, "class")= chr  "collector_guess" "collector"
+#&gt;   .. ..- attr(*, "class")= chr [1:2] "collector_guess" "collector"
 #&gt;   ..$ skip   : num 1
 #&gt;   ..- attr(*, "class")= chr "col_spec"</div></pre>
   </div>

@@ -93,7 +93,7 @@
 <div id="install-devtools" class="section level3">
 <h3 class="hasAnchor">
 <a href="#install-devtools" class="anchor"></a>1. Install {devtools}</h3>
-<p>First, let’s install <a href="https://github.com/r-lib/devtools">{devtools}</a>, an R package with many handy R tools. In your R console, type in:</p>
+<p>First, letâs install <a href="https://github.com/r-lib/devtools">{devtools}</a>, an R package with many handy R tools. In your R console, type in:</p>
 <div class="sourceCode" id="cb1"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"devtools"</span>)</pre></div>
 <p>If you already have {devtools} installed, you can move on to the next step.</p>
 <p>If you are not sure whether you have it installed, you can run this function, which will install the newest version of {devtools} if you do not already have it.</p>
@@ -112,9 +112,9 @@
 <a href="#important-notes-on-installation" class="anchor"></a>Important Notes on Installation</h4>
 <ul>
 <li><p>{dataedu} requires R 3.6 or above to be installed.</p></li>
-<li><p>{dataedu} has other packages that it needs to be able to run. You can see the full list under “Imports” (imported when downloading the package) and “Suggests” (we think you should include these too!) in the <a href="https://github.com/data-edu/dataedu/blob/master/DESCRIPTION#L34">DESCRIPTION file</a>.</p></li>
-<li><p><strong>We recommend first checking to see if your packages are all up-to-date if you are running into issues with installation.</strong> If you have installed these imported/suggested packages previously and have not updated them in a while, RStudio may prompt you to update them. You can choose to (1) ignore this prompt, (2) exit the prompt and update your packages, or (3) try to update your packages through the prompt. It’s usually easier to exit and update your packages outside the prompt (one way to do this is to go to the RStudio Packages pane and click Update, then select the packages you’d like to update).</p></li>
-<li><p>In particular, if you have installed {devtools} previously but have not updated it in a while, and you try to install the {dataedu} package, you may see a messsage such as <code>devtools::install_github("data-edu/dataedu") Error in loadNamespace(j &lt;- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : namespace ‘remotes’ 2.1.0 is being loaded, but &gt;= 2.1.1 is required.</code> Please read through the message to see what is needed (in this case, updating {remotes}). It’s always best to keep {devtools} (and all your packages) up-to-date to limit issues.</p></li>
+<li><p>{dataedu} has other packages that it needs to be able to run. You can see the full list under âImportsâ (imported when downloading the package) and âSuggestsâ (we think you should include these too!) in the <a href="https://github.com/data-edu/dataedu/blob/master/DESCRIPTION#L34">DESCRIPTION file</a>.</p></li>
+<li><p><strong>We recommend first checking to see if your packages are all up-to-date if you are running into issues with installation.</strong> If you have installed the imported/suggested packages previously and have not updated them in a while, RStudio may prompt you to update them. You can choose to (1) ignore this prompt, (2) exit the prompt and update your packages, or (3) try to update your packages through the prompt. Itâs usually easier to exit and update your packages outside the prompt (one way to do this is to go to the RStudio Packages pane and click Update, then select the packages youâd like to update).</p></li>
+<li><p>In particular, if you have installed {devtools} previously but have not updated it in a while, and you try to install the {dataedu} package, you may see a messsage such as <code>devtools::install_github("data-edu/dataedu") Error in loadNamespace(j &lt;- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : namespace âremotesâ 2.1.0 is being loaded, but &gt;= 2.1.1 is required.</code> Please read through the message to see what is needed (in this case, updating {remotes}). Itâs always best to keep {devtools} (and all your packages) up-to-date to limit issues.</p></li>
 </ul>
 </div>
 </div>
@@ -147,7 +147,7 @@
 <span class="co">#&gt;  [6] "janitor"     "lme4"        "lubridate"   "performance" "readxl"     </span>
 <span class="co">#&gt; [11] "rtweet"      "randomNames" "sjPlot"      "textdata"    "tidygraph"  </span>
 <span class="co">#&gt; [16] "tidylog"     "tidyverse"   "tidytext"</span></pre></div>
-<p><strong>A special note on {tabulizer}:</strong> One of the walkthroughs uses <a href="https://github.com/ropensci/tabulizer">tabulizer</a>, created by ROpenSci to read PDFs. {tabulizer} requires the installation of <a href="https://cran.r-project.org/web/packages/rJava/index.html">RJava</a>, which can be a tricky process on Mac computers. {tabulizer} is not included in <code>mass_install()</code> and we recommend reading through the notes on its Github repo if installing.</p>
+<p><strong>A special note on {tabulizer}:</strong> One of the walkthroughs uses <a href="https://github.com/ropensci/tabulizer">tabulizer</a>, created by ROpenSci to read PDFs. {tabulizer} requires the installation of <a href="https://cran.r-project.org/web/packages/rJava/index.html">RJava</a>, which can be a tricky process. {tabulizer} is not included in <code><a href="https://rdrr.io/pkg/dataedu/man/install_dataedu.html">install_dataedu()</a></code> and we recommend reading through the notes on its Github repo if installing.</p>
 </div>
 <div id="reproducible-code-for-walkthroughs" class="section level3">
 <h3 class="hasAnchor">
@@ -164,26 +164,46 @@
 <span class="co"># only `data(package = "dataedu")` is needed to see this list</span>
 <span class="no">a</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span>(<span class="kw">package</span> <span class="kw">=</span> <span class="st">"dataedu"</span>)
 <span class="no">a</span>$<span class="no">result</span>[ , <span class="fl">3</span>:<span class="fl">4</span>]
-<span class="co">#&gt;       Item                  </span>
-<span class="co">#&gt;  [1,] "course_data"         </span>
-<span class="co">#&gt;  [2,] "course_minutes"      </span>
-<span class="co">#&gt;  [3,] "district_merged_data"</span>
-<span class="co">#&gt;  [4,] "longitudinal_data"   </span>
-<span class="co">#&gt;  [5,] "ma_data_init"        </span>
-<span class="co">#&gt;  [6,] "pre_survey"          </span>
-<span class="co">#&gt;  [7,] "sci_mo_processed"    </span>
-<span class="co">#&gt;  [8,] "sci_mo_with_text"    </span>
-<span class="co">#&gt;  [9,] "tt_tweets"           </span>
-<span class="co">#&gt;       Title                                                          </span>
-<span class="co">#&gt;  [1,] "Walkthrough 01 - Course Data"                                 </span>
-<span class="co">#&gt;  [2,] "Walkthrough 01 - Course Minutes"                              </span>
-<span class="co">#&gt;  [3,] "Walkthrough 03 - Merged Ethnicity and FRPL District Data"     </span>
-<span class="co">#&gt;  [4,] "Walkthrough 04 - Students with Disabilities Longitudinal Data"</span>
-<span class="co">#&gt;  [5,] "Foundational Skills Data"                                     </span>
-<span class="co">#&gt;  [6,] "Walkthrough 01 - Pre-Survey"                                  </span>
-<span class="co">#&gt;  [7,] "Walkthrough 01 - Student Motivation (Processed)"              </span>
-<span class="co">#&gt;  [8,] "Walkthrough 01 - Student Motivation (Processed and With Text)"</span>
-<span class="co">#&gt;  [9,] "Walkthrough 12 - Tweet Data"</span></pre></div>
+<span class="co">#&gt;       Item                                 </span>
+<span class="co">#&gt;  [1,] "all_files"                          </span>
+<span class="co">#&gt;  [2,] "bchildcountandedenvironments2012"   </span>
+<span class="co">#&gt;  [3,] "bchildcountandedenvironments2013"   </span>
+<span class="co">#&gt;  [4,] "bchildcountandedenvironments2014"   </span>
+<span class="co">#&gt;  [5,] "bchildcountandedenvironments2015"   </span>
+<span class="co">#&gt;  [6,] "bchildcountandedenvironments2016"   </span>
+<span class="co">#&gt;  [7,] "bchildcountandedenvironments2017_18"</span>
+<span class="co">#&gt;  [8,] "child_counts"                       </span>
+<span class="co">#&gt;  [9,] "course_data"                        </span>
+<span class="co">#&gt; [10,] "course_minutes"                     </span>
+<span class="co">#&gt; [11,] "district_merged_df"                 </span>
+<span class="co">#&gt; [12,] "district_tidy_df"                   </span>
+<span class="co">#&gt; [13,] "frpl_pdf"                           </span>
+<span class="co">#&gt; [14,] "ma_data_init"                       </span>
+<span class="co">#&gt; [15,] "pre_survey"                         </span>
+<span class="co">#&gt; [16,] "race_pdf"                           </span>
+<span class="co">#&gt; [17,] "sci_mo_processed"                   </span>
+<span class="co">#&gt; [18,] "sci_mo_with_text"                   </span>
+<span class="co">#&gt; [19,] "tt_tweets"                          </span>
+<span class="co">#&gt;       Title                                                                                </span>
+<span class="co">#&gt;  [1,] "Walkthrough 04 - Students with Disabilities Counts - Combined List"                 </span>
+<span class="co">#&gt;  [2,] "Walkthrough 04 - Students with Disabilities Counts - 2012"                          </span>
+<span class="co">#&gt;  [3,] "Walkthrough 04 - Students with Disabilities Counts - 2013"                          </span>
+<span class="co">#&gt;  [4,] "Walkthrough 04 - Students with Disabilities Counts - 2014"                          </span>
+<span class="co">#&gt;  [5,] "Walkthrough 04 - Students with Disabilities Counts - 2015"                          </span>
+<span class="co">#&gt;  [6,] "Walkthrough 04 - Students with Disabilities Counts - 2016"                          </span>
+<span class="co">#&gt;  [7,] "Walkthrough 04 - Students with Disabilities Counts - 2017-18"                       </span>
+<span class="co">#&gt;  [8,] "Walkthrough 04 - Students with Disabilities Longitudinal Data - Combined Data Frame"</span>
+<span class="co">#&gt;  [9,] "Walkthrough 01 - Course Data"                                                       </span>
+<span class="co">#&gt; [10,] "Walkthrough 01 - Course Minutes"                                                    </span>
+<span class="co">#&gt; [11,] "Walkthrough 03 - Merged Ethnicity and FRPL District Data"                           </span>
+<span class="co">#&gt; [12,] "Walkthrough 03 - Merged and Tidy Ethnicity and FRPL District Data"                  </span>
+<span class="co">#&gt; [13,] "Walkthrough 03 - Tabulizer Output from FRPL PDF"                                    </span>
+<span class="co">#&gt; [14,] "Foundational Skills Data"                                                           </span>
+<span class="co">#&gt; [15,] "Walkthrough 01 - Pre-Survey"                                                        </span>
+<span class="co">#&gt; [16,] "Walkthrough 03 - Tabulizer Output from Race PDF"                                    </span>
+<span class="co">#&gt; [17,] "Walkthrough 01 - Student Motivation (Processed)"                                    </span>
+<span class="co">#&gt; [18,] "Walkthrough 01 - Student Motivation (Processed and With Text)"                      </span>
+<span class="co">#&gt; [19,] "Walkthrough 12 - Tweet Data"</span></pre></div>
 </div>
 <div id="using-the-dataedu-theme-and-palette" class="section level3">
 <h3 class="hasAnchor">
@@ -245,7 +265,7 @@
 <li><a href="https://ci.appveyor.com/project/data-edu/dataedu"><img src="https://ci.appveyor.com/api/projects/status/github/data-edu/dataedu?branch=master&amp;svg=true" alt="AppVeyor build status"></a></li>
 <li><a href="https://codecov.io/gh/data-edu/dataedu?branch=master"><img src="https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
 <li><a href="https://cran.r-project.org/"><img src="https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg" alt="minimal R version"></a></li>
-<li><a href="https://github.com/data-edu/dataedu/commits/master"><img src="https://img.shields.io/badge/last%20change-2020--03--29-yellowgreen.svg" alt="Last-changedate"></a></li>
+<li><a href="https://github.com/data-edu/dataedu/commits/master"><img src="https://img.shields.io/badge/last%20change-2020--04--01-yellowgreen.svg" alt="Last-changedate"></a></li>
 </ul>
 </div>
 </div>

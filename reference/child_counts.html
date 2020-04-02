@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Walkthrough 04 - Students with Disabilities Longitudinal Data — longitudinal_data • dataedu</title>
+<title>Walkthrough 04 - Students with Disabilities Longitudinal Data - Combined Data Frame — child_counts • dataedu</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,9 +46,9 @@
 
 
 
-<meta property="og:title" content="Walkthrough 04 - Students with Disabilities Longitudinal Data — longitudinal_data" />
-<meta property="og:description" content="Walkthrough 04 - Datasets containing students with disabilities
-longitudinal enrollment" />
+<meta property="og:title" content="Walkthrough 04 - Students with Disabilities Longitudinal Data - Combined Data Frame — child_counts" />
+<meta property="og:description" content="Walkthrough 04 - Combined data frame containing students with disabilities
+longitudinal enrollment counts from 2012-18" />
 <meta property="og:image" content="/logo.png" />
 
 
@@ -117,17 +117,17 @@ longitudinal enrollment" />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Walkthrough 04 - Students with Disabilities Longitudinal Data</h1>
+    <h1>Walkthrough 04 - Students with Disabilities Longitudinal Data - Combined Data Frame</h1>
     <small class="dont-index">Source: <a href='https://github.com/data-edu/dataedu/blob/master/R/data.R'><code>R/data.R</code></a></small>
-    <div class="hidden name"><code>longitudinal_data.Rd</code></div>
+    <div class="hidden name"><code>child_counts.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Walkthrough 04 - Datasets containing students with disabilities
-longitudinal enrollment</p>
+    <p>Walkthrough 04 - Combined data frame containing students with disabilities
+longitudinal enrollment counts from 2012-18</p>
     </div>
 
-    <pre class="usage"><span class='no'>longitudinal_data</span></pre>
+    <pre class="usage"><span class='no'>child_counts</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
@@ -139,15 +139,15 @@ longitudinal enrollment</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span>(<span class='kw pkg'>dataedu</span><span class='kw ns'>::</span><span class='no'>longitudinal_data</span>)</div><div class='output co'>#&gt; Classes ‘spec_tbl_df’, ‘tbl_df’, ‘tbl’ and 'data.frame':	97387 obs. of  8 variables:
-#&gt;  $ Year                     : num  2012 2012 2012 2012 2012 ...
-#&gt;  $ State Name               : chr  "ALABAMA" "ALABAMA" "ALABAMA" "ALABAMA" ...
-#&gt;  $ SEA Education Environment: chr  "Correctional Facilities" "Home" "Homebound/Hospital" "Inside regular class 40% through 79% of day" ...
-#&gt;  $ SEA Disability Category  : chr  "All Disabilities" "All Disabilities" "All Disabilities" "All Disabilities" ...
-#&gt;  $ Female Age 3 to 5        : chr  "-" "63" "-" "-" ...
-#&gt;  $ Male Age 3 to 5          : chr  "-" "174" "-" "-" ...
-#&gt;  $ Female Age 6 to 21       : chr  "4" "-" "104" "1590" ...
-#&gt;  $ Male Age 6 to 21         : chr  "121" "-" "130" "3076" ...</div></pre>
+<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span>(<span class='kw pkg'>dataedu</span><span class='kw ns'>::</span><span class='no'>child_counts</span>)</div><div class='output co'>#&gt; tibble [97,387 × 8] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+#&gt;  $ Year                     : num [1:97387] 2012 2012 2012 2012 2012 ...
+#&gt;  $ State Name               : chr [1:97387] "ALABAMA" "ALABAMA" "ALABAMA" "ALABAMA" ...
+#&gt;  $ SEA Education Environment: chr [1:97387] "Correctional Facilities" "Home" "Homebound/Hospital" "Inside regular class 40% through 79% of day" ...
+#&gt;  $ SEA Disability Category  : chr [1:97387] "All Disabilities" "All Disabilities" "All Disabilities" "All Disabilities" ...
+#&gt;  $ Female Age 3 to 5        : chr [1:97387] "-" "63" "-" "-" ...
+#&gt;  $ Male Age 3 to 5          : chr [1:97387] "-" "174" "-" "-" ...
+#&gt;  $ Female Age 6 to 21       : chr [1:97387] "4" "-" "104" "1590" ...
+#&gt;  $ Male Age 6 to 21         : chr [1:97387] "121" "-" "130" "3076" ...</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

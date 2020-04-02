@@ -137,123 +137,123 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span>(<span class='kw pkg'>dataedu</span><span class='kw ns'>::</span><span class='no'>tt_tweets</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	4418 obs. of  90 variables:
-#&gt;  $ user_id                : chr  "1159211379963772928" "1073323083170238466" "1073323083170238466" "1073323083170238466" ...
-#&gt;  $ status_id              : chr  "1163154266065735680" "1163247504542130176" "1145043578479108097" "1116864894144528384" ...
-#&gt;  $ created_at             : POSIXct, format: "2019-08-18 18:22:42" "2019-08-19 00:33:11" ...
-#&gt;  $ screen_name            : chr  "MKumarYYC" "cizzart" "cizzart" "cizzart" ...
-#&gt;  $ text                   : chr  "First #TidyTuesday submission! Roman emperors and their rise to power in different eras. Interested to hear abo"| __truncated__ "El saqueo de #Macri \nEl #MERVAL colapsó el lunes 12/08 y fue la segunda mas grande en la historia desde 1950 s"| __truncated__ "Proyeccion dinamica de población por SEXO para la provincia de #Misiones para los años 2010-2040 elaborado a pa"| __truncated__ "#Argentina Número de SMS enviados en el periodo 2013-2018. Los numeros no dejan dudas: el declive del SMS es in"| __truncated__ ...
-#&gt;  $ source                 : chr  "Twitter Web App" "Twitter Web App" "Twitter Web Client" "Twitter Web Client" ...
-#&gt;  $ display_text_width     : num  178 280 196 214 262 227 260 271 117 268 ...
-#&gt;  $ reply_to_status_id     : chr  NA NA NA NA ...
-#&gt;  $ reply_to_user_id       : chr  NA NA NA NA ...
-#&gt;  $ reply_to_screen_name   : chr  NA NA NA NA ...
-#&gt;  $ is_quote               : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
-#&gt;  $ is_retweet             : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
-#&gt;  $ favorite_count         : int  9 1 1 1 0 1 1 1 6 5 ...
-#&gt;  $ retweet_count          : int  3 1 0 1 1 1 1 0 3 2 ...
-#&gt;  $ quote_count            : int  NA NA NA NA NA NA NA NA NA NA ...
-#&gt;  $ reply_count            : int  NA NA NA NA NA NA NA NA NA NA ...
+<span class='fu'><a href='https://rdrr.io/r/utils/str.html'>str</a></span>(<span class='kw pkg'>dataedu</span><span class='kw ns'>::</span><span class='no'>tt_tweets</span>)</div><div class='output co'>#&gt; tibble [4,418 × 90] (S3: tbl_df/tbl/data.frame)
+#&gt;  $ user_id                : chr [1:4418] "1159211379963772928" "1073323083170238466" "1073323083170238466" "1073323083170238466" ...
+#&gt;  $ status_id              : chr [1:4418] "1163154266065735680" "1163247504542130176" "1145043578479108097" "1116864894144528384" ...
+#&gt;  $ created_at             : POSIXct[1:4418], format: "2019-08-18 18:22:42" "2019-08-19 00:33:11" ...
+#&gt;  $ screen_name            : chr [1:4418] "MKumarYYC" "cizzart" "cizzart" "cizzart" ...
+#&gt;  $ text                   : chr [1:4418] "First #TidyTuesday submission! Roman emperors and their rise to power in different eras. Interested to hear abo"| __truncated__ "El saqueo de #Macri \nEl #MERVAL colapsó el lunes 12/08 y fue la segunda mas grande en la historia desde 1950 s"| __truncated__ "Proyeccion dinamica de población por SEXO para la provincia de #Misiones para los años 2010-2040 elaborado a pa"| __truncated__ "#Argentina Número de SMS enviados en el periodo 2013-2018. Los numeros no dejan dudas: el declive del SMS es in"| __truncated__ ...
+#&gt;  $ source                 : chr [1:4418] "Twitter Web App" "Twitter Web App" "Twitter Web Client" "Twitter Web Client" ...
+#&gt;  $ display_text_width     : num [1:4418] 178 280 196 214 262 227 260 271 117 268 ...
+#&gt;  $ reply_to_status_id     : chr [1:4418] NA NA NA NA ...
+#&gt;  $ reply_to_user_id       : chr [1:4418] NA NA NA NA ...
+#&gt;  $ reply_to_screen_name   : chr [1:4418] NA NA NA NA ...
+#&gt;  $ is_quote               : logi [1:4418] FALSE FALSE FALSE FALSE FALSE FALSE ...
+#&gt;  $ is_retweet             : logi [1:4418] FALSE FALSE FALSE FALSE FALSE FALSE ...
+#&gt;  $ favorite_count         : int [1:4418] 9 1 1 1 0 1 1 1 6 5 ...
+#&gt;  $ retweet_count          : int [1:4418] 3 1 0 1 1 1 1 0 3 2 ...
+#&gt;  $ quote_count            : int [1:4418] NA NA NA NA NA NA NA NA NA NA ...
+#&gt;  $ reply_count            : int [1:4418] NA NA NA NA NA NA NA NA NA NA ...
 #&gt;  $ hashtags               :List of 4418
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "DataScience"
-#&gt;   ..$ : chr  "Macri" "MERVAL" "Bloomberg" "rstats" ...
-#&gt;   ..$ : chr  "Misiones" "rstats" "dataviz" "TidyTuesday" ...
-#&gt;   ..$ : chr  "Argentina" "dataviz" "rstats" "TidyTuesday" ...
-#&gt;   ..$ : chr  "Misiones" "tidytuesday" "rstats" "Posadas" ...
-#&gt;   ..$ : chr  "Misiones" "rstats" "TidyTuesday" "dataviz" ...
-#&gt;   ..$ : chr  "Posadas" "rstats" "dataviz" "TidyTuesday" ...
-#&gt;   ..$ : chr  "dataviz" "Misiones" "Argentina" "posadas" ...
-#&gt;   ..$ : chr  "Posadas" "Misiones" "rstats" "TidyTuesday"
-#&gt;   ..$ : chr  "Posadas" "Misiones" "rstats" "dataviz" ...
-#&gt;   ..$ : chr  "Misiones" "rstats" "TidyTuesday"
-#&gt;   ..$ : chr  "Misiones" "Posadas" "TidyTuesday" "dataviz"
-#&gt;   ..$ : chr  "Elecciones2019" "MisionerismoPuro" "MisionesVota" "rstats" ...
-#&gt;   ..$ : chr  "Misiones" "género" "rstats" "TidyTuesday" ...
-#&gt;   ..$ : chr  "Elecciones2019" "Misiones" "TidyTuesday" "dataviz" ...
-#&gt;   ..$ : chr  "Misiones" "Posadas" "dataviz" "TidyTuesday" ...
-#&gt;   ..$ : chr  "Elecciones2019" "Misiones" "CierreDeListas" "Posadas" ...
-#&gt;   ..$ : chr  "Argentina" "TidyTuesday" "r4ds" "economia" ...
-#&gt;   ..$ : chr  "Misiones" "rstats" "Posadas" "r4ds" ...
-#&gt;   ..$ : chr  "Misiones" "voto" "rstats" "dataviz" ...
-#&gt;   ..$ : chr  "Candelaria" "elecciones" "politicos" "Misiones" ...
-#&gt;   ..$ : chr  "Posadas" "Misiones" "rstats" "TidyTuesday" ...
-#&gt;   ..$ : chr  "Misiones" "rstats" "TidyTuesday" "dataviz" ...
-#&gt;   ..$ : chr  "Argentina" "dataviz" "TidyTuesday" "Posadas" ...
-#&gt;   ..$ : chr  "rstats" "Posadas" "r4ds" "TidyTuesday" ...
-#&gt;   ..$ : chr  "pobreza" "Argentina" "rstats" "r4ds" ...
-#&gt;   ..$ : chr  "Misiones" "Posadas" "HacemosCiudad" "SigamosHaciendoJuntos" ...
-#&gt;   ..$ : chr  "MERVAL" "Macri" "rstats" "TidyTuesday" ...
-#&gt;   ..$ : chr  "Elecciones2019" "Misiones" "rstats" "TidyTuesday" ...
-#&gt;   ..$ : chr  "Misiones" "rstats" "dataviz" "TidyTuesday" ...
-#&gt;   ..$ : chr  "Argentina" "Misiones" "Posadas" "rstats" ...
-#&gt;   ..$ : chr  "Argentina" "rstats" "r4ds" "tidyverse" ...
-#&gt;   ..$ : chr  "Argentina" "dataviz" "rstats" "TidyTuesday" ...
-#&gt;   ..$ : chr  "Misiones" "TidyTuesday" "dataviz" "Posadas" ...
-#&gt;   ..$ : chr  "EleccionesArgentina" "EscrutinioDefinitivo" "rstats" "TidyTuesday"
-#&gt;   ..$ : chr  "rstats" "TidyTuesday" "ggplot"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "DataScience"
+#&gt;   ..$ : chr [1:6] "Macri" "MERVAL" "Bloomberg" "rstats" ...
+#&gt;   ..$ : chr [1:6] "Misiones" "rstats" "dataviz" "TidyTuesday" ...
+#&gt;   ..$ : chr [1:6] "Argentina" "dataviz" "rstats" "TidyTuesday" ...
+#&gt;   ..$ : chr [1:6] "Misiones" "tidytuesday" "rstats" "Posadas" ...
+#&gt;   ..$ : chr [1:5] "Misiones" "rstats" "TidyTuesday" "dataviz" ...
+#&gt;   ..$ : chr [1:6] "Posadas" "rstats" "dataviz" "TidyTuesday" ...
+#&gt;   ..$ : chr [1:6] "dataviz" "Misiones" "Argentina" "posadas" ...
+#&gt;   ..$ : chr [1:4] "Posadas" "Misiones" "rstats" "TidyTuesday"
+#&gt;   ..$ : chr [1:8] "Posadas" "Misiones" "rstats" "dataviz" ...
+#&gt;   ..$ : chr [1:3] "Misiones" "rstats" "TidyTuesday"
+#&gt;   ..$ : chr [1:4] "Misiones" "Posadas" "TidyTuesday" "dataviz"
+#&gt;   ..$ : chr [1:7] "Elecciones2019" "MisionerismoPuro" "MisionesVota" "rstats" ...
+#&gt;   ..$ : chr [1:6] "Misiones" "género" "rstats" "TidyTuesday" ...
+#&gt;   ..$ : chr [1:6] "Elecciones2019" "Misiones" "TidyTuesday" "dataviz" ...
+#&gt;   ..$ : chr [1:6] "Misiones" "Posadas" "dataviz" "TidyTuesday" ...
+#&gt;   ..$ : chr [1:7] "Elecciones2019" "Misiones" "CierreDeListas" "Posadas" ...
+#&gt;   ..$ : chr [1:7] "Argentina" "TidyTuesday" "r4ds" "economia" ...
+#&gt;   ..$ : chr [1:5] "Misiones" "rstats" "Posadas" "r4ds" ...
+#&gt;   ..$ : chr [1:6] "Misiones" "voto" "rstats" "dataviz" ...
+#&gt;   ..$ : chr [1:9] "Candelaria" "elecciones" "politicos" "Misiones" ...
+#&gt;   ..$ : chr [1:6] "Posadas" "Misiones" "rstats" "TidyTuesday" ...
+#&gt;   ..$ : chr [1:6] "Misiones" "rstats" "TidyTuesday" "dataviz" ...
+#&gt;   ..$ : chr [1:6] "Argentina" "dataviz" "TidyTuesday" "Posadas" ...
+#&gt;   ..$ : chr [1:6] "rstats" "Posadas" "r4ds" "TidyTuesday" ...
+#&gt;   ..$ : chr [1:7] "pobreza" "Argentina" "rstats" "r4ds" ...
+#&gt;   ..$ : chr [1:7] "Misiones" "Posadas" "HacemosCiudad" "SigamosHaciendoJuntos" ...
+#&gt;   ..$ : chr [1:6] "MERVAL" "Macri" "rstats" "TidyTuesday" ...
+#&gt;   ..$ : chr [1:7] "Elecciones2019" "Misiones" "rstats" "TidyTuesday" ...
+#&gt;   ..$ : chr [1:6] "Misiones" "rstats" "dataviz" "TidyTuesday" ...
+#&gt;   ..$ : chr [1:6] "Argentina" "Misiones" "Posadas" "rstats" ...
+#&gt;   ..$ : chr [1:6] "Argentina" "rstats" "r4ds" "tidyverse" ...
+#&gt;   ..$ : chr [1:6] "Argentina" "dataviz" "rstats" "TidyTuesday" ...
+#&gt;   ..$ : chr [1:6] "Misiones" "TidyTuesday" "dataviz" "Posadas" ...
+#&gt;   ..$ : chr [1:4] "EleccionesArgentina" "EscrutinioDefinitivo" "rstats" "TidyTuesday"
+#&gt;   ..$ : chr [1:3] "rstats" "TidyTuesday" "ggplot"
 #&gt;   ..$ : chr "tidytuesday"
 #&gt;   ..$ : chr "TidyTuesday"
 #&gt;   ..$ : chr "TidyTuesday"
 #&gt;   ..$ : chr "TidyTuesday"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "r4ds" "tidyverse"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "ggplot2"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats"
+#&gt;   ..$ : chr [1:4] "TidyTuesday" "rstats" "r4ds" "tidyverse"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "ggplot2"
+#&gt;   ..$ : chr [1:2] "TidyTuesday" "rstats"
 #&gt;   ..$ : chr "tidytuesday"
 #&gt;   ..$ : chr "TidyTuesday"
 #&gt;   ..$ : chr "TidyTuesday"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "dataviz"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "dataviz"
 #&gt;   ..$ : chr "TidyTuesday"
-#&gt;   ..$ : chr  "TidyTuesday" "Rstats" "dataviz"
-#&gt;   ..$ : chr  "Tidytuesday" "DataViz" "rstats"
-#&gt;   ..$ : chr  "TidyTuesday" "RStats" "dataviz"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "ggplot" "dataviz"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "Rstats" "dataviz"
+#&gt;   ..$ : chr [1:3] "Tidytuesday" "DataViz" "rstats"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "RStats" "dataviz"
+#&gt;   ..$ : chr [1:4] "TidyTuesday" "rstats" "ggplot" "dataviz"
 #&gt;   ..$ : chr "tidytuesday"
-#&gt;   ..$ : chr  "TidyTuesday" "Rstat" "dataviz"
-#&gt;   ..$ : chr  "TidyTuesday" "RStats" "ggplot2"
-#&gt;   ..$ : chr  "TidyTuesday" "dataviz" "Rstats"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "Rstat" "dataviz"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "RStats" "ggplot2"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "dataviz" "Rstats"
 #&gt;   ..$ : chr "Tidytuesday"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "dataviz"
-#&gt;   ..$ : chr  "tidyTuesday" "rstats" "DataViz"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "dataviz"
-#&gt;   ..$ : chr  "TidyTuesday" "Rstats" "DataViz"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "dataviz"
+#&gt;   ..$ : chr [1:3] "tidyTuesday" "rstats" "DataViz"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "dataviz"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "Rstats" "DataViz"
 #&gt;   ..$ : chr "TidyTuesday"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "dataviz"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats"
-#&gt;   ..$ : chr  "decor" "housedecor" "decluttering" "TidyTuesday" ...
-#&gt;   ..$ : chr  "tidytuesday" "rstats" "RFeedbackFriday" "functionfriday"
-#&gt;   ..$ : chr  "rstats" "tidytuesday"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "dataviz"
+#&gt;   ..$ : chr [1:2] "TidyTuesday" "rstats"
+#&gt;   ..$ : chr [1:5] "decor" "housedecor" "decluttering" "TidyTuesday" ...
+#&gt;   ..$ : chr [1:4] "tidytuesday" "rstats" "RFeedbackFriday" "functionfriday"
+#&gt;   ..$ : chr [1:2] "rstats" "tidytuesday"
 #&gt;   ..$ : chr "tidytuesday"
 #&gt;   ..$ : chr "TidyTuesday"
 #&gt;   ..$ : chr "tidytuesday"
 #&gt;   ..$ : chr "TidyTuesday"
-#&gt;   ..$ : chr  "rstudioconf" "tidytuesday"
-#&gt;   ..$ : chr  "rstats" "TidyTuesday" "wine"
+#&gt;   ..$ : chr [1:2] "rstudioconf" "tidytuesday"
+#&gt;   ..$ : chr [1:3] "rstats" "TidyTuesday" "wine"
 #&gt;   ..$ : chr "TidyTuesday"
 #&gt;   ..$ : chr "TidyTuesday"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "r4ds"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "r4ds"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "r4ds"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "r4ds"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "r4ds"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "r4ds"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "r4ds"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "r4ds"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "r4ds"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "r4ds"
 #&gt;   ..$ : chr "TidyTuesday"
-#&gt;   ..$ : chr  "TidyTuesday" "R4DS" "rstats"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "r4ds"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "R4DS" "rstats"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "r4ds"
 #&gt;   ..$ : chr "TidyTuesday"
-#&gt;   ..$ : chr  "TidyTuesday" "dataviz" "r4ds" "rstats"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "r4ds"
-#&gt;   ..$ : chr  "rstats" "R4DS" "TidyTuesday"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "r4ds"
-#&gt;   ..$ : chr  "TidyTuesday" "r4ds" "rstats"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats"
+#&gt;   ..$ : chr [1:4] "TidyTuesday" "dataviz" "r4ds" "rstats"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "r4ds"
+#&gt;   ..$ : chr [1:3] "rstats" "R4DS" "TidyTuesday"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "r4ds"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "r4ds" "rstats"
+#&gt;   ..$ : chr [1:2] "TidyTuesday" "rstats"
 #&gt;   ..$ : chr "TidyTuesday"
 #&gt;   ..$ : chr "TidyTuesday"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "r4ds"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "r4ds"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "r4ds"
-#&gt;   ..$ : chr  "TidyTuesday" "r4ds" "rstats"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "r4ds"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "r4ds"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "r4ds"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "r4ds"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "r4ds" "rstats"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "r4ds"
 #&gt;   ..$ : chr "TidyTuesday"
-#&gt;   ..$ : chr  "TidyTuesday" "rstats" "r4ds"
+#&gt;   ..$ : chr [1:3] "TidyTuesday" "rstats" "r4ds"
 #&gt;   .. [list output truncated]
 #&gt;  $ symbols                :List of 4418
 #&gt;   ..$ : chr NA
@@ -443,7 +443,7 @@
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "bit.ly/2TMiRyW"
 #&gt;   ..$ : chr "github.com/jkaupp/tidytue…"
-#&gt;   ..$ : chr  "jakekaupp.com/post/tidytuesd…" "github.com/jkaupp/tidytue…"
+#&gt;   ..$ : chr [1:2] "jakekaupp.com/post/tidytuesd…" "github.com/jkaupp/tidytue…"
 #&gt;   ..$ : chr "bit.ly/2TMiRyW"
 #&gt;   ..$ : chr "bit.ly/2TMiRyW"
 #&gt;   ..$ : chr NA
@@ -453,7 +453,7 @@
 #&gt;   ..$ : chr "bit.ly/2TMiRyW"
 #&gt;   ..$ : chr "bit.ly/2TMiRyW"
 #&gt;   ..$ : chr "bit.ly/2TMiRyW"
-#&gt;   ..$ : chr  "science.sciencemag.org/content/347/62…" "bit.ly/2TMiRyW"
+#&gt;   ..$ : chr [1:2] "science.sciencemag.org/content/347/62…" "bit.ly/2TMiRyW"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "bit.ly/2TMiRyW"
 #&gt;   .. [list output truncated]
@@ -544,7 +544,7 @@
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "https://t.co/1BhlhPnYyC"
 #&gt;   ..$ : chr "https://t.co/kuJdBQG4pn"
-#&gt;   ..$ : chr  "https://t.co/CgRT1WkxUA" "https://t.co/kuJdBQG4pn"
+#&gt;   ..$ : chr [1:2] "https://t.co/CgRT1WkxUA" "https://t.co/kuJdBQG4pn"
 #&gt;   ..$ : chr "https://t.co/1BhlhPnYyC"
 #&gt;   ..$ : chr "https://t.co/1BhlhPnYyC"
 #&gt;   ..$ : chr NA
@@ -554,7 +554,7 @@
 #&gt;   ..$ : chr "https://t.co/1BhlhPnYyC"
 #&gt;   ..$ : chr "https://t.co/1BhlhPnYyC"
 #&gt;   ..$ : chr "https://t.co/1BhlhPnYyC"
-#&gt;   ..$ : chr  "https://t.co/N0il99wBqy" "https://t.co/1BhlhPnYyC"
+#&gt;   ..$ : chr [1:2] "https://t.co/N0il99wBqy" "https://t.co/1BhlhPnYyC"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "https://t.co/1BhlhPnYyC"
 #&gt;   .. [list output truncated]
@@ -645,7 +645,7 @@
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "http://bit.ly/2TMiRyW"
 #&gt;   ..$ : chr "https://github.com/jkaupp/tidytuesdays"
-#&gt;   ..$ : chr  "http://www.jakekaupp.com/post/tidytuesday-the-sad-story/" "https://github.com/jkaupp/tidytuesdays"
+#&gt;   ..$ : chr [1:2] "http://www.jakekaupp.com/post/tidytuesday-the-sad-story/" "https://github.com/jkaupp/tidytuesdays"
 #&gt;   ..$ : chr "http://bit.ly/2TMiRyW"
 #&gt;   ..$ : chr "http://bit.ly/2TMiRyW"
 #&gt;   ..$ : chr NA
@@ -655,7 +655,7 @@
 #&gt;   ..$ : chr "http://bit.ly/2TMiRyW"
 #&gt;   ..$ : chr "http://bit.ly/2TMiRyW"
 #&gt;   ..$ : chr "http://bit.ly/2TMiRyW"
-#&gt;   ..$ : chr  "https://science.sciencemag.org/content/347/6223/768" "http://bit.ly/2TMiRyW"
+#&gt;   ..$ : chr [1:2] "https://science.sciencemag.org/content/347/6223/768" "http://bit.ly/2TMiRyW"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "http://bit.ly/2TMiRyW"
 #&gt;   .. [list output truncated]
@@ -1074,7 +1074,7 @@
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D9SThyzXUAA0_Pc.png"
 #&gt;   ..$ : chr "http://pbs.twimg.com/tweet_video_thumb/D7eNp-YXYAAgN5F.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D5b3pMaWkAAUaqi.png"
-#&gt;   ..$ : chr  "http://pbs.twimg.com/media/D7I48beW4AA9wHS.png" "http://pbs.twimg.com/media/D7I6Gc7WwAEVR5w.png"
+#&gt;   ..$ : chr [1:2] "http://pbs.twimg.com/media/D7I48beW4AA9wHS.png" "http://pbs.twimg.com/media/D7I6Gc7WwAEVR5w.png"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D7Ts-G-WwAERKYr.png"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D8G8N0FXYAADddX.png"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D5FetuYWAAEluPy.png"
@@ -1088,13 +1088,13 @@
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D5fPkhiWAAEA4TH.png"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D-g7fYkWwAEhUag.png"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D_SCajcWwAInlwI.png"
-#&gt;   ..$ : chr  "http://pbs.twimg.com/media/D5-5eEYW4AEHv3E.jpg" "http://pbs.twimg.com/media/D5-9u0OXkAMt4SX.png"
+#&gt;   ..$ : chr [1:2] "http://pbs.twimg.com/media/D5-5eEYW4AEHv3E.jpg" "http://pbs.twimg.com/media/D5-9u0OXkAMt4SX.png"
 #&gt;   ..$ : chr "http://pbs.twimg.com/tweet_video_thumb/D69KvGqXsAUc-3-.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/tweet_video_thumb/D78g09fXsAADZuo.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/ECRIeZLXYAEjY3c.png"
 #&gt;   ..$ : chr "http://pbs.twimg.com/tweet_video_thumb/D76lAcxXoAAojXX.jpg"
-#&gt;   ..$ : chr  "http://pbs.twimg.com/media/D6Q78deWAAA5X7e.jpg" "http://pbs.twimg.com/media/D6Q7-zcX4AAt78h.png"
-#&gt;   ..$ : chr  "http://pbs.twimg.com/media/D3xGh4VWsAo7P3D.png" "http://pbs.twimg.com/media/D3xGkA8WAAAFHEB.png"
+#&gt;   ..$ : chr [1:2] "http://pbs.twimg.com/media/D6Q78deWAAA5X7e.jpg" "http://pbs.twimg.com/media/D6Q7-zcX4AAt78h.png"
+#&gt;   ..$ : chr [1:2] "http://pbs.twimg.com/media/D3xGh4VWsAo7P3D.png" "http://pbs.twimg.com/media/D3xGkA8WAAAFHEB.png"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/EAN76m-X4AA6mPm.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D4fN3NEUIAAt9sQ.png"
 #&gt;   ..$ : chr "http://pbs.twimg.com/tweet_video_thumb/D8UJfkyU8AEqgSW.jpg"
@@ -1103,13 +1103,13 @@
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/DeWyA5AXcAAbIZW.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/EB74e9aX4AIbRyr.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/tweet_video_thumb/DwWVhcDW0AEoY53.jpg"
-#&gt;   ..$ : chr  "http://pbs.twimg.com/media/DxdV4MjXcAA5zRp.jpg" "http://pbs.twimg.com/media/DxdV4MWWkAAwHPv.jpg"
-#&gt;   ..$ : chr  "http://pbs.twimg.com/media/DcD-EHQXcAA2lW2.png" "http://pbs.twimg.com/media/DcD-HCYWkAE0IsD.jpg"
+#&gt;   ..$ : chr [1:2] "http://pbs.twimg.com/media/DxdV4MjXcAA5zRp.jpg" "http://pbs.twimg.com/media/DxdV4MWWkAAwHPv.jpg"
+#&gt;   ..$ : chr [1:2] "http://pbs.twimg.com/media/DcD-EHQXcAA2lW2.png" "http://pbs.twimg.com/media/DcD-HCYWkAE0IsD.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/EAyPKmKXkAAO1Go.png"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "http://pbs.twimg.com/tweet_video_thumb/EAPLq07WsAAI3-x.jpg"
 #&gt;   ..$ : chr NA
-#&gt;   ..$ : chr  "http://pbs.twimg.com/media/EB338g0W4AAmXZW.png" "http://pbs.twimg.com/media/EB338g2WkAYPe50.jpg"
+#&gt;   ..$ : chr [1:2] "http://pbs.twimg.com/media/EB338g0W4AAmXZW.png" "http://pbs.twimg.com/media/EB338g2WkAYPe50.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D36rQDxWAAIWo_D.png"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/Dzz4nvGXQAc3hGU.jpg"
@@ -1118,16 +1118,16 @@
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D_x29PsWkAAFJJb.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D4ZZA8WWAAAZ7_w.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/DzVBxOUVAAEXe6Y.png"
-#&gt;   ..$ : chr  "http://pbs.twimg.com/media/DyxAvsMUwAAk4pa.jpg" "http://pbs.twimg.com/media/DyxBCiLUcAEFnsP.jpg"
+#&gt;   ..$ : chr [1:2] "http://pbs.twimg.com/media/DyxAvsMUwAAk4pa.jpg" "http://pbs.twimg.com/media/DyxBCiLUcAEFnsP.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/EA7it89XoAEKk4N.jpg"
-#&gt;   ..$ : chr  "http://pbs.twimg.com/media/D3WuhI2W0AECN3j.png" "http://pbs.twimg.com/media/D3WuhI1WkAEDL1m.png"
+#&gt;   ..$ : chr [1:2] "http://pbs.twimg.com/media/D3WuhI2W0AECN3j.png" "http://pbs.twimg.com/media/D3WuhI1WkAEDL1m.png"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/EAc8hUdXkAALHJN.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D1gIDTqX4AAHiLe.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D2Eau7DWsAADzQm.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D44dglnWwAAmCUA.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D_TpYgHWwAASkeV.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/EBaXVc3XYAMxoeS.jpg"
-#&gt;   ..$ : chr  "http://pbs.twimg.com/media/DzF65vEVAAE9D2Q.jpg" "http://pbs.twimg.com/media/DzF65tbUwAEIPce.jpg"
+#&gt;   ..$ : chr [1:2] "http://pbs.twimg.com/media/DzF65vEVAAE9D2Q.jpg" "http://pbs.twimg.com/media/DzF65tbUwAEIPce.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/EBznSNyXYAAoOQg.jpg"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
@@ -1145,7 +1145,7 @@
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/EB8IPOdXYAAjOd7.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D3U5DtIX4AM5Pi2.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/D6EpFtSW4AQ-xsE.jpg"
-#&gt;   ..$ : chr  "http://pbs.twimg.com/media/DdKeNkIV0AAnNYi.jpg" "http://pbs.twimg.com/media/DdKeO2pV4AAIuY1.jpg"
+#&gt;   ..$ : chr [1:2] "http://pbs.twimg.com/media/DdKeNkIV0AAnNYi.jpg" "http://pbs.twimg.com/media/DdKeO2pV4AAIuY1.jpg"
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/EByUw4RXYAIF2qK.jpg"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "http://pbs.twimg.com/media/DxAEVpaVAAAsuQW.jpg"
@@ -1175,7 +1175,7 @@
 #&gt;   ..$ : chr "https://t.co/yZkWgO7csw"
 #&gt;   ..$ : chr "https://t.co/nN0zWmG0Lx"
 #&gt;   ..$ : chr "https://t.co/5jM3FpZDie"
-#&gt;   ..$ : chr  "https://t.co/J5R75p7Dxw" "https://t.co/J5R75p7Dxw"
+#&gt;   ..$ : chr [1:2] "https://t.co/J5R75p7Dxw" "https://t.co/J5R75p7Dxw"
 #&gt;   ..$ : chr "https://t.co/POsaubL7MI"
 #&gt;   ..$ : chr "https://t.co/U8FYIJw94K"
 #&gt;   ..$ : chr "https://t.co/zSqLlFB8s2"
@@ -1189,13 +1189,13 @@
 #&gt;   ..$ : chr "https://t.co/62Xvule47Y"
 #&gt;   ..$ : chr "https://t.co/6pXN27Y4h2"
 #&gt;   ..$ : chr "https://t.co/rwR2EFXV7L"
-#&gt;   ..$ : chr  "https://t.co/bKkuNyGS6N" "https://t.co/bKkuNyGS6N"
+#&gt;   ..$ : chr [1:2] "https://t.co/bKkuNyGS6N" "https://t.co/bKkuNyGS6N"
 #&gt;   ..$ : chr "https://t.co/vqICJrmaza"
 #&gt;   ..$ : chr "https://t.co/F2iTmtXWd2"
 #&gt;   ..$ : chr "https://t.co/8Aka4jfRsN"
 #&gt;   ..$ : chr "https://t.co/zPdYu7VN5b"
-#&gt;   ..$ : chr  "https://t.co/hSN91kPk58" "https://t.co/hSN91kPk58"
-#&gt;   ..$ : chr  "https://t.co/LG6TpHtA1E" "https://t.co/LG6TpHtA1E"
+#&gt;   ..$ : chr [1:2] "https://t.co/hSN91kPk58" "https://t.co/hSN91kPk58"
+#&gt;   ..$ : chr [1:2] "https://t.co/LG6TpHtA1E" "https://t.co/LG6TpHtA1E"
 #&gt;   ..$ : chr "https://t.co/aAlodFghxL"
 #&gt;   ..$ : chr "https://t.co/w4UCbzAqdU"
 #&gt;   ..$ : chr "https://t.co/dmYyS3T89w"
@@ -1204,13 +1204,13 @@
 #&gt;   ..$ : chr "https://t.co/AFO3uPFDCA"
 #&gt;   ..$ : chr "https://t.co/KY5FUq5dxV"
 #&gt;   ..$ : chr "https://t.co/0k432OqZv2"
-#&gt;   ..$ : chr  "https://t.co/hXIYemBZhj" "https://t.co/hXIYemBZhj"
-#&gt;   ..$ : chr  "https://t.co/JB0GXmND2t" "https://t.co/JB0GXmND2t"
+#&gt;   ..$ : chr [1:2] "https://t.co/hXIYemBZhj" "https://t.co/hXIYemBZhj"
+#&gt;   ..$ : chr [1:2] "https://t.co/JB0GXmND2t" "https://t.co/JB0GXmND2t"
 #&gt;   ..$ : chr "https://t.co/BtGU00e2DL"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "https://t.co/PyCOoBWT8r"
 #&gt;   ..$ : chr NA
-#&gt;   ..$ : chr  "https://t.co/oeMs0CPToY" "https://t.co/oeMs0CPToY"
+#&gt;   ..$ : chr [1:2] "https://t.co/oeMs0CPToY" "https://t.co/oeMs0CPToY"
 #&gt;   ..$ : chr "https://t.co/NjT5iK41jS"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "https://t.co/PpfALYngGa"
@@ -1219,16 +1219,16 @@
 #&gt;   ..$ : chr "https://t.co/uR0bV0XjEu"
 #&gt;   ..$ : chr "https://t.co/ez75XY6hA8"
 #&gt;   ..$ : chr "https://t.co/FukbDKPwXf"
-#&gt;   ..$ : chr  "https://t.co/W1mnkB84Jg" "https://t.co/W1mnkB84Jg"
+#&gt;   ..$ : chr [1:2] "https://t.co/W1mnkB84Jg" "https://t.co/W1mnkB84Jg"
 #&gt;   ..$ : chr "https://t.co/WkMRsHYjA1"
-#&gt;   ..$ : chr  "https://t.co/3WHhFWCjcj" "https://t.co/3WHhFWCjcj"
+#&gt;   ..$ : chr [1:2] "https://t.co/3WHhFWCjcj" "https://t.co/3WHhFWCjcj"
 #&gt;   ..$ : chr "https://t.co/pKaECW4gzs"
 #&gt;   ..$ : chr "https://t.co/bNAdHKiHMm"
 #&gt;   ..$ : chr "https://t.co/aWZbJpVn4p"
 #&gt;   ..$ : chr "https://t.co/B6yLiJ7xKo"
 #&gt;   ..$ : chr "https://t.co/zL7SpXpu9t"
 #&gt;   ..$ : chr "https://t.co/hB4Kg9RiTq"
-#&gt;   ..$ : chr  "https://t.co/DGAFPxshYo" "https://t.co/DGAFPxshYo"
+#&gt;   ..$ : chr [1:2] "https://t.co/DGAFPxshYo" "https://t.co/DGAFPxshYo"
 #&gt;   ..$ : chr "https://t.co/Sgu57cmeFg"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
@@ -1246,7 +1246,7 @@
 #&gt;   ..$ : chr "https://t.co/tjeInoq1AO"
 #&gt;   ..$ : chr "https://t.co/zUlJXI2Epo"
 #&gt;   ..$ : chr "https://t.co/KzowDvGtBx"
-#&gt;   ..$ : chr  "https://t.co/86Hbx2guLj" "https://t.co/86Hbx2guLj"
+#&gt;   ..$ : chr [1:2] "https://t.co/86Hbx2guLj" "https://t.co/86Hbx2guLj"
 #&gt;   ..$ : chr "https://t.co/sYnmKuD99k"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "https://t.co/QykAPBgKE3"
@@ -1276,7 +1276,7 @@
 #&gt;   ..$ : chr "https://twitter.com/cizzart/status/1140702108649426945/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/cizzart/status/1132529994255745024/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/cizzart/status/1123358546874261504/photo/1"
-#&gt;   ..$ : chr  "https://twitter.com/cizzart/status/1131031073507467264/photo/1" "https://twitter.com/cizzart/status/1131031073507467264/photo/1"
+#&gt;   ..$ : chr [1:2] "https://twitter.com/cizzart/status/1131031073507467264/photo/1" "https://twitter.com/cizzart/status/1131031073507467264/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/cizzart/status/1131793343304929280/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/cizzart/status/1135397698427904005/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/cizzart/status/1121785566432059393/photo/1"
@@ -1290,13 +1290,13 @@
 #&gt;   ..$ : chr "https://twitter.com/cizzart/status/1123596838538547201/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/cizzart/status/1146232742109229059/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/cizzart/status/1149688272513392640/photo/1"
-#&gt;   ..$ : chr  "https://twitter.com/cizzart/status/1125829312895172609/photo/1" "https://twitter.com/cizzart/status/1125829312895172609/photo/1"
+#&gt;   ..$ : chr [1:2] "https://twitter.com/cizzart/status/1125829312895172609/photo/1" "https://twitter.com/cizzart/status/1125829312895172609/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/cizzart/status/1130206810349162498/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/cizzart/status/1134664174674612225/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/cizzart/status/1163134302575570945/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/cizzart/status/1134528497525936128/photo/1"
-#&gt;   ..$ : chr  "https://twitter.com/cizzart/status/1127094197562019841/photo/1" "https://twitter.com/cizzart/status/1127094197562019841/photo/1"
-#&gt;   ..$ : chr  "https://twitter.com/cizzart/status/1115846484270952450/photo/1" "https://twitter.com/cizzart/status/1115846484270952450/photo/1"
+#&gt;   ..$ : chr [1:2] "https://twitter.com/cizzart/status/1127094197562019841/photo/1" "https://twitter.com/cizzart/status/1127094197562019841/photo/1"
+#&gt;   ..$ : chr [1:2] "https://twitter.com/cizzart/status/1115846484270952450/photo/1" "https://twitter.com/cizzart/status/1115846484270952450/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/cizzart/status/1153902330531725314/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/cizzart/status/1119091254682210305/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/cizzart/status/1136326837544595459/photo/1"
@@ -1305,13 +1305,13 @@
 #&gt;   ..$ : chr "https://twitter.com/davidmasp/status/1001412196247666688/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/davidmasp/status/1161638973808287746/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/davidmasp/status/1082436223791259659/photo/1"
-#&gt;   ..$ : chr  "https://twitter.com/davidmasp/status/1087432261069430785/photo/1" "https://twitter.com/davidmasp/status/1087432261069430785/photo/1"
-#&gt;   ..$ : chr  "https://twitter.com/davidmasp/status/991073965899644928/photo/1" "https://twitter.com/davidmasp/status/991073965899644928/photo/1"
+#&gt;   ..$ : chr [1:2] "https://twitter.com/davidmasp/status/1087432261069430785/photo/1" "https://twitter.com/davidmasp/status/1087432261069430785/photo/1"
+#&gt;   ..$ : chr [1:2] "https://twitter.com/davidmasp/status/991073965899644928/photo/1" "https://twitter.com/davidmasp/status/991073965899644928/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/datawookie/status/1156456637588283392/photo/1"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "https://twitter.com/datawookie/status/1153990122255343617/photo/1"
 #&gt;   ..$ : chr NA
-#&gt;   ..$ : chr  "https://twitter.com/jvaghela4/status/1161356902498013185/photo/1" "https://twitter.com/jvaghela4/status/1161356902498013185/photo/1"
+#&gt;   ..$ : chr [1:2] "https://twitter.com/jvaghela4/status/1161356902498013185/photo/1" "https://twitter.com/jvaghela4/status/1161356902498013185/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/FournierJohanie/status/1116518351147360257/photo/1"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "https://twitter.com/FournierJohanie/status/1098025772554612738/photo/1"
@@ -1320,16 +1320,16 @@
 #&gt;   ..$ : chr "https://twitter.com/FournierJohanie/status/1151926405162291200/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/FournierJohanie/status/1118679777232158722/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/FournierJohanie/status/1095854400004853765/photo/1"
-#&gt;   ..$ : chr  "https://twitter.com/FournierJohanie/status/1093320787770200065/photo/1" "https://twitter.com/FournierJohanie/status/1093320787770200065/photo/1"
+#&gt;   ..$ : chr [1:2] "https://twitter.com/FournierJohanie/status/1093320787770200065/photo/1" "https://twitter.com/FournierJohanie/status/1093320787770200065/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/FournierJohanie/status/1157111441419395074/photo/1"
-#&gt;   ..$ : chr  "https://twitter.com/FournierJohanie/status/1113988718338215937/photo/1" "https://twitter.com/FournierJohanie/status/1113988718338215937/photo/1"
+#&gt;   ..$ : chr [1:2] "https://twitter.com/FournierJohanie/status/1113988718338215937/photo/1" "https://twitter.com/FournierJohanie/status/1113988718338215937/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/FournierJohanie/status/1154958378764046336/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/FournierJohanie/status/1105642831413239808/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/FournierJohanie/status/1108196618464047105/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/FournierJohanie/status/1120865858111385600/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/FournierJohanie/status/1149800610004426752/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/FournierJohanie/status/1159280417813532673/photo/1"
-#&gt;   ..$ : chr  "https://twitter.com/FournierJohanie/status/1094791392797380608/photo/1" "https://twitter.com/FournierJohanie/status/1094791392797380608/photo/1"
+#&gt;   ..$ : chr [1:2] "https://twitter.com/FournierJohanie/status/1094791392797380608/photo/1" "https://twitter.com/FournierJohanie/status/1094791392797380608/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/debrafranke7/status/1161057113147396096/photo/1"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
@@ -1347,7 +1347,7 @@
 #&gt;   ..$ : chr "https://twitter.com/jakekaupp/status/1161656332686102529/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/jakekaupp/status/1113859250885996546/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/jakekaupp/status/1126226854984257536/photo/1"
-#&gt;   ..$ : chr  "https://twitter.com/jakekaupp/status/996032676812374016/photo/1" "https://twitter.com/jakekaupp/status/996032676812374016/photo/1"
+#&gt;   ..$ : chr [1:2] "https://twitter.com/jakekaupp/status/996032676812374016/photo/1" "https://twitter.com/jakekaupp/status/996032676812374016/photo/1"
 #&gt;   ..$ : chr "https://twitter.com/jakekaupp/status/1160966530538061824/photo/1"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "https://twitter.com/jakekaupp/status/1085372365062787073/photo/1"
@@ -1366,19 +1366,19 @@
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "https://twitter.com/jakekaupp/status/1138861812978520064/photo/1"
 #&gt;   .. [list output truncated]
-#&gt;  $ ext_media_type         : chr  NA NA NA NA ...
+#&gt;  $ ext_media_type         : chr [1:4418] NA NA NA NA ...
 #&gt;  $ mentions_user_id       :List of 4418
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "2792557771"
 #&gt;   ..$ : chr "4471336875"
 #&gt;   ..$ : chr "2249583145"
-#&gt;   ..$ : chr  "856530775" "1550707568"
+#&gt;   ..$ : chr [1:2] "856530775" "1550707568"
 #&gt;   ..$ : chr "4471336875"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
-#&gt;   ..$ : chr  "856530775" "1550707568"
+#&gt;   ..$ : chr [1:2] "856530775" "1550707568"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
@@ -1397,13 +1397,13 @@
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "1105263752553869312"
 #&gt;   ..$ : chr NA
-#&gt;   ..$ : chr  "1550707568" "856530775"
+#&gt;   ..$ : chr [1:2] "1550707568" "856530775"
 #&gt;   ..$ : chr "4471336875"
 #&gt;   ..$ : chr "235261861"
 #&gt;   ..$ : chr "4471336875"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "1105263752553869312"
-#&gt;   ..$ : chr  "3092381638" "46245868"
+#&gt;   ..$ : chr [1:2] "3092381638" "46245868"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "611597719"
@@ -1412,8 +1412,8 @@
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
-#&gt;   ..$ : chr  "3230388598" "267256091" "933014576647548928"
-#&gt;   ..$ : chr  "1241814552" "936191454"
+#&gt;   ..$ : chr [1:3] "3230388598" "267256091" "933014576647548928"
+#&gt;   ..$ : chr [1:2] "1241814552" "936191454"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "16902857"
 #&gt;   ..$ : chr NA
@@ -1423,7 +1423,7 @@
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "1241814552"
-#&gt;   ..$ : chr  "4481853575" "379406678" "3092381638"
+#&gt;   ..$ : chr [1:3] "4481853575" "379406678" "3092381638"
 #&gt;   ..$ : chr "970554068899790848"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
@@ -1433,16 +1433,16 @@
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "1241814552"
 #&gt;   ..$ : chr "2949131574"
-#&gt;   ..$ : chr  "983470194982088704" "880766885544902656"
+#&gt;   ..$ : chr [1:2] "983470194982088704" "880766885544902656"
 #&gt;   ..$ : chr "983470194982088704"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "543981616"
-#&gt;   ..$ : chr  "1719561181" "983470194982088704" "744431959" "2440258777" ...
-#&gt;   ..$ : chr  "24228154" "46245868" "1241814552" "235261861" ...
-#&gt;   ..$ : chr  "46245868" "983470194982088704"
+#&gt;   ..$ : chr [1:5] "1719561181" "983470194982088704" "744431959" "2440258777" ...
+#&gt;   ..$ : chr [1:5] "24228154" "46245868" "1241814552" "235261861" ...
+#&gt;   ..$ : chr [1:2] "46245868" "983470194982088704"
 #&gt;   ..$ : chr NA
-#&gt;   ..$ : chr  "752982253576318976" "3092381638"
-#&gt;   ..$ : chr  "2440258777" "983470194982088704"
+#&gt;   ..$ : chr [1:2] "752982253576318976" "3092381638"
+#&gt;   ..$ : chr [1:2] "2440258777" "983470194982088704"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
@@ -1461,11 +1461,11 @@
 #&gt;   ..$ : chr "1241814552"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "5988062"
-#&gt;   ..$ : chr  "396746547" "29306310"
+#&gt;   ..$ : chr [1:2] "396746547" "29306310"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "983470194982088704"
 #&gt;   ..$ : chr NA
-#&gt;   ..$ : chr  "495425905" "69133574"
+#&gt;   ..$ : chr [1:2] "495425905" "69133574"
 #&gt;   ..$ : chr NA
 #&gt;   .. [list output truncated]
 #&gt;  $ mentions_screen_name   :List of 4418
@@ -1473,13 +1473,13 @@
 #&gt;   ..$ : chr "eldestapeweb"
 #&gt;   ..$ : chr "INDECArgentina"
 #&gt;   ..$ : chr "ENACOMArgentina"
-#&gt;   ..$ : chr  "tribunalelecmns" "CamaraElectoral"
+#&gt;   ..$ : chr [1:2] "tribunalelecmns" "CamaraElectoral"
 #&gt;   ..$ : chr "INDECArgentina"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
-#&gt;   ..$ : chr  "tribunalelecmns" "CamaraElectoral"
+#&gt;   ..$ : chr [1:2] "tribunalelecmns" "CamaraElectoral"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
@@ -1498,13 +1498,13 @@
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "R4DS_es"
 #&gt;   ..$ : chr NA
-#&gt;   ..$ : chr  "CamaraElectoral" "tribunalelecmns"
+#&gt;   ..$ : chr [1:2] "CamaraElectoral" "tribunalelecmns"
 #&gt;   ..$ : chr "INDECArgentina"
 #&gt;   ..$ : chr "rstudio"
 #&gt;   ..$ : chr "INDECArgentina"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "R4DS_es"
-#&gt;   ..$ : chr  "CedScherer" "drob"
+#&gt;   ..$ : chr [1:2] "CedScherer" "drob"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "thomasp85"
@@ -1513,8 +1513,8 @@
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
-#&gt;   ..$ : chr  "dataandme" "_inundata" "mybinderteam"
-#&gt;   ..$ : chr  "thomas_mock" "benalexkeen"
+#&gt;   ..$ : chr [1:3] "dataandme" "_inundata" "mybinderteam"
+#&gt;   ..$ : chr [1:2] "thomas_mock" "benalexkeen"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "kernpanik"
 #&gt;   ..$ : chr NA
@@ -1524,7 +1524,7 @@
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "thomas_mock"
-#&gt;   ..$ : chr  "LarissaKostiw" "tanya_shapiro" "CedScherer"
+#&gt;   ..$ : chr [1:3] "LarissaKostiw" "tanya_shapiro" "CedScherer"
 #&gt;   ..$ : chr "DaveBloom11"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
@@ -1534,16 +1534,16 @@
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "thomas_mock"
 #&gt;   ..$ : chr "MarieKondo"
-#&gt;   ..$ : chr  "R4DScommunity" "UseR2019_Conf"
+#&gt;   ..$ : chr [1:2] "R4DScommunity" "UseR2019_Conf"
 #&gt;   ..$ : chr "R4DScommunity"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "dgkeyes"
-#&gt;   ..$ : chr  "Kuprinasha" "R4DScommunity" "Giants_Collide" "kierisi" ...
-#&gt;   ..$ : chr  "hspter" "drob" "thomas_mock" "rstudio" ...
-#&gt;   ..$ : chr  "drob" "R4DScommunity"
+#&gt;   ..$ : chr [1:5] "Kuprinasha" "R4DScommunity" "Giants_Collide" "kierisi" ...
+#&gt;   ..$ : chr [1:5] "hspter" "drob" "thomas_mock" "rstudio" ...
+#&gt;   ..$ : chr [1:2] "drob" "R4DScommunity"
 #&gt;   ..$ : chr NA
-#&gt;   ..$ : chr  "Physacourses" "CedScherer"
-#&gt;   ..$ : chr  "kierisi" "R4DScommunity"
+#&gt;   ..$ : chr [1:2] "Physacourses" "CedScherer"
+#&gt;   ..$ : chr [1:2] "kierisi" "R4DScommunity"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr NA
@@ -1562,372 +1562,372 @@
 #&gt;   ..$ : chr "thomas_mock"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "TheEconomist"
-#&gt;   ..$ : chr  "grssnbchr" "angelozehr"
+#&gt;   ..$ : chr [1:2] "grssnbchr" "angelozehr"
 #&gt;   ..$ : chr NA
 #&gt;   ..$ : chr "R4DScommunity"
 #&gt;   ..$ : chr NA
-#&gt;   ..$ : chr  "CieraReports" "hadleywickham"
+#&gt;   ..$ : chr [1:2] "CieraReports" "hadleywickham"
 #&gt;   ..$ : chr NA
 #&gt;   .. [list output truncated]
-#&gt;  $ lang                   : chr  "en" "es" "es" "es" ...
-#&gt;  $ quoted_status_id       : chr  NA NA NA NA ...
-#&gt;  $ quoted_text            : chr  NA NA NA NA ...
-#&gt;  $ quoted_created_at      : POSIXct, format: NA NA ...
-#&gt;  $ quoted_source          : chr  NA NA NA NA ...
-#&gt;  $ quoted_favorite_count  : int  NA NA NA NA NA NA NA NA NA NA ...
-#&gt;  $ quoted_retweet_count   : int  NA NA NA NA NA NA NA NA NA NA ...
-#&gt;  $ quoted_user_id         : chr  NA NA NA NA ...
-#&gt;  $ quoted_screen_name     : chr  NA NA NA NA ...
-#&gt;  $ quoted_name            : chr  NA NA NA NA ...
-#&gt;  $ quoted_followers_count : int  NA NA NA NA NA NA NA NA NA NA ...
-#&gt;  $ quoted_friends_count   : int  NA NA NA NA NA NA NA NA NA NA ...
-#&gt;  $ quoted_statuses_count  : int  NA NA NA NA NA NA NA NA NA NA ...
-#&gt;  $ quoted_location        : chr  NA NA NA NA ...
-#&gt;  $ quoted_description     : chr  NA NA NA NA ...
-#&gt;  $ quoted_verified        : logi  NA NA NA NA NA NA ...
-#&gt;  $ retweet_status_id      : chr  NA NA NA NA ...
-#&gt;  $ retweet_text           : chr  NA NA NA NA ...
-#&gt;  $ retweet_created_at     : POSIXct, format: NA NA ...
-#&gt;  $ retweet_source         : chr  NA NA NA NA ...
-#&gt;  $ retweet_favorite_count : int  NA NA NA NA NA NA NA NA NA NA ...
-#&gt;  $ retweet_retweet_count  : int  NA NA NA NA NA NA NA NA NA NA ...
-#&gt;  $ retweet_user_id        : chr  NA NA NA NA ...
-#&gt;  $ retweet_screen_name    : chr  NA NA NA NA ...
-#&gt;  $ retweet_name           : chr  NA NA NA NA ...
-#&gt;  $ retweet_followers_count: int  NA NA NA NA NA NA NA NA NA NA ...
-#&gt;  $ retweet_friends_count  : int  NA NA NA NA NA NA NA NA NA NA ...
-#&gt;  $ retweet_statuses_count : int  NA NA NA NA NA NA NA NA NA NA ...
-#&gt;  $ retweet_location       : chr  NA NA NA NA ...
-#&gt;  $ retweet_description    : chr  NA NA NA NA ...
-#&gt;  $ retweet_verified       : logi  NA NA NA NA NA NA ...
-#&gt;  $ place_url              : chr  NA NA NA NA ...
-#&gt;  $ place_name             : chr  NA NA NA NA ...
-#&gt;  $ place_full_name        : chr  NA NA NA NA ...
-#&gt;  $ place_type             : chr  NA NA NA NA ...
-#&gt;  $ country                : chr  NA NA NA NA ...
-#&gt;  $ country_code           : chr  NA NA NA NA ...
+#&gt;  $ lang                   : chr [1:4418] "en" "es" "es" "es" ...
+#&gt;  $ quoted_status_id       : chr [1:4418] NA NA NA NA ...
+#&gt;  $ quoted_text            : chr [1:4418] NA NA NA NA ...
+#&gt;  $ quoted_created_at      : POSIXct[1:4418], format: NA NA ...
+#&gt;  $ quoted_source          : chr [1:4418] NA NA NA NA ...
+#&gt;  $ quoted_favorite_count  : int [1:4418] NA NA NA NA NA NA NA NA NA NA ...
+#&gt;  $ quoted_retweet_count   : int [1:4418] NA NA NA NA NA NA NA NA NA NA ...
+#&gt;  $ quoted_user_id         : chr [1:4418] NA NA NA NA ...
+#&gt;  $ quoted_screen_name     : chr [1:4418] NA NA NA NA ...
+#&gt;  $ quoted_name            : chr [1:4418] NA NA NA NA ...
+#&gt;  $ quoted_followers_count : int [1:4418] NA NA NA NA NA NA NA NA NA NA ...
+#&gt;  $ quoted_friends_count   : int [1:4418] NA NA NA NA NA NA NA NA NA NA ...
+#&gt;  $ quoted_statuses_count  : int [1:4418] NA NA NA NA NA NA NA NA NA NA ...
+#&gt;  $ quoted_location        : chr [1:4418] NA NA NA NA ...
+#&gt;  $ quoted_description     : chr [1:4418] NA NA NA NA ...
+#&gt;  $ quoted_verified        : logi [1:4418] NA NA NA NA NA NA ...
+#&gt;  $ retweet_status_id      : chr [1:4418] NA NA NA NA ...
+#&gt;  $ retweet_text           : chr [1:4418] NA NA NA NA ...
+#&gt;  $ retweet_created_at     : POSIXct[1:4418], format: NA NA ...
+#&gt;  $ retweet_source         : chr [1:4418] NA NA NA NA ...
+#&gt;  $ retweet_favorite_count : int [1:4418] NA NA NA NA NA NA NA NA NA NA ...
+#&gt;  $ retweet_retweet_count  : int [1:4418] NA NA NA NA NA NA NA NA NA NA ...
+#&gt;  $ retweet_user_id        : chr [1:4418] NA NA NA NA ...
+#&gt;  $ retweet_screen_name    : chr [1:4418] NA NA NA NA ...
+#&gt;  $ retweet_name           : chr [1:4418] NA NA NA NA ...
+#&gt;  $ retweet_followers_count: int [1:4418] NA NA NA NA NA NA NA NA NA NA ...
+#&gt;  $ retweet_friends_count  : int [1:4418] NA NA NA NA NA NA NA NA NA NA ...
+#&gt;  $ retweet_statuses_count : int [1:4418] NA NA NA NA NA NA NA NA NA NA ...
+#&gt;  $ retweet_location       : chr [1:4418] NA NA NA NA ...
+#&gt;  $ retweet_description    : chr [1:4418] NA NA NA NA ...
+#&gt;  $ retweet_verified       : logi [1:4418] NA NA NA NA NA NA ...
+#&gt;  $ place_url              : chr [1:4418] NA NA NA NA ...
+#&gt;  $ place_name             : chr [1:4418] NA NA NA NA ...
+#&gt;  $ place_full_name        : chr [1:4418] NA NA NA NA ...
+#&gt;  $ place_type             : chr [1:4418] NA NA NA NA ...
+#&gt;  $ country                : chr [1:4418] NA NA NA NA ...
+#&gt;  $ country_code           : chr [1:4418] NA NA NA NA ...
 #&gt;  $ geo_coords             :List of 4418
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
 #&gt;   .. [list output truncated]
 #&gt;  $ coords_coords          :List of 4418
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
-#&gt;   ..$ : num  NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
+#&gt;   ..$ : num [1:2] NA NA
 #&gt;   .. [list output truncated]
 #&gt;  $ bbox_coords            :List of 4418
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
-#&gt;   ..$ : num  NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
+#&gt;   ..$ : num [1:8] NA NA NA NA NA NA NA NA
 #&gt;   .. [list output truncated]
-#&gt;  $ status_url             : chr  "https://twitter.com/MKumarYYC/status/1163154266065735680" "https://twitter.com/cizzart/status/1163247504542130176" "https://twitter.com/cizzart/status/1145043578479108097" "https://twitter.com/cizzart/status/1116864894144528384" ...
-#&gt;  $ name                   : chr  "Mehul Kumar" "César" "César" "César" ...
-#&gt;  $ location               : chr  "Calgary, AB" "Posadas, Argentina" "Posadas, Argentina" "Posadas, Argentina" ...
-#&gt;  $ description            : chr  "Dabbling in data devices | #rstats/#datascience| #internationaldevelopment| mountain biker | 🍁 MSc. candidate |"| __truncated__ "Ciencia de Datos y Estadistica #rstats/ @rstudio #DataScience #Statistics. (R for Political Data Science/ cesar"| __truncated__ "Ciencia de Datos y Estadistica #rstats/ @rstudio #DataScience #Statistics. (R for Political Data Science/ cesar"| __truncated__ "Ciencia de Datos y Estadistica #rstats/ @rstudio #DataScience #Statistics. (R for Political Data Science/ cesar"| __truncated__ ...
-#&gt;  $ url                    : chr  NA NA NA NA ...
-#&gt;  $ protected              : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
-#&gt;  $ followers_count        : int  10 57 57 57 57 57 57 57 57 57 ...
-#&gt;  $ friends_count          : int  21 120 120 120 120 120 120 120 120 120 ...
-#&gt;  $ listed_count           : int  0 0 0 0 0 0 0 0 0 0 ...
-#&gt;  $ statuses_count         : int  18 152 152 152 152 152 152 152 152 152 ...
-#&gt;  $ favourites_count       : int  180 977 977 977 977 977 977 977 977 977 ...
-#&gt;  $ account_created_at     : POSIXct, format: "2019-08-07 21:15:04" "2018-12-13 21:05:39" ...
-#&gt;  $ verified               : logi  FALSE FALSE FALSE FALSE FALSE FALSE ...
-#&gt;  $ profile_url            : chr  NA NA NA NA ...
-#&gt;  $ profile_expanded_url   : chr  NA NA NA NA ...
-#&gt;  $ account_lang           : logi  NA NA NA NA NA NA ...
-#&gt;  $ profile_banner_url     : chr  "https://pbs.twimg.com/profile_banners/1159211379963772928/1566153017" "https://pbs.twimg.com/profile_banners/1073323083170238466/1551337674" "https://pbs.twimg.com/profile_banners/1073323083170238466/1551337674" "https://pbs.twimg.com/profile_banners/1073323083170238466/1551337674" ...
-#&gt;  $ profile_background_url : chr  NA "http://abs.twimg.com/images/themes/theme1/bg.png" "http://abs.twimg.com/images/themes/theme1/bg.png" "http://abs.twimg.com/images/themes/theme1/bg.png" ...
-#&gt;  $ profile_image_url      : chr  "http://pbs.twimg.com/profile_images/1163156171651338240/lswwW8wN_normal.jpg" "http://pbs.twimg.com/profile_images/1132000357301805059/lHr81Hig_normal.png" "http://pbs.twimg.com/profile_images/1132000357301805059/lHr81Hig_normal.png" "http://pbs.twimg.com/profile_images/1132000357301805059/lHr81Hig_normal.png" ...</div></pre>
+#&gt;  $ status_url             : chr [1:4418] "https://twitter.com/MKumarYYC/status/1163154266065735680" "https://twitter.com/cizzart/status/1163247504542130176" "https://twitter.com/cizzart/status/1145043578479108097" "https://twitter.com/cizzart/status/1116864894144528384" ...
+#&gt;  $ name                   : chr [1:4418] "Mehul Kumar" "César" "César" "César" ...
+#&gt;  $ location               : chr [1:4418] "Calgary, AB" "Posadas, Argentina" "Posadas, Argentina" "Posadas, Argentina" ...
+#&gt;  $ description            : chr [1:4418] "Dabbling in data devices | #rstats/#datascience| #internationaldevelopment| mountain biker | 🍁 MSc. candidate |"| __truncated__ "Ciencia de Datos y Estadistica #rstats/ @rstudio #DataScience #Statistics. (R for Political Data Science/ cesar"| __truncated__ "Ciencia de Datos y Estadistica #rstats/ @rstudio #DataScience #Statistics. (R for Political Data Science/ cesar"| __truncated__ "Ciencia de Datos y Estadistica #rstats/ @rstudio #DataScience #Statistics. (R for Political Data Science/ cesar"| __truncated__ ...
+#&gt;  $ url                    : chr [1:4418] NA NA NA NA ...
+#&gt;  $ protected              : logi [1:4418] FALSE FALSE FALSE FALSE FALSE FALSE ...
+#&gt;  $ followers_count        : int [1:4418] 10 57 57 57 57 57 57 57 57 57 ...
+#&gt;  $ friends_count          : int [1:4418] 21 120 120 120 120 120 120 120 120 120 ...
+#&gt;  $ listed_count           : int [1:4418] 0 0 0 0 0 0 0 0 0 0 ...
+#&gt;  $ statuses_count         : int [1:4418] 18 152 152 152 152 152 152 152 152 152 ...
+#&gt;  $ favourites_count       : int [1:4418] 180 977 977 977 977 977 977 977 977 977 ...
+#&gt;  $ account_created_at     : POSIXct[1:4418], format: "2019-08-07 21:15:04" "2018-12-13 21:05:39" ...
+#&gt;  $ verified               : logi [1:4418] FALSE FALSE FALSE FALSE FALSE FALSE ...
+#&gt;  $ profile_url            : chr [1:4418] NA NA NA NA ...
+#&gt;  $ profile_expanded_url   : chr [1:4418] NA NA NA NA ...
+#&gt;  $ account_lang           : logi [1:4418] NA NA NA NA NA NA ...
+#&gt;  $ profile_banner_url     : chr [1:4418] "https://pbs.twimg.com/profile_banners/1159211379963772928/1566153017" "https://pbs.twimg.com/profile_banners/1073323083170238466/1551337674" "https://pbs.twimg.com/profile_banners/1073323083170238466/1551337674" "https://pbs.twimg.com/profile_banners/1073323083170238466/1551337674" ...
+#&gt;  $ profile_background_url : chr [1:4418] NA "http://abs.twimg.com/images/themes/theme1/bg.png" "http://abs.twimg.com/images/themes/theme1/bg.png" "http://abs.twimg.com/images/themes/theme1/bg.png" ...
+#&gt;  $ profile_image_url      : chr [1:4418] "http://pbs.twimg.com/profile_images/1163156171651338240/lswwW8wN_normal.jpg" "http://pbs.twimg.com/profile_images/1132000357301805059/lHr81Hig_normal.png" "http://pbs.twimg.com/profile_images/1132000357301805059/lHr81Hig_normal.png" "http://pbs.twimg.com/profile_images/1132000357301805059/lHr81Hig_normal.png" ...</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
