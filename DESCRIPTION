@@ -33,11 +33,11 @@ Depends:
     R (>= 3.6)
 Imports: 
     devtools,
+    extrafont,
     ggplot2,
     grDevices,
     nlme,
-    rlang (>= 0.4.1),
-    extrafont
+    rlang (>= 0.4.1)
 Suggests:
     apaTables,
     dplyr,

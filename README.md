@@ -13,7 +13,7 @@ status](https://ci.appveyor.com/api/projects/status/github/data-edu/dataedu?bran
 coverage](https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg)](https://codecov.io/gh/data-edu/dataedu?branch=master)
 [![minimal R
 version](https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg)](https://cran.r-project.org/)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2020--03--29-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2020--04--01-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
 <!-- badges: end -->
 
 The goal of {dataedu} is to provide readers of [Data Science in
@@ -71,7 +71,7 @@ devtools::install_github("data-edu/dataedu")
 
   - **We recommend first checking to see if your packages are all
     up-to-date if you are running into issues with installation.** If
-    you have installed these imported/suggested packages previously and
+    you have installed the imported/suggested packages previously and
     have not updated them in a while, RStudio may prompt you to update
     them. You can choose to (1) ignore this prompt, (2) exit the prompt
     and update your packages, or (3) try to update your packages through
@@ -141,8 +141,8 @@ dataedu::dataedu_packages
 [tabulizer](https://github.com/ropensci/tabulizer), created by ROpenSci
 to read PDFs. {tabulizer} requires the installation of
 [RJava](https://cran.r-project.org/web/packages/rJava/index.html), which
-can be a tricky process on Mac computers. {tabulizer} is not included in
-`mass_install()` and we recommend reading through the notes on its
+can be a tricky process. {tabulizer} is not included in
+`install_dataedu()` and we recommend reading through the notes on its
 Github repo if installing.
 
 ### Reproducible Code for Walkthroughs
@@ -166,26 +166,46 @@ To see all the datasets available in the package, run `data(package =
 # only `data(package = "dataedu")` is needed to see this list
 a <- data(package = "dataedu")
 a$result[ , 3:4]
-#>       Item                  
-#>  [1,] "course_data"         
-#>  [2,] "course_minutes"      
-#>  [3,] "district_merged_data"
-#>  [4,] "longitudinal_data"   
-#>  [5,] "ma_data_init"        
-#>  [6,] "pre_survey"          
-#>  [7,] "sci_mo_processed"    
-#>  [8,] "sci_mo_with_text"    
-#>  [9,] "tt_tweets"           
-#>       Title                                                          
-#>  [1,] "Walkthrough 01 - Course Data"                                 
-#>  [2,] "Walkthrough 01 - Course Minutes"                              
-#>  [3,] "Walkthrough 03 - Merged Ethnicity and FRPL District Data"     
-#>  [4,] "Walkthrough 04 - Students with Disabilities Longitudinal Data"
-#>  [5,] "Foundational Skills Data"                                     
-#>  [6,] "Walkthrough 01 - Pre-Survey"                                  
-#>  [7,] "Walkthrough 01 - Student Motivation (Processed)"              
-#>  [8,] "Walkthrough 01 - Student Motivation (Processed and With Text)"
-#>  [9,] "Walkthrough 12 - Tweet Data"
+#>       Item                                 
+#>  [1,] "all_files"                          
+#>  [2,] "bchildcountandedenvironments2012"   
+#>  [3,] "bchildcountandedenvironments2013"   
+#>  [4,] "bchildcountandedenvironments2014"   
+#>  [5,] "bchildcountandedenvironments2015"   
+#>  [6,] "bchildcountandedenvironments2016"   
+#>  [7,] "bchildcountandedenvironments2017_18"
+#>  [8,] "child_counts"                       
+#>  [9,] "course_data"                        
+#> [10,] "course_minutes"                     
+#> [11,] "district_merged_df"                 
+#> [12,] "district_tidy_df"                   
+#> [13,] "frpl_pdf"                           
+#> [14,] "ma_data_init"                       
+#> [15,] "pre_survey"                         
+#> [16,] "race_pdf"                           
+#> [17,] "sci_mo_processed"                   
+#> [18,] "sci_mo_with_text"                   
+#> [19,] "tt_tweets"                          
+#>       Title                                                                                
+#>  [1,] "Walkthrough 04 - Students with Disabilities Counts - Combined List"                 
+#>  [2,] "Walkthrough 04 - Students with Disabilities Counts - 2012"                          
+#>  [3,] "Walkthrough 04 - Students with Disabilities Counts - 2013"                          
+#>  [4,] "Walkthrough 04 - Students with Disabilities Counts - 2014"                          
+#>  [5,] "Walkthrough 04 - Students with Disabilities Counts - 2015"                          
+#>  [6,] "Walkthrough 04 - Students with Disabilities Counts - 2016"                          
+#>  [7,] "Walkthrough 04 - Students with Disabilities Counts - 2017-18"                       
+#>  [8,] "Walkthrough 04 - Students with Disabilities Longitudinal Data - Combined Data Frame"
+#>  [9,] "Walkthrough 01 - Course Data"                                                       
+#> [10,] "Walkthrough 01 - Course Minutes"                                                    
+#> [11,] "Walkthrough 03 - Merged Ethnicity and FRPL District Data"                           
+#> [12,] "Walkthrough 03 - Merged and Tidy Ethnicity and FRPL District Data"                  
+#> [13,] "Walkthrough 03 - Tabulizer Output from FRPL PDF"                                    
+#> [14,] "Foundational Skills Data"                                                           
+#> [15,] "Walkthrough 01 - Pre-Survey"                                                        
+#> [16,] "Walkthrough 03 - Tabulizer Output from Race PDF"                                    
+#> [17,] "Walkthrough 01 - Student Motivation (Processed)"                                    
+#> [18,] "Walkthrough 01 - Student Motivation (Processed and With Text)"                      
+#> [19,] "Walkthrough 12 - Tweet Data"
 ```
 
 ### Using the {dataedu} Theme and Palette

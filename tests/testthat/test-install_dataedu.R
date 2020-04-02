@@ -1,7 +1,7 @@
 library(testthat)
 library(dataedu)
-context("test-mass_install.R")
+context("test-install_dataedu.R")
 
-test_that("mass_install() works", {
+test_that("install_dataedu() works", {
   expect_true("apaTables" %in% rownames(installed.packages()))
 })
