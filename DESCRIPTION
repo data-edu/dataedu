@@ -37,7 +37,7 @@ Imports:
     ggplot2,
     grDevices,
     nlme,
-    rlang (>= 0.4.1),
+    rlang (>= 0.4.1)
 Suggests:
     apaTables,
     dplyr,
