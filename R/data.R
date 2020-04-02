@@ -174,21 +174,149 @@
 #' str(dataedu::district_tidy_df)
 "district_tidy_df"
 
-#' Walkthrough 04 - Students with Disabilities Longitudinal Data
+#' Walkthrough 04 - Students with Disabilities Counts - 2012
 #'
-#' Walkthrough 04 - Datasets containing students with disabilities
-#' longitudinal enrollment
+#' Walkthrough 04 - Dataset containing students with disabilities
+#' longitudinal enrollment counts in 2012
 #'
 #'
-#' @name longitudinal_data
+#' @name bchildcountandedenvironments2012
 #' @docType data
 #' @format Dataset of class \code{tibble}.
 #' @source US Department of Education <https://www2.ed.gov/programs/osepidea/618-data/state-level-data-files/index.html>
 #' @keywords datasets
 #' @examples
 #'
-#' str(dataedu::longitudinal_data)
-"longitudinal_data"
+#' str(dataedu::bchildcountandedenvironments2012)
+"bchildcountandedenvironments2012"
+
+#' Walkthrough 04 - Students with Disabilities Counts - 2012
+#'
+#' Walkthrough 04 - Dataset containing students with disabilities
+#' longitudinal enrollment counts in 2012
+#'
+#'
+#' @name bchildcountandedenvironments2012
+#' @docType data
+#' @format Dataset of class \code{tibble}.
+#' @source US Department of Education <https://www2.ed.gov/programs/osepidea/618-data/state-level-data-files/index.html>
+#' @keywords datasets
+#' @examples
+#'
+#' str(dataedu::bchildcountandedenvironments2012)
+"bchildcountandedenvironments2012"
+
+#' Walkthrough 04 - Students with Disabilities Counts - 2013
+#'
+#' Walkthrough 04 - Dataset containing students with disabilities
+#' longitudinal enrollment counts in 2013
+#'
+#'
+#' @name bchildcountandedenvironments2013
+#' @docType data
+#' @format Dataset of class \code{tibble}.
+#' @source US Department of Education <https://www2.ed.gov/programs/osepidea/618-data/state-level-data-files/index.html>
+#' @keywords datasets
+#' @examples
+#'
+#' str(dataedu::bchildcountandedenvironments2013)
+"bchildcountandedenvironments2013"
+
+#' Walkthrough 04 - Students with Disabilities Counts - 2014
+#'
+#' Walkthrough 04 - Dataset containing students with disabilities
+#' longitudinal enrollment counts in 2014
+#'
+#'
+#' @name bchildcountandedenvironments2014
+#' @docType data
+#' @format Dataset of class \code{tibble}.
+#' @source US Department of Education <https://www2.ed.gov/programs/osepidea/618-data/state-level-data-files/index.html>
+#' @keywords datasets
+#' @examples
+#'
+#' str(dataedu::bchildcountandedenvironments2014)
+"bchildcountandedenvironments2014"
+
+#' Walkthrough 04 - Students with Disabilities Counts - 2015
+#'
+#' Walkthrough 04 - Dataset containing students with disabilities
+#' longitudinal enrollment counts in 2015
+#'
+#'
+#' @name bchildcountandedenvironments2015
+#' @docType data
+#' @format Dataset of class \code{tibble}.
+#' @source US Department of Education <https://www2.ed.gov/programs/osepidea/618-data/state-level-data-files/index.html>
+#' @keywords datasets
+#' @examples
+#'
+#' str(dataedu::bchildcountandedenvironments2015)
+"bchildcountandedenvironments2015"
+
+#' Walkthrough 04 - Students with Disabilities Counts - 2016
+#'
+#' Walkthrough 04 - Dataset containing students with disabilities
+#' longitudinal enrollment counts in 2016
+#'
+#'
+#' @name bchildcountandedenvironments2016
+#' @docType data
+#' @format Dataset of class \code{tibble}.
+#' @source US Department of Education <https://www2.ed.gov/programs/osepidea/618-data/state-level-data-files/index.html>
+#' @keywords datasets
+#' @examples
+#'
+#' str(dataedu::bchildcountandedenvironments2016)
+"bchildcountandedenvironments2016"
+
+#' Walkthrough 04 - Students with Disabilities Counts - 2017-18
+#'
+#' Walkthrough 04 - Dataset containing students with disabilities
+#' longitudinal enrollment counts in 2017-18
+#'
+#'
+#' @name bchildcountandedenvironments2017_18
+#' @docType data
+#' @format Dataset of class \code{tibble}.
+#' @source US Department of Education <https://www2.ed.gov/programs/osepidea/618-data/state-level-data-files/index.html>
+#' @keywords datasets
+#' @examples
+#'
+#' str(dataedu::bchildcountandedenvironments2017_18)
+"bchildcountandedenvironments2017_18"
+
+#' Walkthrough 04 - Students with Disabilities Counts - Combined List
+#'
+#' Walkthrough 04 - List containing students with disabilities
+#' longitudinal enrollment counts from 2012-18
+#'
+#'
+#' @name all_files
+#' @docType data
+#' @format Dataset of class \code{list}.
+#' @source US Department of Education <https://www2.ed.gov/programs/osepidea/618-data/state-level-data-files/index.html>
+#' @keywords datasets
+#' @examples
+#'
+#' str(dataedu::all_files)
+"all_files"
+
+#' Walkthrough 04 - Students with Disabilities Longitudinal Data - Combined Data Frame
+#'
+#' Walkthrough 04 - Combined data frame containing students with disabilities
+#' longitudinal enrollment counts from 2012-18
+#'
+#'
+#' @name child_counts
+#' @docType data
+#' @format Dataset of class \code{tibble}.
+#' @source US Department of Education <https://www2.ed.gov/programs/osepidea/618-data/state-level-data-files/index.html>
+#' @keywords datasets
+#' @examples
+#'
+#' str(dataedu::child_counts)
+"child_counts"
 
 #' All packages used in Data Science in Education Using R
 #'

@@ -12,9 +12,6 @@ knitr::opts_chunk$set(
 )
 
 dep <- as.vector(read.dcf('DESCRIPTION')[, 'Depends'])
-# m <- regexpr('R *\\\\(>= \\\\d+.\\\\d+.\\\\d+\\\\)', dep)
-# rm <- regmatches(dep, m)
-# rvers <- gsub('.*(\\\\d+.\\\\d+.\\\\d+).*', '\\\\1', rm)
 ```
 
 # dataedu <img src = 'man/figures/logo.png' align="right" height="150" />
@@ -105,7 +102,7 @@ To see the packages used in the book, run:
 dataedu::dataedu_packages
 ```
 
-**A special note on {tabulizer}:** One of the walkthroughs uses [tabulizer](https://github.com/ropensci/tabulizer), created by ROpenSci to read PDFs. {tabulizer} requires the installation of [RJava](https://cran.r-project.org/web/packages/rJava/index.html), which can be a tricky process on Mac computers. {tabulizer} is not included in `mass_install()` and we recommend reading through the notes on its Github repo if installing.
+**A special note on {tabulizer}:** One of the walkthroughs uses [tabulizer](https://github.com/ropensci/tabulizer), created by ROpenSci to read PDFs. {tabulizer} requires the installation of [RJava](https://cran.r-project.org/web/packages/rJava/index.html), which can be a tricky process. {tabulizer} is not included in `install_dataedu()` and we recommend reading through the notes on its Github repo if installing.
 
 ### Reproducible Code for Walkthroughs
 
