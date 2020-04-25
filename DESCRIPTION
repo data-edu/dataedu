@@ -3,14 +3,14 @@ Package: dataedu
 Title: Package for Data Science in Education Using R
 Version: 0.1.0
 Authors@R: 
-    c(person(given = "Emily",
-             family = "Bovee",
-             role = "aut",
-             email = "emily.a.bovee@gmail.com"),
-      person(given = "Ryan",
+    c(person(given = "Ryan",
              family = "Estrellado",
              role = "aut",
              email = "ryan.estrellado@gmail.com"),
+      person(given = "Emily",
+             family = "Bovee",
+             role = "aut",
+             email = "emily.a.bovee@gmail.com"),
       person(given = "Jesse",
              family = "Mostipak",
              role = "aut",
