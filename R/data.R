@@ -302,7 +302,7 @@
 #' str(dataedu::all_files)
 "all_files"
 
-#' Walkthrough 04 - Students with Disabilities Longitudinal Data - Combined Data Frame
+#' Walkthrough 04 - Students with Disabilities Counts - Combined Data Frame
 #'
 #' Walkthrough 04 - Combined data frame containing students with disabilities
 #' longitudinal enrollment counts from 2012-18

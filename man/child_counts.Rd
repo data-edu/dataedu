@@ -3,7 +3,7 @@
 \docType{data}
 \name{child_counts}
 \alias{child_counts}
-\title{Walkthrough 04 - Students with Disabilities Longitudinal Data - Combined Data Frame}
+\title{Walkthrough 04 - Students with Disabilities Counts - Combined Data Frame}
 \format{
 Dataset of class \code{tibble}.
 }
