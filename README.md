@@ -13,7 +13,7 @@ status](https://ci.appveyor.com/api/projects/status/github/data-edu/dataedu?bran
 coverage](https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg)](https://codecov.io/gh/data-edu/dataedu?branch=master)
 [![minimal R
 version](https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg)](https://cran.r-project.org/)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2020--04--01-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2020--04--25-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
 <!-- badges: end -->
 
 The goal of {dataedu} is to provide readers of [Data Science in
@@ -207,6 +207,10 @@ a$result[ , 3:4]
 #> [18,] "Walkthrough 01 - Student Motivation (Processed and With Text)"                      
 #> [19,] "Walkthrough 12 - Tweet Data"
 ```
+
+If you would like to download the data in non-`.Rds` (RData) format, the
+CSV’s are saved under
+[`inst/extdata`](https://github.com/data-edu/dataedu/tree/master/inst/extdata).
 
 ### Using the {dataedu} Theme and Palette
 
