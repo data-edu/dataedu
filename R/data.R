@@ -101,7 +101,7 @@
 #'
 #' @name tt_tweets
 #' @docType data
-#' @format Dataset of class \code{tibble}.
+#' @format Dataset of class \code{list}.
 #' @source Twitter and TidyTuesday <https://thomasmock.netlify.com/post/tidytuesday-a-weekly-social-data-project-in-r/>
 #' @keywords datasets
 #' @examples
