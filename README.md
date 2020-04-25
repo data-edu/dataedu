@@ -186,31 +186,33 @@ a$result[ , 3:4]
 #> [17,] "sci_mo_processed"                   
 #> [18,] "sci_mo_with_text"                   
 #> [19,] "tt_tweets"                          
-#>       Title                                                                                
-#>  [1,] "Walkthrough 04 - Students with Disabilities Counts - Combined List"                 
-#>  [2,] "Walkthrough 04 - Students with Disabilities Counts - 2012"                          
-#>  [3,] "Walkthrough 04 - Students with Disabilities Counts - 2013"                          
-#>  [4,] "Walkthrough 04 - Students with Disabilities Counts - 2014"                          
-#>  [5,] "Walkthrough 04 - Students with Disabilities Counts - 2015"                          
-#>  [6,] "Walkthrough 04 - Students with Disabilities Counts - 2016"                          
-#>  [7,] "Walkthrough 04 - Students with Disabilities Counts - 2017-18"                       
-#>  [8,] "Walkthrough 04 - Students with Disabilities Longitudinal Data - Combined Data Frame"
-#>  [9,] "Walkthrough 01 - Course Data"                                                       
-#> [10,] "Walkthrough 01 - Course Minutes"                                                    
-#> [11,] "Walkthrough 03 - Merged Ethnicity and FRPL District Data"                           
-#> [12,] "Walkthrough 03 - Merged and Tidy Ethnicity and FRPL District Data"                  
-#> [13,] "Walkthrough 03 - Tabulizer Output from FRPL PDF"                                    
-#> [14,] "Foundational Skills Data"                                                           
-#> [15,] "Walkthrough 01 - Pre-Survey"                                                        
-#> [16,] "Walkthrough 03 - Tabulizer Output from Race PDF"                                    
-#> [17,] "Walkthrough 01 - Student Motivation (Processed)"                                    
-#> [18,] "Walkthrough 01 - Student Motivation (Processed and With Text)"                      
+#>       Title                                                                     
+#>  [1,] "Walkthrough 04 - Students with Disabilities Counts - Combined List"      
+#>  [2,] "Walkthrough 04 - Students with Disabilities Counts - 2012"               
+#>  [3,] "Walkthrough 04 - Students with Disabilities Counts - 2013"               
+#>  [4,] "Walkthrough 04 - Students with Disabilities Counts - 2014"               
+#>  [5,] "Walkthrough 04 - Students with Disabilities Counts - 2015"               
+#>  [6,] "Walkthrough 04 - Students with Disabilities Counts - 2016"               
+#>  [7,] "Walkthrough 04 - Students with Disabilities Counts - 2017-18"            
+#>  [8,] "Walkthrough 04 - Students with Disabilities Counts - Combined Data Frame"
+#>  [9,] "Walkthrough 01 - Course Data"                                            
+#> [10,] "Walkthrough 01 - Course Minutes"                                         
+#> [11,] "Walkthrough 03 - Merged Ethnicity and FRPL District Data"                
+#> [12,] "Walkthrough 03 - Merged and Tidy Ethnicity and FRPL District Data"       
+#> [13,] "Walkthrough 03 - Tabulizer Output from FRPL PDF"                         
+#> [14,] "Foundational Skills Data"                                                
+#> [15,] "Walkthrough 01 - Pre-Survey"                                             
+#> [16,] "Walkthrough 03 - Tabulizer Output from Race PDF"                         
+#> [17,] "Walkthrough 01 - Student Motivation (Processed)"                         
+#> [18,] "Walkthrough 01 - Student Motivation (Processed and With Text)"           
 #> [19,] "Walkthrough 12 - Tweet Data"
 ```
 
 If you would like to download the data in non-`.Rds` (RData) format, the
-CSV’s are saved under
+CSV and JSON formats are available under
 [`inst/extdata`](https://github.com/data-edu/dataedu/tree/master/inst/extdata).
+Please note that `all_files` is not included because of how large the
+file would be.
 
 ### Using the {dataedu} Theme and Palette
 
