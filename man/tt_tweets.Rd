@@ -5,7 +5,7 @@
 \alias{tt_tweets}
 \title{Walkthrough 12 - Tweet Data}
 \format{
-Dataset of class \code{tibble}.
+Dataset of class \code{list}.
 }
 \source{
 Twitter and TidyTuesday \url{https://thomasmock.netlify.com/post/tidytuesday-a-weekly-social-data-project-in-r/}
