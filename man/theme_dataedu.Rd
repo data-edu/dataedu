@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_dataedu.R
 \name{theme_dataedu}
 \alias{theme_dataedu}
-\title{A ggplot2 theme for Data Science in Education Using R}
+\title{ggplot2 theme for Data Science in Education Using R}
 \usage{
 theme_dataedu()
 }
@@ -10,8 +10,5 @@ theme_dataedu()
 Apply the 'Data Science in Education Using R' background and font to ggplot2.
 }
 \details{
-The dataedu theme uses the font Gills Sans Mt which is available on Macs by default
-and used on Windows through the \href{https://github.com/wch/extrafont}{extrafont} package.
-
-To use \href{https://github.com/wch/extrafont}{extrafont}, the extrafont database is required. More information can be found on the \href{https://github.com/wch/extrafont}{extrafont} help page.
+The dataedu theme uses the font Gills Sans Mt.
 }

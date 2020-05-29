@@ -34,21 +34,10 @@ The goal of {dataedu} is to provide readers of [Data Science in Education Using 
 
 ### 1. Install {remotes}
 
-First, let's install {remotes}:
+First, let's install {remotes}. If you already have {remotes} installed, you can move on to the next step.
 
 ``` r
 install.packages("remotes")
-```
-
-If you already have {remotes} installed, you can move on to the next step.
-
-If you are not sure whether you have it installed, you can run this function, which will install the newest version of {remotes} if you do not already have it.
-
-``` r
-if (!require(remotes)) {
-  install.packages("remotes")
-  library(remotes)
-}
 ```
 
 ### 2. Install {dataedu}
@@ -137,6 +126,8 @@ ggplot(midwest, aes(x = area, y = popdensity, color = state)) +
   theme_dataedu() +
   scale_color_dataedu()
 ```
+
+The font for the DSIEUR graphs is Gill Sans MT and available [here](https://www.dafontfree.net/freefonts-gill-sans-mt-f64845.htm). The code to load the font with the package is heavily based on the code from Guangchuang Yu's [extrafont](https://github.com/GuangchuangYu/emojifont) package - thank you!
 
 ## Contact
 

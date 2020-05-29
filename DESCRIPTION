@@ -33,9 +33,11 @@ Depends:
     R (>= 3.6)
 Imports: 
     devtools,
-    extrafont,
     ggplot2,
-    grDevices
+    grDevices,
+    proto,
+    showtext,
+    sysfonts
 Suggests:
     apaTables,
     dplyr,
