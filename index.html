@@ -93,20 +93,14 @@
 <div id="install-remotes" class="section level3">
 <h3 class="hasAnchor">
 <a href="#install-remotes" class="anchor"></a>1. Install {remotes}</h3>
-<p>First, let’s install {remotes}:</p>
+<p>First, let’s install {remotes}. If you already have {remotes} installed, you can move on to the next step.</p>
 <div class="sourceCode" id="cb1"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"remotes"</span>)</pre></div>
-<p>If you already have {remotes} installed, you can move on to the next step.</p>
-<p>If you are not sure whether you have it installed, you can run this function, which will install the newest version of {remotes} if you do not already have it.</p>
-<div class="sourceCode" id="cb2"><pre class="r"><span class="kw">if</span> (!<span class="fu"><a href="https://rdrr.io/r/base/library.html">require</a></span>(<span class="no">remotes</span>)) {
-  <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"remotes"</span>)
-  <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">remotes</span>)
-}</pre></div>
 </div>
 <div id="install-dataedu" class="section level3">
 <h3 class="hasAnchor">
 <a href="#install-dataedu" class="anchor"></a>2. Install {dataedu}</h3>
 <p>You can install the development version of {dataedu} by running this in your RStudio console:</p>
-<div class="sourceCode" id="cb3"><pre class="r"><span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"data-edu/dataedu"</span>)</pre></div>
+<div class="sourceCode" id="cb2"><pre class="r"><span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"data-edu/dataedu"</span>)</pre></div>
 <div id="important-notes-on-installation" class="section level4">
 <h4 class="hasAnchor">
 <a href="#important-notes-on-installation" class="anchor"></a>Important Notes on Installation</h4>
@@ -121,7 +115,7 @@
 <h3 class="hasAnchor">
 <a href="#call-the-package" class="anchor"></a>3. Call the Package</h3>
 <p>Before you can use the package, make sure to call it using <code>library()</code>:</p>
-<div class="sourceCode" id="cb4"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">dataedu</span>)</pre></div>
+<div class="sourceCode" id="cb3"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">dataedu</span>)</pre></div>
 </div>
 </div>
 <div id="package-contents" class="section level2">
@@ -139,9 +133,9 @@
 <a href="#mass-installation-of-packages" class="anchor"></a>Mass Installation of Packages</h3>
 <p>We strived to use packages that we use in our daily work when creating the walkthroughs in the book. Because we covered a variety of subjects, that means we used a lot of packages! As described in the Foundational Skills chapter, you can install the packages individually as they suit your needs.</p>
 <p>However, if you want to get started quickly and download all the packages at once, please use <code><a href="https://rdrr.io/pkg/dataedu/man/install_dataedu.html">install_dataedu()</a></code>.</p>
-<div class="sourceCode" id="cb5"><pre class="r"><span class="kw pkg">dataedu</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/dataedu/man/install_dataedu.html">install_dataedu</a></span>()</pre></div>
+<div class="sourceCode" id="cb4"><pre class="r"><span class="kw pkg">dataedu</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/dataedu/man/install_dataedu.html">install_dataedu</a></span>()</pre></div>
 <p>To see the packages used in the book, run:</p>
-<div class="sourceCode" id="cb6"><pre class="r"><span class="kw pkg">dataedu</span><span class="kw ns">::</span><span class="no"><a href="https://rdrr.io/pkg/dataedu/man/dataedu_packages.html">dataedu_packages</a></span>
+<div class="sourceCode" id="cb5"><pre class="r"><span class="kw pkg">dataedu</span><span class="kw ns">::</span><span class="no"><a href="https://rdrr.io/pkg/dataedu/man/dataedu_packages.html">dataedu_packages</a></span>
 <span class="co">#&gt;  [1] "apaTables"   "caret"       "dummies"     "ggraph"      "here"       </span>
 <span class="co">#&gt;  [6] "janitor"     "lme4"        "lubridate"   "performance" "readxl"     </span>
 <span class="co">#&gt; [11] "rtweet"      "randomNames" "sjPlot"      "textdata"    "tidygraph"  </span>
@@ -157,9 +151,9 @@
 <h3 class="hasAnchor">
 <a href="#accessing-the-walkthrough-data" class="anchor"></a>Accessing the Walkthrough Data</h3>
 <p>To get the data, run <code>dataedu::</code> then the dataset as it is named in the book:</p>
-<div class="sourceCode" id="cb7"><pre class="r"><span class="kw pkg">dataedu</span><span class="kw ns">::</span><span class="no"><a href="https://rdrr.io/pkg/dataedu/man/course_data.html">course_data</a></span></pre></div>
+<div class="sourceCode" id="cb6"><pre class="r"><span class="kw pkg">dataedu</span><span class="kw ns">::</span><span class="no"><a href="https://rdrr.io/pkg/dataedu/man/course_data.html">course_data</a></span></pre></div>
 <p>To see all the datasets available in the package, run <code><a href="https://rdrr.io/r/utils/data.html">data(package = "dataedu")</a></code>.</p>
-<div class="sourceCode" id="cb8"><pre class="r"><span class="co"># this is to print the results for the README</span>
+<div class="sourceCode" id="cb7"><pre class="r"><span class="co"># this is to print the results for the README</span>
 <span class="co"># only `data(package = "dataedu")` is needed to see this list</span>
 <span class="no">a</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span>(<span class="kw">package</span> <span class="kw">=</span> <span class="st">"dataedu"</span>)
 <span class="no">a</span>$<span class="no">result</span>[ , <span class="fl">3</span>:<span class="fl">4</span>]
@@ -209,7 +203,7 @@
 <h3 class="hasAnchor">
 <a href="#using-the-dataedu-theme-and-palette" class="anchor"></a>Using the {dataedu} Theme and Palette</h3>
 <p>Add the theme and palette to ggplot2-based plots using <code><a href="https://rdrr.io/pkg/dataedu/man/theme_dataedu.html">theme_dataedu()</a></code> and <code>scale_*_dataedu()</code>.</p>
-<div class="sourceCode" id="cb9"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">ggplot2</span>)
+<div class="sourceCode" id="cb8"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">ggplot2</span>)
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">dataedu</span>)
 
 <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="no">midwest</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">area</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">popdensity</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">state</span>)) +
@@ -217,6 +211,7 @@
   <span class="fu"><a href="https://rdrr.io/pkg/dataedu/man/theme_dataedu.html">theme_dataedu</a></span>() +
   <span class="fu"><a href="https://rdrr.io/pkg/dataedu/man/scale_color_dataedu.html">scale_color_dataedu</a></span>()</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-5-1.png" style="display: block; margin: auto;"></p>
+<p>The font for the DSIEUR graphs is Gill Sans MT and available <a href="https://www.dafontfree.net/freefonts-gill-sans-mt-f64845.htm">here</a>. The code to load the font with the package is heavily based on the code from Guangchuang Yu’s <a href="https://github.com/GuangchuangYu/emojifont">extrafont</a> package - thank you!</p>
 </div>
 </div>
 <div id="contact" class="section level2">
