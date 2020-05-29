@@ -13,7 +13,7 @@ status](https://ci.appveyor.com/api/projects/status/github/data-edu/dataedu?bran
 coverage](https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg)](https://codecov.io/gh/data-edu/dataedu?branch=master)
 [![minimal R
 version](https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg)](https://cran.r-project.org/)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2020--04--25-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2020--05--29-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
 <!-- badges: end -->
 
 The goal of {dataedu} is to provide readers of [Data Science in
@@ -27,26 +27,25 @@ with useful functions, data, and references from the book.
 
 ## Installation
 
-### 1\. Install {devtools}
+### 1\. Install {remotes}
 
-First, let’s install [{devtools}](https://github.com/r-lib/devtools), an
-R package with many handy R tools. In your R console, type in:
+First, let’s install {remotes}:
 
 ``` r
-install.packages("devtools")
+install.packages("remotes")
 ```
 
-If you already have {devtools} installed, you can move on to the next
+If you already have {remotes} installed, you can move on to the next
 step.
 
 If you are not sure whether you have it installed, you can run this
-function, which will install the newest version of {devtools} if you do
+function, which will install the newest version of {remotes} if you do
 not already have it.
 
 ``` r
-if (!require(devtools)) {
-  install.packages("devtools")
-  library(devtools)
+if (!require(remotes)) {
+  install.packages("remotes")
+  library(remotes)
 }
 ```
 
@@ -56,7 +55,7 @@ You can install the development version of {dataedu} by running this in
 your RStudio console:
 
 ``` r
-devtools::install_github("data-edu/dataedu")
+remotes::install_github("data-edu/dataedu")
 ```
 
 #### Important Notes on Installation
@@ -79,16 +78,6 @@ devtools::install_github("data-edu/dataedu")
     outside the prompt (one way to do this is to go to the RStudio
     Packages pane and click Update, then select the packages you’d like
     to update).
-
-  - In particular, if you have installed {devtools} previously but have
-    not updated it in a while, and you try to install the {dataedu}
-    package, you may see a messsage such as
-    `devtools::install_github("data-edu/dataedu") Error in
-    loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck =
-    vI[[j]]) : namespace ‘remotes’ 2.1.0 is being loaded, but >= 2.1.1
-    is required.` Please read through the message to see what is needed
-    (in this case, updating {remotes}). It’s always best to keep
-    {devtools} (and all your packages) up-to-date to limit issues.
 
 ### 3\. Call the Package
 

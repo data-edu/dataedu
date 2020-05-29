@@ -35,15 +35,14 @@ Imports:
     devtools,
     extrafont,
     ggplot2,
-    grDevices,
-    nlme,
-    rlang (>= 0.4.1)
+    grDevices
 Suggests:
     apaTables,
     dplyr,
     covr,
     glue,
     stringr,
+    rlang,
     testthat (>= 2.1.0)
 Encoding: UTF-8
 LazyData: true
