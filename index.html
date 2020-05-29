@@ -90,23 +90,23 @@
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<div id="install-devtools" class="section level3">
+<div id="install-remotes" class="section level3">
 <h3 class="hasAnchor">
-<a href="#install-devtools" class="anchor"></a>1. Install {devtools}</h3>
-<p>First, let’s install <a href="https://github.com/r-lib/devtools">{devtools}</a>, an R package with many handy R tools. In your R console, type in:</p>
-<div class="sourceCode" id="cb1"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"devtools"</span>)</pre></div>
-<p>If you already have {devtools} installed, you can move on to the next step.</p>
-<p>If you are not sure whether you have it installed, you can run this function, which will install the newest version of {devtools} if you do not already have it.</p>
-<div class="sourceCode" id="cb2"><pre class="r"><span class="kw">if</span> (!<span class="fu"><a href="https://rdrr.io/r/base/library.html">require</a></span>(<span class="no">devtools</span>)) {
-  <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"devtools"</span>)
-  <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">devtools</span>)
+<a href="#install-remotes" class="anchor"></a>1. Install {remotes}</h3>
+<p>First, let’s install {remotes}:</p>
+<div class="sourceCode" id="cb1"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"remotes"</span>)</pre></div>
+<p>If you already have {remotes} installed, you can move on to the next step.</p>
+<p>If you are not sure whether you have it installed, you can run this function, which will install the newest version of {remotes} if you do not already have it.</p>
+<div class="sourceCode" id="cb2"><pre class="r"><span class="kw">if</span> (!<span class="fu"><a href="https://rdrr.io/r/base/library.html">require</a></span>(<span class="no">remotes</span>)) {
+  <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"remotes"</span>)
+  <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">remotes</span>)
 }</pre></div>
 </div>
 <div id="install-dataedu" class="section level3">
 <h3 class="hasAnchor">
 <a href="#install-dataedu" class="anchor"></a>2. Install {dataedu}</h3>
 <p>You can install the development version of {dataedu} by running this in your RStudio console:</p>
-<div class="sourceCode" id="cb3"><pre class="r"><span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span>(<span class="st">"data-edu/dataedu"</span>)</pre></div>
+<div class="sourceCode" id="cb3"><pre class="r"><span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"data-edu/dataedu"</span>)</pre></div>
 <div id="important-notes-on-installation" class="section level4">
 <h4 class="hasAnchor">
 <a href="#important-notes-on-installation" class="anchor"></a>Important Notes on Installation</h4>
@@ -114,7 +114,6 @@
 <li><p>{dataedu} requires R 3.6 or above to be installed.</p></li>
 <li><p>{dataedu} has other packages that it needs to be able to run. You can see the full list under “Imports” (imported when downloading the package) and “Suggests” (we think you should include these too!) in the <a href="https://github.com/data-edu/dataedu/blob/master/DESCRIPTION#L34">DESCRIPTION file</a>.</p></li>
 <li><p><strong>We recommend first checking to see if your packages are all up-to-date if you are running into issues with installation.</strong> If you have installed the imported/suggested packages previously and have not updated them in a while, RStudio may prompt you to update them. You can choose to (1) ignore this prompt, (2) exit the prompt and update your packages, or (3) try to update your packages through the prompt. It’s usually easier to exit and update your packages outside the prompt (one way to do this is to go to the RStudio Packages pane and click Update, then select the packages you’d like to update).</p></li>
-<li><p>In particular, if you have installed {devtools} previously but have not updated it in a while, and you try to install the {dataedu} package, you may see a messsage such as <code>devtools::install_github("data-edu/dataedu") Error in loadNamespace(j &lt;- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : namespace ‘remotes’ 2.1.0 is being loaded, but &gt;= 2.1.1 is required.</code> Please read through the message to see what is needed (in this case, updating {remotes}). It’s always best to keep {devtools} (and all your packages) up-to-date to limit issues.</p></li>
 </ul>
 </div>
 </div>
@@ -266,7 +265,7 @@
 <li><a href="https://ci.appveyor.com/project/data-edu/dataedu"><img src="https://ci.appveyor.com/api/projects/status/github/data-edu/dataedu?branch=master&amp;svg=true" alt="AppVeyor build status"></a></li>
 <li><a href="https://codecov.io/gh/data-edu/dataedu?branch=master"><img src="https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
 <li><a href="https://cran.r-project.org/"><img src="https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg" alt="minimal R version"></a></li>
-<li><a href="https://github.com/data-edu/dataedu/commits/master"><img src="https://img.shields.io/badge/last%20change-2020--04--25-yellowgreen.svg" alt="Last-changedate"></a></li>
+<li><a href="https://github.com/data-edu/dataedu/commits/master"><img src="https://img.shields.io/badge/last%20change-2020--05--29-yellowgreen.svg" alt="Last-changedate"></a></li>
 </ul>
 </div>
 </div>
