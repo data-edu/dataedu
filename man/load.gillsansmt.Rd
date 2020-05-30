@@ -4,10 +4,10 @@
 \alias{load.gillsansmt}
 \title{load.gillsansmt}
 \usage{
-load.gillsansmt(font = "GillSansMT.TTF")
+load.gillsansmt(font = "GillSansMT.ttf")
 }
 \arguments{
-\item{font}{one of output from list.gillsansmt}
+\item{font}{Gill Sans MT}
 }
 \description{
 Load Gill Sans MT Font

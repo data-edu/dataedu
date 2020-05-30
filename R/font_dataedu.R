@@ -6,12 +6,12 @@
 #' @importFrom showtext showtext_auto
 #' @importFrom proto proto
 
-efproto <- proto::proto(expr={
+gillproto <- proto::proto(expr={
   get_path <- function() {
     font_folder <- "fonts"
     system.file(font_folder, package = "dataedu")
   }
-  list_fonts <- function(.) {
+  list_fonts <- function() {
     list.files(get_path())
   }
   load_font <- function(., font) {
@@ -28,24 +28,13 @@ efproto <- proto::proto(expr={
   }
 })
 
-#' List Gill Sans MT
+#' Load Gill Sans MT Font
 #'
 #'
-#' @title list.gillsansmt
-#' @return Gill Sans MT Font Files
+#' @title load.gillsansmt
+#' @param font Gill Sans MT
+#' @return NULL
 #' @export
-
-list.gillsansmt <- function() {
-  efproto$list_fonts()
-}
-
-##' Load Gill Sans MT Font
-##'
-##'
-##' @title load.gillsansmt
-##' @param font one of output from list.gillsansmt
-##' @return NULL
-##' @export
-load.gillsansmt <- function(font = "GillSansMT.TTF") {
-  efproto$load_font(font = font)
+load.gillsansmt <- function(font = "GillSansMT.ttf") {
+  gillproto$load_font(font = font)
 }

@@ -3,7 +3,6 @@
 export(dataedu_colors)
 export(dataedu_packages)
 export(install_dataedu)
-export(list.gillsansmt)
 export(load.gillsansmt)
 export(scale_color_dataedu)
 export(scale_fill_dataedu)
