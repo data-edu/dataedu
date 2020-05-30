@@ -335,6 +335,7 @@ dataedu_packages <-
     "lme4",
     "lubridate",
     "performance",
+    "ranger",
     "readxl",
     "rtweet",
     "randomNames",
