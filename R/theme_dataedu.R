@@ -13,5 +13,5 @@
 #' @export
 theme_dataedu <- function() {
   ggplot2::theme_minimal(base_size = 12,
-                         base_family = "GillSansMT")
+                         base_family = "Cabin")
 }
