@@ -6,7 +6,7 @@
 #' @importFrom showtext showtext_auto
 #' @importFrom proto proto
 
-gillproto <- proto::proto(expr={
+cabinproto <- proto::proto(expr={
   get_path <- function() {
     font_folder <- "fonts"
     system.file(font_folder, package = "dataedu")
@@ -28,13 +28,13 @@ gillproto <- proto::proto(expr={
   }
 })
 
-#' Load Gill Sans MT Font
+#' Load Cabin Font
 #'
 #'
-#' @title load.gillsansmt
-#' @param font Gill Sans MT
+#' @title load.cabin
+#' @param font Cabin
 #' @return NULL
 #' @export
-load.gillsansmt <- function(font = "GillSansMT.ttf") {
-  gillproto$load_font(font = font)
+load.cabin <- function(font = "Cabin.ttf") {
+  cabinproto$load_font(font = font)
 }

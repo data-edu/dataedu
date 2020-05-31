@@ -1,3 +1,3 @@
 .onAttach <- function(libname, pkgname) {
-  load.gillsansmt()
+  load.cabin()
 }
