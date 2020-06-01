@@ -22,7 +22,8 @@ cabinproto <- proto::proto(expr={
       setwd(wd)
       stop("font doesn't exist...")
     }
-    sysfonts::font_add(sub("\\..*", "", font), font)
+    sysfonts::font_add(family = sub("\\..*", "", font),
+                       regular = font)
     showtext::showtext_auto()
     setwd(wd)
   }

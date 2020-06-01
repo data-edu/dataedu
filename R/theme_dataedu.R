@@ -7,7 +7,7 @@
 #' theme_dataedu()
 #'
 #' @details
-#' The dataedu theme uses the font Gills Sans Mt.
+#' The dataedu theme uses the font Cabin.
 #' 
 #' @rdname theme_dataedu
 #' @export
