@@ -195,6 +195,15 @@ file would be.
 Add the theme and palette to ggplot2-based plots using `theme_dataedu()`
 and `scale_*_dataedu()`.
 
+  - **Note:** The DataEdu theme uses {showtext} to render the font. If
+    you would like to use it in an R markdown chunk, please ensure that
+    the chunk lists `fig.showtext = TRUE`. If you would like to use it
+    in a standalone R script, then you will need to use a differnet
+    graphic device. More information is available in the documentation
+    [here](https://cran.rstudio.com/web/packages/showtext/vignettes/introduction.html).
+
+<!-- end list -->
+
 ``` r
 library(ggplot2)
 library(dataedu)
