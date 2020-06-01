@@ -137,9 +137,9 @@
 <p>To see the packages used in the book, run:</p>
 <div class="sourceCode" id="cb5"><pre class="r"><span class="kw pkg">dataedu</span><span class="kw ns">::</span><span class="no"><a href="https://rdrr.io/pkg/dataedu/man/dataedu_packages.html">dataedu_packages</a></span>
 <span class="co">#&gt;  [1] "apaTables"   "caret"       "dummies"     "ggraph"      "here"       </span>
-<span class="co">#&gt;  [6] "janitor"     "lme4"        "lubridate"   "performance" "readxl"     </span>
-<span class="co">#&gt; [11] "rtweet"      "randomNames" "sjPlot"      "textdata"    "tidygraph"  </span>
-<span class="co">#&gt; [16] "tidylog"     "tidyverse"   "tidytext"</span></pre></div>
+<span class="co">#&gt;  [6] "janitor"     "lme4"        "lubridate"   "performance" "ranger"     </span>
+<span class="co">#&gt; [11] "readxl"      "rtweet"      "randomNames" "sjPlot"      "textdata"   </span>
+<span class="co">#&gt; [16] "tidygraph"   "tidylog"     "tidyverse"   "tidytext"</span></pre></div>
 <p><strong>A special note on {tabulizer}:</strong> One of the walkthroughs uses <a href="https://github.com/ropensci/tabulizer">tabulizer</a>, created by ROpenSci to read PDFs. {tabulizer} requires the installation of <a href="https://cran.r-project.org/web/packages/rJava/index.html">RJava</a>, which can be a tricky process. {tabulizer} is not included in <code><a href="https://rdrr.io/pkg/dataedu/man/install_dataedu.html">install_dataedu()</a></code> and we recommend reading through the notes on its Github repo if installing.</p>
 </div>
 <div id="reproducible-code-for-walkthroughs" class="section level3">
@@ -203,7 +203,11 @@
 <h3 class="hasAnchor">
 <a href="#using-the-dataedu-theme-and-palette" class="anchor"></a>Using the {dataedu} Theme and Palette</h3>
 <p>Add the theme and palette to ggplot2-based plots using <code><a href="https://rdrr.io/pkg/dataedu/man/theme_dataedu.html">theme_dataedu()</a></code> and <code>scale_*_dataedu()</code>.</p>
-<div class="sourceCode" id="cb8"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">ggplot2</span>)
+<ul>
+<li>
+<strong>Note:</strong> The DataEdu theme uses {showtext} to render the font. If you would like to use it in an R markdown chunk, please ensure that the chunk lists <code>fig.showtext = TRUE</code>. If you would like to use it in a standalone R script, then you will need to use a differnet graphic device. More information is available in the documentation <a href="https://cran.rstudio.com/web/packages/showtext/vignettes/introduction.html">here</a>.</li>
+</ul>
+<!-- end list --><div class="sourceCode" id="cb8"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">ggplot2</span>)
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">dataedu</span>)
 
 <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="no">midwest</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">area</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">popdensity</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">state</span>)) +
@@ -211,7 +215,7 @@
   <span class="fu"><a href="https://rdrr.io/pkg/dataedu/man/theme_dataedu.html">theme_dataedu</a></span>() +
   <span class="fu"><a href="https://rdrr.io/pkg/dataedu/man/scale_color_dataedu.html">scale_color_dataedu</a></span>()</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-5-1.png" style="display: block; margin: auto;"></p>
-<p>The font for the DSIEUR graphs is Gill Sans MT and available <a href="https://www.dafontfree.net/freefonts-gill-sans-mt-f64845.htm">here</a>. The code to load the font with the package is heavily based on the code from Guangchuang Yu’s <a href="https://github.com/GuangchuangYu/emojifont">extrafont</a> package - thank you!</p>
+<p>The font for the DSIEUR graphs is Cabin and available <a href="https://fonts.google.com/specimen/Cabin">here</a>. The code to load the font with the package is heavily based on the code from Guangchuang Yu’s <a href="https://github.com/GuangchuangYu/emojifont">extrafont</a> package - thank you!</p>
 </div>
 </div>
 <div id="contact" class="section level2">
@@ -257,10 +261,10 @@
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://travis-ci.org/data-edu/dataedu"><img src="https://travis-ci.org/data-edu/dataedu.svg?branch=master" alt="Travis build status"></a></li>
-<li><a href="https://ci.appveyor.com/project/data-edu/dataedu"><img src="https://ci.appveyor.com/api/projects/status/github/data-edu/dataedu?branch=master&amp;svg=true" alt="AppVeyor build status"></a></li>
+<li><a href="https://ci.appveyor.com/project/ivelasq/dataedu"><img src="https://ci.appveyor.com/api/projects/status/github/ivelasq/dataedu?branch=master&amp;svg=true" alt="AppVeyor build status"></a></li>
 <li><a href="https://codecov.io/gh/data-edu/dataedu?branch=master"><img src="https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
 <li><a href="https://cran.r-project.org/"><img src="https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg" alt="minimal R version"></a></li>
-<li><a href="https://github.com/data-edu/dataedu/commits/master"><img src="https://img.shields.io/badge/last%20change-2020--05--29-yellowgreen.svg" alt="Last-changedate"></a></li>
+<li><a href="https://github.com/data-edu/dataedu/commits/master"><img src="https://img.shields.io/badge/last%20change-2020--05--31-yellowgreen.svg" alt="Last-changedate"></a></li>
 </ul>
 </div>
 </div>
