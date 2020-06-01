@@ -18,7 +18,7 @@ dep <- as.vector(read.dcf('DESCRIPTION')[, 'Depends'])
 
 <!-- badges: start -->
 [![Travis build status](https://travis-ci.org/data-edu/dataedu.svg?branch=master)](https://travis-ci.org/data-edu/dataedu)
-[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/data-edu/dataedu?branch=master&svg=true)](https://ci.appveyor.com/project/data-edu/dataedu)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/ivelasq/dataedu?branch=master&svg=true)](https://ci.appveyor.com/project/ivelasq/dataedu)
 [![Codecov test coverage](https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg)](https://codecov.io/gh/data-edu/dataedu?branch=master)
 [![minimal R version](https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg)](https://cran.r-project.org/)
 [![Last-changedate](https://img.shields.io/badge/last%20change-`r gsub('-', '--', Sys.Date())`-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
@@ -117,7 +117,7 @@ If you would like to download the data in non-`.Rds` (RData) format, the CSV and
 
 Add the theme and palette to ggplot2-based plots using `theme_dataedu()` and `scale_*_dataedu()`.
 
-```{r, fig.align = "center", dpi = 300, message = FALSE, warning = FALSE}
+```{r, fig.align = "center", dpi = 300, message = FALSE, warning = FALSE, fig.showtext = TRUE}
 library(ggplot2)
 library(dataedu)
 
@@ -127,7 +127,7 @@ ggplot(midwest, aes(x = area, y = popdensity, color = state)) +
   scale_color_dataedu()
 ```
 
-The font for the DSIEUR graphs is Gill Sans MT and available [here](https://www.dafontfree.net/freefonts-gill-sans-mt-f64845.htm). The code to load the font with the package is heavily based on the code from Guangchuang Yu's [extrafont](https://github.com/GuangchuangYu/emojifont) package - thank you!
+The font for the DSIEUR graphs is Cabin and available [here](https://fonts.google.com/specimen/Cabin). The code to load the font with the package is heavily based on the code from Guangchuang Yu's [extrafont](https://github.com/GuangchuangYu/emojifont) package - thank you!
 
 ## Contact
 

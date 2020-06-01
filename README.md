@@ -8,12 +8,12 @@
 [![Travis build
 status](https://travis-ci.org/data-edu/dataedu.svg?branch=master)](https://travis-ci.org/data-edu/dataedu)
 [![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/data-edu/dataedu?branch=master&svg=true)](https://ci.appveyor.com/project/data-edu/dataedu)
+status](https://ci.appveyor.com/api/projects/status/github/ivelasq/dataedu?branch=master&svg=true)](https://ci.appveyor.com/project/ivelasq/dataedu)
 [![Codecov test
 coverage](https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg)](https://codecov.io/gh/data-edu/dataedu?branch=master)
 [![minimal R
 version](https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg)](https://cran.r-project.org/)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2020--05--29-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2020--05--31-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
 <!-- badges: end -->
 
 The goal of {dataedu} is to provide readers of [Data Science in
@@ -108,9 +108,9 @@ To see the packages used in the book, run:
 ``` r
 dataedu::dataedu_packages
 #>  [1] "apaTables"   "caret"       "dummies"     "ggraph"      "here"       
-#>  [6] "janitor"     "lme4"        "lubridate"   "performance" "readxl"     
-#> [11] "rtweet"      "randomNames" "sjPlot"      "textdata"    "tidygraph"  
-#> [16] "tidylog"     "tidyverse"   "tidytext"
+#>  [6] "janitor"     "lme4"        "lubridate"   "performance" "ranger"     
+#> [11] "readxl"      "rtweet"      "randomNames" "sjPlot"      "textdata"   
+#> [16] "tidygraph"   "tidylog"     "tidyverse"   "tidytext"
 ```
 
 **A special note on {tabulizer}:** One of the walkthroughs uses
@@ -207,10 +207,9 @@ ggplot(midwest, aes(x = area, y = popdensity, color = state)) +
 
 <img src="man/figures/README-unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
 
-The font for the DSIEUR graphs is Gill Sans MT and available
-[here](https://www.dafontfree.net/freefonts-gill-sans-mt-f64845.htm).
-The code to load the font with the package is heavily based on the code
-from Guangchuang Yu’s
+The font for the DSIEUR graphs is Cabin and available
+[here](https://fonts.google.com/specimen/Cabin). The code to load the
+font with the package is heavily based on the code from Guangchuang Yu’s
 [extrafont](https://github.com/GuangchuangYu/emojifont) package - thank
 you\!
 
