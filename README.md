@@ -13,7 +13,7 @@ status](https://ci.appveyor.com/api/projects/status/github/ivelasq/dataedu?branc
 coverage](https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg)](https://codecov.io/gh/data-edu/dataedu?branch=master)
 [![minimal R
 version](https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg)](https://cran.r-project.org/)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2020--05--31-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2020--06--28-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
 <!-- badges: end -->
 
 The goal of {dataedu} is to provide readers of [Data Science in
@@ -107,10 +107,10 @@ To see the packages used in the book, run:
 
 ``` r
 dataedu::dataedu_packages
-#>  [1] "apaTables"   "caret"       "dummies"     "ggraph"      "here"       
-#>  [6] "janitor"     "lme4"        "lubridate"   "performance" "ranger"     
-#> [11] "readxl"      "rtweet"      "randomNames" "sjPlot"      "textdata"   
-#> [16] "tidygraph"   "tidylog"     "tidyverse"   "tidytext"
+#>  [1] "apaTables"   "caret"       "dummies"     "e1071"       "ggraph"     
+#>  [6] "here"        "janitor"     "lme4"        "lubridate"   "performance"
+#> [11] "ranger"      "readxl"      "rtweet"      "randomNames" "sjPlot"     
+#> [16] "textdata"    "tidygraph"   "tidylog"     "tidyverse"   "tidytext"
 ```
 
 **A special note on {tabulizer}:** One of the walkthroughs uses

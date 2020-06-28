@@ -329,6 +329,7 @@ dataedu_packages <-
     "apaTables",
     "caret",
     "dummies",
+    "e1071",
     "ggraph",
     "here",
     "janitor",
