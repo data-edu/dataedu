@@ -358,5 +358,6 @@ dataedu_bookdown_dependencies <-
   c(
     "RefManageR", 
     "png", 
-    "bookdown"
+    "bookdown",
+    "extrafont"
   )
