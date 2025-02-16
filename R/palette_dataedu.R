@@ -8,7 +8,8 @@ dataedu_palette <- c(
   `turquoise`  = "#006876",
   `green`      = "#00906b",
   `lightgreen` = "#87af49",
-  `yellow`     = "#ffbc49"
+  `yellow`     = "#ffbc49",
+  `purple`     = "#82204a"
 )
 
 #' Extract dataedu colors as hex codes
