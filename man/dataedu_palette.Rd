@@ -5,7 +5,7 @@
 \alias{dataedu_palette}
 \title{Color palette for Data Science in Education}
 \format{
-An object of class \code{character} of length 5.
+An object of class \code{character} of length 6.
 }
 \usage{
 dataedu_palette

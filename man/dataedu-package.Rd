@@ -6,11 +6,9 @@
 \alias{dataedu-package}
 \title{dataedu: Package for Data Science in Education Using R}
 \description{
-\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-Provide readers of Data Science in Education Using
-    R with a package containing useful functions, data, and references
-    from the book.
+Provide readers of Data Science in Education Using R with a package containing useful functions, data, and references from the book.
 }
 \seealso{
 Useful links:
