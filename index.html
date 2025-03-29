@@ -78,18 +78,18 @@
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
 <div class="section level3">
-<h3 id="id_1-install-remotes">1. Install {remotes}<a class="anchor" aria-label="anchor" href="#id_1-install-remotes"></a>
+<h3 id="id_1-install-pak">1. Install {pak}<a class="anchor" aria-label="anchor" href="#id_1-install-pak"></a>
 </h3>
-<p>First, let’s install {remotes}. If you already have {remotes} installed, you can move on to the next step.</p>
+<p>First, let’s install {pak}. If you already have {pak} installed, you can move on to the next step.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"pak"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="id_2-install-dataedu">2. Install {dataedu}<a class="anchor" aria-label="anchor" href="#id_2-install-dataedu"></a>
 </h3>
 <p>You can install the development version of {dataedu} by running this in your RStudio console:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"data-edu/dataedu"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"data-edu/dataedu"</span><span class="op">)</span></span></code></pre></div>
 <div class="section level4">
 <h4 id="important-notes-on-installation">Important Notes on Installation<a class="anchor" aria-label="anchor" href="#important-notes-on-installation"></a>
 </h4>
@@ -132,12 +132,7 @@
 <span><span class="co">#&gt;  [6] "here"        "janitor"     "lme4"        "lubridate"   "performance"</span></span>
 <span><span class="co">#&gt; [11] "ranger"      "readxl"      "rtweet"      "randomNames" "sjPlot"     </span></span>
 <span><span class="co">#&gt; [16] "textdata"    "tidygraph"   "tidylog"     "tidyverse"   "tidytext"</span></span></code></pre></div>
-<p><strong>A special note on {tabulizer}:</strong> One of the walkthroughs uses <a href="https://github.com/ropensci/tabulizer" class="external-link">tabulizer</a>, created by ROpenSci to read PDFs. {tabulizer} requires the installation of <a href="https://cran.r-project.org/web/packages/rJava/index.html" class="external-link">RJava</a>, which can be a tricky process. {tabulizer} is not included in <code><a href="reference/install_dataedu.html">install_dataedu()</a></code> and we recommend reading through the notes on its Github repo if installing.</p>
-</div>
-<div class="section level3">
-<h3 id="reproducible-code-for-walkthroughs">Reproducible Code for Walkthroughs<a class="anchor" aria-label="anchor" href="#reproducible-code-for-walkthroughs"></a>
-</h3>
-<p>Coming soon!</p>
+<p><strong>A special note on {tabulapdf}:</strong> One of the walkthroughs uses <a href="https://docs.ropensci.org/tabulapdf/index.html" class="external-link">tabulapdf</a>, created by ROpenSci to read PDFs. {tabulapdf} requires the installation of <a href="https://cran.r-project.org/web/packages/rJava/index.html" class="external-link">RJava</a>, which can be a tricky process. {tabulapdf} is not included in <code><a href="reference/install_dataedu.html">install_dataedu()</a></code> and we recommend reading through the notes on its Github repo if installing.</p>
 </div>
 <div class="section level3">
 <h3 id="accessing-the-walkthrough-data">Accessing the Walkthrough Data<a class="anchor" aria-label="anchor" href="#accessing-the-walkthrough-data"></a>
@@ -201,7 +196,7 @@
 <li>
 <strong>Note:</strong> The DataEdu theme uses {showtext} to render the font. If you would like to use it in an R markdown chunk, please ensure that the chunk lists <code>fig.showtext = TRUE</code>. If you would like to use it in a standalone R script, then you will need to use a differnet graphic device. More information is available in the documentation <a href="https://cran.rstudio.com/web/packages/showtext/vignettes/introduction.html" class="external-link">here</a>.</li>
 </ul>
-<!-- end list --><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/data-edu/dataedu" class="external-link">dataedu</a></span><span class="op">)</span></span>
 <span></span>
@@ -263,11 +258,11 @@
 <div class="dev-status">
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://travis-ci.org/data-edu/dataedu" class="external-link"><img src="https://travis-ci.org/data-edu/dataedu.svg?branch=master" alt="Travis build status"></a></li>
-<li><a href="https://ci.appveyor.com/project/ivelasq/dataedu" class="external-link"><img src="https://ci.appveyor.com/api/projects/status/github/ivelasq/dataedu?branch=master&amp;svg=true" alt="AppVeyor build status"></a></li>
 <li><a href="https://codecov.io/gh/data-edu/dataedu?branch=master" class="external-link"><img src="https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
 <li><a href="https://cran.r-project.org/" class="external-link"><img src="https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg" alt="minimal R version"></a></li>
-<li><a href="https://github.com/data-edu/dataedu/commits/master" class="external-link"><img src="https://img.shields.io/badge/last%20change-2020--06--28-yellowgreen.svg" alt="Last-changedate"></a></li>
+<li><a href="https://github.com/data-edu/dataedu/commits/master" class="external-link"><img src="https://img.shields.io/badge/last%20change-2025--03--29-yellowgreen.svg" alt="Last-changedate"></a></li>
+<li><a href="https://github.com/data-edu/dataedu/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/data-edu/dataedu/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://app.codecov.io/gh/data-edu/dataedu" class="external-link"><img src="https://codecov.io/gh/data-edu/dataedu/graph/badge.svg" alt="Codecov test coverage"></a></li>
 </ul>
 </div>
 
