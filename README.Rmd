@@ -107,7 +107,7 @@ a <- data(package = "dataedu")
 a$result[ , 3:4]
 ```
 
-If you would like to download the data in non-`.Rds` (RData) format, the CSV and JSON formats are available under [`inst/extdata`](https://github.com/data-edu/dataedu/tree/master/inst/extdata). Please note that `all_files` is not included because of how large the file would be.
+If you would like to download the data in non-`.Rds` (RData) format, the CSV and JSON formats are available under [`inst/extdata`](https://github.com/data-edu/dataedu/tree/master/inst/extdata). Please note that `all_files` and `oulad_interactions_filtered` are not included because of their size.
 
 ### Using the {dataedu} Theme and Palette
 

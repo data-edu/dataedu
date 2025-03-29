@@ -318,6 +318,54 @@
 #' str(dataedu::child_counts)
 "child_counts"
 
+#' Walkthrough 08 - Open University Learning Analytics Dataset - Virtual Learning Environment
+#'
+#' Walkthrough 08 - Virtual learning environment (VLE)
+#' log-trace data.
+#' 
+#'
+#' @name oulad_interactions_filtered
+#' @docType data
+#' @format Dataset of class \code{tibble}.
+#' @source Open University Learning Analytics Dataset <https://analyse.kmi.open.ac.uk/open-dataset>
+#' @keywords datasets
+#' @examples
+#'
+#' str(dataedu::oulad_interactions_filtered)
+"oulad_interactions_filtered"
+
+#' Walkthrough 08 - Open University Learning Analytics Dataset - Student Data
+#'
+#' Walkthrough 08 - Information from three sources that relate to students and 
+#' the courses they took: `studentInfo`, `courses`, and `studentRegistration`.
+#' 
+#'
+#' @name oulad_students
+#' @docType data
+#' @format Dataset of class \code{tibble}.
+#' @source Open University Learning Analytics Dataset <https://analyse.kmi.open.ac.uk/open-dataset>
+#' @keywords datasets
+#' @examples
+#'
+#' str(dataedu::oulad_students)
+"oulad_students"
+
+#' Walkthrough 08 - Open University Learning Analytics Dataset - Assessment Data
+#'
+#' Walkthrough 08 - Provides data on students' performance on various assessments 
+#' throughout their courses.
+#' 
+#'
+#' @name oulad_assessments
+#' @docType data
+#' @format Dataset of class \code{tibble}.
+#' @source Open University Learning Analytics Dataset <https://analyse.kmi.open.ac.uk/open-dataset>
+#' @keywords datasets
+#' @examples
+#'
+#' str(dataedu::oulad_assessments)
+"oulad_assessments"
+
 #' All packages used in Data Science in Education Using R
 #'
 #' @name dataedu_packages
