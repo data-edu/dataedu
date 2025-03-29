@@ -5,15 +5,14 @@
 
 <!-- badges: start -->
 
-[![Travis build
-status](https://travis-ci.org/data-edu/dataedu.svg?branch=master)](https://travis-ci.org/data-edu/dataedu)
-[![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/ivelasq/dataedu?branch=master&svg=true)](https://ci.appveyor.com/project/ivelasq/dataedu)
 [![Codecov test
 coverage](https://codecov.io/gh/data-edu/dataedu/branch/master/graph/badge.svg)](https://codecov.io/gh/data-edu/dataedu?branch=master)
 [![minimal R
 version](https://img.shields.io/badge/R%3E%3D-3.6-6666ff.svg)](https://cran.r-project.org/)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2020--06--28-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2025--03--29-yellowgreen.svg)](https://github.com/data-edu/dataedu/commits/master)
+[![R-CMD-check](https://github.com/data-edu/dataedu/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/data-edu/dataedu/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/data-edu/dataedu/graph/badge.svg)](https://app.codecov.io/gh/data-edu/dataedu)
 <!-- badges: end -->
 
 The goal of {dataedu} is to provide readers of [Data Science in
@@ -21,52 +20,51 @@ Education Using
 R](https://github.com/data-edu/data-science-in-education) with a package
 with useful functions, data, and references from the book.
 
-  - [Installation](#installation)
-  - [Package Contents](#package-contents)
-  - [Contact](#contact)
+- [Installation](#installation)
+- [Package Contents](#package-contents)
+- [Contact](#contact)
 
 ## Installation
 
-### 1\. Install {remotes}
+### 1. Install {pak}
 
-First, let’s install {remotes}. If you already have {remotes} installed,
-you can move on to the next step.
+First, let’s install {pak}. If you already have {pak} installed, you can
+move on to the next step.
 
 ``` r
-install.packages("remotes")
+install.packages("pak")
 ```
 
-### 2\. Install {dataedu}
+### 2. Install {dataedu}
 
 You can install the development version of {dataedu} by running this in
 your RStudio console:
 
 ``` r
-remotes::install_github("data-edu/dataedu")
+pak::pak("data-edu/dataedu")
 ```
 
 #### Important Notes on Installation
 
-  - {dataedu} requires R 3.6 or above to be installed.
+- {dataedu} requires R 3.6 or above to be installed.
 
-  - {dataedu} has other packages that it needs to be able to run. You
-    can see the full list under “Imports” (imported when downloading the
-    package) and “Suggests” (we think you should include these too\!) in
-    the [DESCRIPTION
-    file](https://github.com/data-edu/dataedu/blob/master/DESCRIPTION#L34).
+- {dataedu} has other packages that it needs to be able to run. You can
+  see the full list under “Imports” (imported when downloading the
+  package) and “Suggests” (we think you should include these too!) in
+  the [DESCRIPTION
+  file](https://github.com/data-edu/dataedu/blob/master/DESCRIPTION#L34).
 
-  - **We recommend first checking to see if your packages are all
-    up-to-date if you are running into issues with installation.** If
-    you have installed the imported/suggested packages previously and
-    have not updated them in a while, RStudio may prompt you to update
-    them. You can choose to (1) ignore this prompt, (2) exit the prompt
-    and update your packages, or (3) try to update your packages through
-    the prompt. It’s usually easier to exit and update your packages
-    outside the prompt (one way to do this is to go to the RStudio
-    Packages pane and click Update, then select the packages you’d like
-    to update).
+- **We recommend first checking to see if your packages are all
+  up-to-date if you are running into issues with installation.** If you
+  have installed the imported/suggested packages previously and have not
+  updated them in a while, RStudio may prompt you to update them. You
+  can choose to (1) ignore this prompt, (2) exit the prompt and update
+  your packages, or (3) try to update your packages through the prompt.
+  It’s usually easier to exit and update your packages outside the
+  prompt (one way to do this is to go to the RStudio Packages pane and
+  click Update, then select the packages you’d like to update).
 
-### 3\. Call the Package
+### 3. Call the Package
 
 Before you can use the package, make sure to call it using `library()`:
 
@@ -92,7 +90,7 @@ into R however they see fit.
 
 We strived to use packages that we use in our daily work when creating
 the walkthroughs in the book. Because we covered a variety of subjects,
-that means we used a lot of packages\! As described in the Foundational
+that means we used a lot of packages! As described in the Foundational
 Skills chapter, you can install the packages individually as they suit
 your needs.
 
@@ -113,17 +111,13 @@ dataedu::dataedu_packages
 #> [16] "textdata"    "tidygraph"   "tidylog"     "tidyverse"   "tidytext"
 ```
 
-**A special note on {tabulizer}:** One of the walkthroughs uses
-[tabulizer](https://github.com/ropensci/tabulizer), created by ROpenSci
-to read PDFs. {tabulizer} requires the installation of
+**A special note on {tabulapdf}:** One of the walkthroughs uses
+[tabulapdf](https://docs.ropensci.org/tabulapdf/index.html), created by
+ROpenSci to read PDFs. {tabulapdf} requires the installation of
 [RJava](https://cran.r-project.org/web/packages/rJava/index.html), which
-can be a tricky process. {tabulizer} is not included in
+can be a tricky process. {tabulapdf} is not included in
 `install_dataedu()` and we recommend reading through the notes on its
 Github repo if installing.
-
-### Reproducible Code for Walkthroughs
-
-Coming soon\!
 
 ### Accessing the Walkthrough Data
 
@@ -134,8 +128,8 @@ book:
 dataedu::course_data
 ```
 
-To see all the datasets available in the package, run `data(package =
-"dataedu")`.
+To see all the datasets available in the package, run
+`data(package = "dataedu")`.
 
 ``` r
 # this is to print the results for the README
@@ -195,14 +189,12 @@ file would be.
 Add the theme and palette to ggplot2-based plots using `theme_dataedu()`
 and `scale_*_dataedu()`.
 
-  - **Note:** The DataEdu theme uses {showtext} to render the font. If
-    you would like to use it in an R markdown chunk, please ensure that
-    the chunk lists `fig.showtext = TRUE`. If you would like to use it
-    in a standalone R script, then you will need to use a differnet
-    graphic device. More information is available in the documentation
-    [here](https://cran.rstudio.com/web/packages/showtext/vignettes/introduction.html).
-
-<!-- end list -->
+- **Note:** The DataEdu theme uses {showtext} to render the font. If you
+  would like to use it in an R markdown chunk, please ensure that the
+  chunk lists `fig.showtext = TRUE`. If you would like to use it in a
+  standalone R script, then you will need to use a differnet graphic
+  device. More information is available in the documentation
+  [here](https://cran.rstudio.com/web/packages/showtext/vignettes/introduction.html).
 
 ``` r
 library(ggplot2)
@@ -220,13 +212,13 @@ The font for the DSIEUR graphs is Cabin and available
 [here](https://fonts.google.com/specimen/Cabin). The code to load the
 font with the package is heavily based on the code from Guangchuang Yu’s
 [extrafont](https://github.com/GuangchuangYu/emojifont) package - thank
-you\!
+you!
 
 ## Contact
 
-  - Please report ideas or issues on the [Issues
-    page](https://github.com/data-edu/dataedu/issues). If possible, make
-    your post reproducible using the
-    [{reprex}](https://github.com/tidyverse/reprex) package.
-  - Send any pull requests on the [Github
-    repository](https://github.com/data-edu/dataedu).
+- Please report ideas or issues on the [Issues
+  page](https://github.com/data-edu/dataedu/issues). If possible, make
+  your post reproducible using the
+  [{reprex}](https://github.com/tidyverse/reprex) package.
+- Send any pull requests on the [Github
+  repository](https://github.com/data-edu/dataedu).
