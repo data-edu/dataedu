@@ -302,6 +302,21 @@
 #' str(dataedu::all_files)
 "all_files"
 
+#' Walkthrough 06 - Bluesky Data - Raw Posts
+#'
+#' Walkthrough 06 - Raw data accessed from Bluesky on #tidytuesday
+#'
+#'
+#' @name bluesky_posts
+#' @docType data
+#' @format Dataset of class \code{tibble}.
+#' @source Bluesky API
+#' @keywords datasets
+#' @examples
+#'
+#' str(dataedu::child_counts)
+"bluesky_posts"
+
 #' Walkthrough 04 - Students with Disabilities Counts - Combined Data Frame
 #'
 #' Walkthrough 04 - Combined data frame containing students with disabilities
