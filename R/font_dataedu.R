@@ -15,17 +15,27 @@ cabinproto <- proto::proto(expr={
     list.files(get_path())
   }
   load_font <- function(., font) {
-    wd <- getwd()
     font_path <- get_path()
+
+    # Check if font path exists (may be empty during development)
+    if (font_path == "" || !dir.exists(font_path)) {
+      warning("Font path not found. The dataedu theme may not work correctly.",
+              call. = FALSE)
+      return(invisible(NULL))
+    }
+
+    wd <- getwd()
+    on.exit(setwd(wd))  # Ensure we always return to original directory
+
     setwd(font_path)
     if (!file.exists(font)) {
-      setwd(wd)
-      stop("font doesn't exist...")
+      warning("Font file '", font, "' doesn't exist.", call. = FALSE)
+      return(invisible(NULL))
     }
+
     sysfonts::font_add(family = sub("\\..*", "", font),
                        regular = font)
     showtext::showtext_auto()
-    setwd(wd)
   }
 })
 
