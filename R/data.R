@@ -410,3 +410,17 @@ dataedu_packages <-
     "tidyverse",
     "tidytext"
   )
+
+#' All packages used to render the Data Science in Education Using R book (via {bookdown})
+#'
+#' @name dataedu_bookdown_dependencies
+#' @format A character vector
+#' @export dataedu_bookdown_dependencies
+
+dataedu_bookdown_dependencies <- 
+  c(
+    "RefManageR", 
+    "png", 
+    "bookdown",
+    "extrafont"
+  )
