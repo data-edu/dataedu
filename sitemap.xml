@@ -16,6 +16,7 @@
 <url><loc>/reference/course_data.html</loc></url>
 <url><loc>/reference/course_minutes.html</loc></url>
 <url><loc>/reference/dataedu-package.html</loc></url>
+<url><loc>/reference/dataedu_bookdown_dependencies.html</loc></url>
 <url><loc>/reference/dataedu_colors.html</loc></url>
 <url><loc>/reference/dataedu_packages.html</loc></url>
 <url><loc>/reference/dataedu_pal.html</loc></url>
@@ -24,6 +25,7 @@
 <url><loc>/reference/district_tidy_df.html</loc></url>
 <url><loc>/reference/frpl_pdf.html</loc></url>
 <url><loc>/reference/index.html</loc></url>
+<url><loc>/reference/install_bookdown_dependencies.html</loc></url>
 <url><loc>/reference/install_dataedu.html</loc></url>
 <url><loc>/reference/load.cabin.html</loc></url>
 <url><loc>/reference/ma_data_init.html</loc></url>
