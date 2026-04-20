@@ -32,7 +32,7 @@ dataedu_colors()
 
 dataedu_palettes <- list(
   `short` = dataedu_colors("green", "yellow"),
-  `main` = dataedu_colors("darkblue", "turquoise", "green", "lightgreen", "yellow")
+  `main` = dataedu_colors("darkblue", "turquoise", "green", "lightgreen", "purple")
 )
 
 #' Interpolate a dataedu color palette
